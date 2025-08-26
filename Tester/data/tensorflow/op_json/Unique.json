@@ -1,0 +1,37 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"out_idx": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": null,
+		"name": "out_idx",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"x": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	}
+}

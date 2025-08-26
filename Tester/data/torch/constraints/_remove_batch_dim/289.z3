@@ -1,0 +1,53 @@
+(declare-fun temp1869_1 () (_ BitVec 64))
+(declare-fun var461171 () (_ BitVec 64))
+(declare-fun temp1869_2 () (_ BitVec 64))
+(declare-fun var1707383 () (_ BitVec 64))
+(declare-fun var1707385 () (_ BitVec 64))
+(declare-fun var1773072 () (_ BitVec 64))
+(declare-fun var1838616 () (_ BitVec 64))
+(declare-fun temp1869_3 () (_ BitVec 64))
+(declare-fun var2756041 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIMSIZE () (_ BitVec 64))
+(declare-fun var2756038 () (_ BitVec 64))
+(declare-fun temp1869_4 () (_ BitVec 64))
+(declare-fun var3607756 () (_ BitVec 64))
+(declare-fun temp1869_5 () (_ BitVec 64))
+(declare-fun var4391863 () (_ BitVec 64))
+(assert (= temp1869_1 #x0000000000000020))
+(assert (= var461171 temp1869_1))
+(assert (= temp1869_2 #x0000000000000008))
+(assert (= var1707383 temp1869_2))
+(assert (= var1707385 var1707383))
+(assert (= var1773072 var1707385))
+(assert (= var1838616 var1773072))
+(assert (= var2756041
+   (ite (= ARGNAME_input_NAMEEND_DIMSIZE var2756038)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp1869_3 #x0000000000000000))
+(assert (= var2756041 temp1869_3))
+(assert (= temp1869_4 #x0000000000000001))
+(assert (= var3607756 temp1869_4))
+(assert (= temp1869_5 #x0000000000000000))
+(assert (= var4391863 temp1869_5))
+(model-add temp1869_1 () (_ BitVec 64) #x0000000000000020)
+(model-add var461171 () (_ BitVec 64) #x0000000000000020)
+(model-add temp1869_2 () (_ BitVec 64) #x0000000000000008)
+(model-add var1707383 () (_ BitVec 64) #x0000000000000008)
+(model-add var1707385 () (_ BitVec 64) #x0000000000000008)
+(model-add var1773072 () (_ BitVec 64) #x0000000000000008)
+(model-add var1838616 () (_ BitVec 64) #x0000000000000008)
+(model-add temp1869_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var2756041 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIMSIZE
+           ()
+           (_ BitVec 64)
+           (ite k!0 var2756038 (bvnot var2756038)))
+
+
+
+
+
+

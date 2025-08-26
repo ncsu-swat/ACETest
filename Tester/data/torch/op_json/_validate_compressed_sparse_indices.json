@@ -1,0 +1,65 @@
+{
+	"is_crow": {
+		"optional": false,
+		"name": "is_crow",
+		"type": "bool",
+		"input_order": 0
+	},
+	"compressed_idx": {
+		"optional": false,
+		"name": "compressed_idx",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"plain_idx": {
+		"optional": false,
+		"name": "plain_idx",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"cdim": {
+		"optional": false,
+		"name": "cdim",
+		"type": "int",
+		"input_order": 3
+	},
+	"dim": {
+		"optional": false,
+		"name": "dim",
+		"type": "int",
+		"input_order": 4,
+		"max": 6,
+		"min": -6
+	},
+	"nnz": {
+		"optional": false,
+		"name": "nnz",
+		"type": "int",
+		"input_order": 5
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

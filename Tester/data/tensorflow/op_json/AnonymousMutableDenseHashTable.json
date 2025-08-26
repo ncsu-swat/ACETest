@@ -1,0 +1,91 @@
+{
+	"key_dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "key_dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"value_dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "value_dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"value_shape": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": [],
+		"is_mid": null,
+		"name": "value_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {},
+		"optional": null
+	},
+	"initial_num_buckets": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 131072,
+		"is_mid": null,
+		"name": "initial_num_buckets",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"max_load_factor": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "max_load_factor",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"empty_key": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "empty_key",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&key_dtype.value",
+		"optional": null
+	},
+	"deleted_key": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "deleted_key",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&key_dtype.value",
+		"optional": null
+	}
+}

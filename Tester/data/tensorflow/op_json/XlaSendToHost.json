@@ -1,0 +1,19 @@
+{
+	"Tinput": {
+		"name": "Tinput",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"key": {
+		"name": "key",
+		"input_order": -1,
+		"type": "string"
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tinput.value"
+	}
+}

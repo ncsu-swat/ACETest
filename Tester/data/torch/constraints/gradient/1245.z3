@@ -1,0 +1,75 @@
+(declare-fun temp1245_2 () (_ BitVec 64))
+(declare-fun temp1245_1 () (_ BitVec 64))
+(declare-fun var987696 () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp1245_3 () (_ BitVec 64))
+(declare-fun temp1245_4 () (_ BitVec 64))
+(declare-fun var1053237 () (_ BitVec 64))
+(declare-fun var1118784 () (_ BitVec 64))
+(declare-fun temp1245_6 () (_ BitVec 64))
+(declare-fun temp1245_5 () (_ BitVec 64))
+(declare-fun temp1245_7 () (_ BitVec 64))
+(declare-fun var1642806 () (_ BitVec 64))
+(declare-fun var1708353 () (_ BitVec 64))
+(declare-fun temp1245_9 () (_ BitVec 64))
+(declare-fun temp1245_8 () (_ BitVec 64))
+(declare-fun temp1245_10 () (_ BitVec 64))
+(declare-fun var2756918 () (_ BitVec 64))
+(declare-fun var2822465 () (_ BitVec 64))
+(assert (= temp1245_2 #x0000000000000000))
+(assert (= temp1245_1 temp1245_2))
+(assert (= var987696
+   (ite (bvslt temp1245_1 ARGNAME_input_NAMEEND_DIM)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp1245_3
+   (ite (= var987696 #x0000000000000001) ARGNAME_input_NAMEEND_DIM temp1245_1)))
+(assert (= temp1245_4 #x0000000000000000))
+(assert (= var1053237 temp1245_4))
+(assert (= var1118784 var1053237))
+(assert (= temp1245_6 #x0000000000000000))
+(assert (= temp1245_5 temp1245_6))
+(assert (= temp1245_7 #x0000000000000000))
+(assert (= var1642806 temp1245_7))
+(assert (= var1708353 var1642806))
+(assert (= temp1245_9 #x0000000000000000))
+(assert (= temp1245_8 temp1245_9))
+(assert (= temp1245_10 #x0000000000000000))
+(assert (= var2756918 temp1245_10))
+(assert (= var2822465 var2756918))
+(model-add temp1245_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var987696
+           ()
+           (_ BitVec 64)
+           (ite (bvsle ARGNAME_input_NAMEEND_DIM #x0000000000000000)
+                #x0000000000000000
+                #x0000000000000001))
+(model-add temp1245_3
+           ()
+           (_ BitVec 64)
+           (ite (= (ite (bvsle ARGNAME_input_NAMEEND_DIM #x0000000000000000)
+                        #x0000000000000000
+                        #x0000000000000001)
+                   #x0000000000000001)
+                ARGNAME_input_NAMEEND_DIM
+                #x0000000000000000))
+(model-add temp1245_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var1053237 () (_ BitVec 64) #x0000000000000000)
+(model-add var1118784 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_7 () (_ BitVec 64) #x0000000000000000)
+(model-add var1642806 () (_ BitVec 64) #x0000000000000000)
+(model-add var1708353 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_9 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_8 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1245_10 () (_ BitVec 64) #x0000000000000000)
+(model-add var2756918 () (_ BitVec 64) #x0000000000000000)
+(model-add var2822465 () (_ BitVec 64) #x0000000000000000)
+
+
+
+
+
+

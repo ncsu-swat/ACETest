@@ -1,0 +1,45 @@
+{
+	"input_shapes": {
+		"name": "input_shapes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "shape"
+		}
+	},
+	"input_layouts": {
+		"name": "input_layouts",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "string"
+		}
+	},
+	"dtypes": {
+		"name": "dtypes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 1
+	},
+	"prefix": {
+		"name": "prefix",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"tensor_names": {
+		"name": "tensor_names",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"shape_and_slices": {
+		"name": "shape_and_slices",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

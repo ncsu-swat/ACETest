@@ -1,0 +1,52 @@
+(declare-fun temp164_2 () (_ BitVec 64))
+(declare-fun temp164_1 () (_ BitVec 64))
+(declare-fun temp164_4 () (_ BitVec 64))
+(declare-fun temp164_3 () (_ BitVec 64))
+(declare-fun temp164_6 () (_ BitVec 64))
+(declare-fun temp164_5 () (_ BitVec 64))
+(declare-fun temp164_7 () (_ BitVec 64))
+(declare-fun var198564 () (_ BitVec 64))
+(declare-fun var264647 () (_ BitVec 64))
+(declare-fun temp164_8 () (_ BitVec 64))
+(declare-fun var198628 () (_ BitVec 64))
+(declare-fun temp164_9 () (_ BitVec 64))
+(declare-fun var198629 () (_ BitVec 64))
+(declare-fun temp164_10 () (_ BitVec 64))
+(declare-fun var198549 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp164_12 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp164_13 () (_ BitVec 64))
+(declare-fun temp164_15 () (_ BitVec 64))
+(declare-fun temp164_14 () (_ BitVec 64))
+(assert (= temp164_2 #x0000000000000000))
+(assert (= temp164_1 temp164_2))
+(assert (= temp164_4 #x0000000000000000))
+(assert (= temp164_3 temp164_4))
+(assert (= temp164_6 #x0000000000000000))
+(assert (= temp164_5 temp164_6))
+(assert (= temp164_7 #x0000000000000000))
+(assert (= var198564 temp164_7))
+(assert (= var264647 var198564))
+(assert (= temp164_8 #x0000000000000000))
+(assert (= var198628 temp164_8))
+(assert (= temp164_9 #x0000000000000000))
+(assert (= var198629
+   (ite (= var198628 temp164_9) #x0000000000000001 #x0000000000000000)))
+(assert (= temp164_10 #x0000000000000001))
+(assert (= var198549 (bvadd var198564 temp164_10)))
+(assert (= var198631 var198628))
+(assert (= temp164_12 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp164_12) #x0000000000000001 #x0000000000000000)))
+(assert (= temp164_13 #x0000000000000000))
+(assert (= var198633 temp164_13))
+(assert (= temp164_15 #x0000000055555555))
+(assert (= temp164_14 temp164_15))
+
+
+
+
+
+
+

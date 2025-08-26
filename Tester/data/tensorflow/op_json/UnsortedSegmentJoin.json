@@ -1,0 +1,80 @@
+{
+	"separator": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "separator",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"Tindices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "Tindices",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"Tnumsegments": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": true,
+		"name": "Tnumsegments",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"inputs": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "inputs",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	},
+	"segment_ids": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "segment_ids",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tindices.value"
+	},
+	"num_segments": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "num_segments",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	}
+}

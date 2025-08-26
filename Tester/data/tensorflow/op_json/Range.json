@@ -1,0 +1,62 @@
+{
+	"Tidx": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": true,
+		"name": "Tidx",
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double",
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint16",
+			"uint32"
+		],
+		"optional": null
+	},
+	"start": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "start",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"limit": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "limit",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"delta": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "delta",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	}
+}

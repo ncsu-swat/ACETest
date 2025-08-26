@@ -1,0 +1,67 @@
+(declare-fun temp27_1 () (_ BitVec 64))
+(declare-fun var397898 () (_ BitVec 64))
+(declare-fun var397900 () (_ BitVec 64))
+(declare-fun temp27_3 () (_ BitVec 64))
+(declare-fun temp27_2 () (_ BitVec 64))
+(declare-fun temp27_4 () (_ BitVec 64))
+(declare-fun var1063364 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_shape_NAMEEND_LEN () (_ BitVec 64))
+(declare-fun temp27_5 () (_ BitVec 64))
+(declare-fun var1063366 () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun var1063369 () (_ BitVec 64))
+(declare-fun temp27_6 () (_ BitVec 64))
+(declare-fun temp27_7 () (_ BitVec 64))
+(declare-fun var1063457 () (_ BitVec 64))
+(declare-fun temp27_8 () (_ BitVec 64))
+(declare-fun var1063475 () (_ BitVec 64))
+(declare-fun temp27_9 () (_ BitVec 64))
+(declare-fun var1641132 () (_ BitVec 64))
+(declare-fun var1641140 () (_ BitVec 64))
+(assert (= temp27_1 #x0000000000000005))
+(assert (= var397898 temp27_1))
+(assert (= var397900 var397898))
+(assert (= temp27_3 #x0000000000000000))
+(assert (= temp27_2 temp27_3))
+(assert (= var1063364
+   (ite (= temp27_2 ARGNAME_shape_NAMEEND_LEN)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp27_4 #x0000000000000001))
+(assert (= var1063364 temp27_4))
+(assert (= temp27_5 #x0000000000000001))
+(assert (= var1063366 temp27_5))
+(assert (= var1063369
+   (ite (= var1063366 ARGNAME_input_NAMEEND_NUMELEMENT)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp27_6 #x0000000000000001))
+(assert (= var1063369 temp27_6))
+(assert (= temp27_7 #x0000000000000000))
+(assert (= var1063457
+   (ite (= var1063366 temp27_7) #x0000000000000001 #x0000000000000000)))
+(assert (= temp27_8 #x0000000000000000))
+(assert (= var1063457 temp27_8))
+(assert (= var1063475 (bvsdiv ARGNAME_input_NAMEEND_NUMELEMENT var1063366)))
+(assert (= temp27_9 #x0000000000000001))
+(assert (= var1641132 temp27_9))
+(assert (= var1641140 var1641132))
+(model-add temp27_1 () (_ BitVec 64) #x0000000000000005)
+(model-add var397898 () (_ BitVec 64) #x0000000000000005)
+(model-add var397900 () (_ BitVec 64) #x0000000000000005)
+(model-add temp27_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp27_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp27_4 () (_ BitVec 64) #x0000000000000001)
+(model-add var1063364 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_shape_NAMEEND_LEN
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000000 (bvnot #x0000000000000000)))
+
+
+
+
+
+

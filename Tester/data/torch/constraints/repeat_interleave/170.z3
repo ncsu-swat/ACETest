@@ -1,0 +1,36 @@
+(declare-fun temp170_1 () (_ BitVec 64))
+(declare-fun var329332 () (_ BitVec 64))
+(declare-fun temp170_2 () (_ BitVec 64))
+(declare-fun var591476 () (_ BitVec 64))
+(declare-fun temp170_4 () (_ BitVec 64))
+(declare-fun temp170_3 () (_ BitVec 64))
+(declare-fun temp170_6 () (_ BitVec 64))
+(declare-fun temp170_5 () (_ BitVec 64))
+(declare-fun temp170_8 () (_ BitVec 64))
+(declare-fun temp170_7 () (_ BitVec 64))
+(assert (= temp170_1 #x0000000000000000))
+(assert (= var329332 temp170_1))
+(assert (= temp170_2 #x0000000000000000))
+(assert (= var591476 temp170_2))
+(assert (= temp170_4 #x0000000000000001))
+(assert (= temp170_3 temp170_4))
+(assert (= temp170_6 #x0000000000000001))
+(assert (= temp170_5 temp170_6))
+(assert (= temp170_8 #x0000000000000001))
+(assert (= temp170_7 temp170_8))
+(model-add temp170_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var329332 () (_ BitVec 64) #x0000000000000000)
+(model-add temp170_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var591476 () (_ BitVec 64) #x0000000000000000)
+(model-add temp170_4 () (_ BitVec 64) #x0000000000000001)
+(model-add temp170_3 () (_ BitVec 64) #x0000000000000001)
+(model-add temp170_6 () (_ BitVec 64) #x0000000000000001)
+(model-add temp170_5 () (_ BitVec 64) #x0000000000000001)
+(model-add temp170_8 () (_ BitVec 64) #x0000000000000001)
+(model-add temp170_7 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"target": {
+		"optional": false,
+		"name": "target",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"reduction": {
+		"optional": false,
+		"name": "reduction",
+		"type": "int",
+		"default": 1,
+		"enum": [
+			0,
+			1,
+			2
+		],
+		"input_order": 2
+	},
+	"beta": {
+		"optional": false,
+		"name": "beta",
+		"type": "float",
+		"default": 1.0,
+		"input_order": 3
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

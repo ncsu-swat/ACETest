@@ -1,0 +1,35 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"int64",
+			"bfloat16",
+			"uint16",
+			"half",
+			"uint32",
+			"uint64"
+		],
+		"default": "float",
+		"is_mid": true
+	},
+	"tag": {
+		"name": "tag",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"values": {
+		"name": "values",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

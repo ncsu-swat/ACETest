@@ -1,0 +1,93 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"complex64",
+			"int64",
+			"qint8",
+			"quint8",
+			"qint32",
+			"bfloat16",
+			"uint16",
+			"complex128",
+			"half",
+			"uint32",
+			"uint64"
+		],
+		"is_mid": true
+	},
+	"use_locking": {
+		"name": "use_locking",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"multiply_linear_by_lr": {
+		"name": "multiply_linear_by_lr",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"var": {
+		"name": "var",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"accum": {
+		"name": "accum",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"linear": {
+		"name": "linear",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"grad": {
+		"name": "grad",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"lr": {
+		"name": "lr",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"l1": {
+		"name": "l1",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"l2": {
+		"name": "l2",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"l2_shrinkage": {
+		"name": "l2_shrinkage",
+		"input_order": 7,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"lr_power": {
+		"name": "lr_power",
+		"input_order": 8,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

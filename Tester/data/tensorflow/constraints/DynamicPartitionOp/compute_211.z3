@@ -1,0 +1,68 @@
+(declare-fun temp405_2 () (_ BitVec 64))
+(declare-fun temp405_1 () (_ BitVec 64))
+(declare-fun temp405_4 () (_ BitVec 64))
+(declare-fun temp405_3 () (_ BitVec 64))
+(declare-fun temp405_6 () (_ BitVec 64))
+(declare-fun temp405_5 () (_ BitVec 64))
+(declare-fun temp405_7 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp405_8 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp405_9 () (_ BitVec 64))
+(declare-fun temp405_11 () (_ BitVec 64))
+(declare-fun temp405_10 () (_ BitVec 64))
+(declare-fun temp405_12 () (_ BitVec 64))
+(declare-fun var66851 () (_ BitVec 64))
+(declare-fun temp405_13 () (_ BitVec 64))
+(declare-fun var66852 () (_ BitVec 64))
+(declare-fun temp405_14 () (_ BitVec 64))
+(declare-fun var66878 () (_ BitVec 64))
+(declare-fun var1378759 () (_ BitVec 64))
+(declare-fun temp405_15 () (_ BitVec 64))
+(declare-fun var1643116 () (_ BitVec 64))
+(assert (= temp405_2 #x0000000000000000))
+(assert (= temp405_1 temp405_2))
+(assert (= temp405_4 #x0000000000000000))
+(assert (= temp405_3 temp405_4))
+(assert (= temp405_6 #x0000000000000000))
+(assert (= temp405_5 temp405_6))
+(assert (= temp405_7 #x0000000000000008))
+(assert (= var198631 temp405_7))
+(assert (= temp405_8 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp405_8) #x0000000000000001 #x0000000000000000)))
+(assert (= temp405_9 #x0000000000000001))
+(assert (= var198633 temp405_9))
+(assert (= temp405_11 #xffffffffffffffff))
+(assert (= temp405_10 temp405_11))
+(assert (= temp405_12 #x0000000000000000))
+(assert (= var66851 temp405_12))
+(assert (= temp405_13 #x0000000000000001))
+(assert (= var66852 (bvadd var66851 temp405_13)))
+(assert (= temp405_14 #x0000000000000000))
+(assert (= var66878 temp405_14))
+(assert (= var1378759 var66878))
+(assert (= temp405_15 #x0000000000000001))
+(assert (= var1643116 temp405_15))
+(model-add temp405_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp405_7 () (_ BitVec 64) #x0000000000000008)
+(model-add var198631 () (_ BitVec 64) #x0000000000000008)
+(model-add temp405_8 () (_ BitVec 64) #x0000000000000008)
+(model-add var198633 () (_ BitVec 64) #x0000000000000001)
+(model-add temp405_9 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+
+
+

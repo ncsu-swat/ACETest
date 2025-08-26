@@ -1,0 +1,38 @@
+(declare-fun temp556_1 () (_ BitVec 64))
+(declare-fun var791270 () (_ BitVec 64))
+(declare-fun temp556_2 () (_ BitVec 64))
+(declare-fun temp556_3 () (_ BitVec 64))
+(declare-fun var791287 () (_ BitVec 64))
+(declare-fun var791267 () (_ BitVec 64))
+(declare-fun var732381 () (_ BitVec 64))
+(declare-fun var1060089 () (_ BitVec 64))
+(declare-fun temp556_4 () (_ BitVec 64))
+(declare-fun ARGNAME_keepdim_NAMEEND () (_ BitVec 64))
+(declare-fun temp556_6 () (_ BitVec 64))
+(declare-fun temp556_5 () (_ BitVec 64))
+(declare-fun temp556_7 () (_ BitVec 64))
+(declare-fun var4139121 () (_ BitVec 64))
+(assert (= temp556_1 #x0000000000000001))
+(assert (= var791270 temp556_1))
+(assert (= temp556_2 #x0000000000000001))
+(assert (= var791270 temp556_2))
+(assert (= temp556_3 #x0000000000000004))
+(assert (= var791287 temp556_3))
+(assert (= var791267 var791287))
+(assert (= var732381 var791267))
+(assert (= var1060089 var732381))
+(assert (= temp556_4 #x0000000000000001))
+(assert (= ARGNAME_keepdim_NAMEEND temp556_4))
+(assert (= temp556_6 #x0000000000000001))
+(assert (= temp556_5 temp556_6))
+(assert (= temp556_7 #x0000000000000000))
+(assert (= var4139121 temp556_7))
+(model-add temp556_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var791270 () (_ BitVec 64) #x0000000000000001)
+(model-add temp556_2 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+

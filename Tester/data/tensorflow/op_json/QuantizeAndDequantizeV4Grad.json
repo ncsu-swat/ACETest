@@ -1,0 +1,90 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		],
+		"optional": null
+	},
+	"axis": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "axis",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"gradients": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "gradients",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"input": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"input_min": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_min",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"input_max": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_max",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"block_size": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "block_size",
+		"type": "int",
+		"max": null,
+		"min": 2,
+		"value": null,
+		"enum": null
+	},
+	"data_format": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "NHWC",
+		"is_mid": null,
+		"name": "data_format",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"NHWC",
+			"NCHW",
+			"NCHW_VECT_C"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	}
+}

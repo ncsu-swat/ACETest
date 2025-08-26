@@ -1,0 +1,17 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	},
+	"memory_region_name": {
+		"name": "memory_region_name",
+		"input_order": -1,
+		"type": "string"
+	}
+}

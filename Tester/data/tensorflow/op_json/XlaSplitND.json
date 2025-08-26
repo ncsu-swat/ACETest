@@ -1,0 +1,37 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"N": {
+		"name": "N",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_splits": {
+		"name": "num_splits",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		}
+	},
+	"paddings": {
+		"name": "paddings",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"default": []
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

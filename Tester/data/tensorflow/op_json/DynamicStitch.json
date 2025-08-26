@@ -1,0 +1,34 @@
+{
+	"N": {
+		"name": "N",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"indices": {
+		"name": "indices",
+		"input_order": 0,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "int32"
+		},
+		"length": "&N.value"
+	},
+	"data": {
+		"name": "data",
+		"input_order": 1,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		},
+		"length": "&N.value"
+	}
+}

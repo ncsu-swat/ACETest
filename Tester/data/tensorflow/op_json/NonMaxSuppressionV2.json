@@ -1,0 +1,86 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"half",
+			"float"
+		],
+		"optional": null
+	},
+	"T_threshold": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": true,
+		"name": "T_threshold",
+		"type": "type",
+		"enum": [
+			"half",
+			"float"
+		],
+		"optional": null
+	},
+	"boxes": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "boxes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"scores": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "scores",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"max_output_size": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "max_output_size",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"iou_threshold": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "iou_threshold",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T_threshold.value",
+		"optional": null
+	}
+}

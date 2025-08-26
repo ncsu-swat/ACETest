@@ -1,0 +1,57 @@
+{
+	"iou_threshold": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "iou_threshold",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"boxes": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "boxes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"scores": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "scores",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"max_output_size": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "max_output_size",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	}
+}

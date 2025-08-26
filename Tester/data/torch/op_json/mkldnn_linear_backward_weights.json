@@ -1,0 +1,52 @@
+{
+	"grad_output": {
+		"optional": false,
+		"name": "grad_output",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"weight": {
+		"optional": false,
+		"name": "weight",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"bias_defined": {
+		"optional": false,
+		"name": "bias_defined",
+		"type": "bool",
+		"input_order": 3
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

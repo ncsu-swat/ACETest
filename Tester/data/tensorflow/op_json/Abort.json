@@ -1,0 +1,27 @@
+{
+	"error_msg": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "error_msg",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null,
+		"img_fmt": null
+	},
+	"exit_without_error": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "exit_without_error",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	}
+}

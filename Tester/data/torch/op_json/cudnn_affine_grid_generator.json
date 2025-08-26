@@ -1,0 +1,56 @@
+{
+	"theta": {
+		"optional": false,
+		"name": "theta",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"N": {
+		"optional": false,
+		"name": "N",
+		"type": "int",
+		"input_order": 1
+	},
+	"C": {
+		"optional": false,
+		"name": "C",
+		"type": "int",
+		"input_order": 2
+	},
+	"H": {
+		"optional": false,
+		"name": "H",
+		"type": "int",
+		"input_order": 3
+	},
+	"W": {
+		"optional": false,
+		"name": "W",
+		"type": "int",
+		"input_order": 4
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

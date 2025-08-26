@@ -1,0 +1,38 @@
+{
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"init": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "init",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": null
+	}
+}

@@ -1,0 +1,67 @@
+(declare-fun temp176_1 () (_ BitVec 64))
+(declare-fun var527461 () (_ BitVec 64))
+(declare-fun temp176_2 () (_ BitVec 64))
+(declare-fun var789605 () (_ BitVec 64))
+(declare-fun temp176_3 () (_ BitVec 64))
+(declare-fun temp176_4 () (_ BitVec 64))
+(declare-fun var134937 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_rtol_NAMEEND () (_ BitVec 64))
+(declare-fun temp176_5 () (_ BitVec 64))
+(declare-fun ARGNAME_atol_NAMEEND () (_ BitVec 64))
+(declare-fun temp176_6 () (_ BitVec 64))
+(declare-fun var135081 () (_ BitVec 64))
+(declare-fun temp176_7 () (_ BitVec 64))
+(declare-fun var2101658 () (_ BitVec 64))
+(declare-fun temp176_8 () (_ BitVec 64))
+(declare-fun var2625946 () (_ BitVec 64))
+(declare-fun temp176_9 () (_ BitVec 64))
+(declare-fun var3150755 () (_ BitVec 64))
+(declare-fun temp176_11 () (_ BitVec 64))
+(declare-fun temp176_10 () (_ BitVec 64))
+(assert (= temp176_1 #x0000000000080000))
+(assert (= var527461 temp176_1))
+(assert (= temp176_2 #x0000000000080000))
+(assert (= var789605 temp176_2))
+(assert (= temp176_3 #x0000000000000000))
+(assert (= var134937
+   (ite (bvslt ARGNAME_rtol_NAMEEND temp176_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp176_4 #x0000000000000000))
+(assert (= var134937 temp176_4))
+(assert (= temp176_5 #x0000000000000001))
+(assert (= ARGNAME_atol_NAMEEND temp176_5))
+(assert (= temp176_6 #x0000000000000000))
+(assert (= var135081
+   (ite (= ARGNAME_rtol_NAMEEND temp176_6)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp176_7 #x0000000000000001))
+(assert (= var2101658 temp176_7))
+(assert (= temp176_8 #x0000000000000001))
+(assert (= var2625946 temp176_8))
+(assert (= temp176_9 #x000000000000000b))
+(assert (= var3150755 temp176_9))
+(assert (= temp176_11 #x0000000000000001))
+(assert (= temp176_10 temp176_11))
+(model-add temp176_1 () (_ BitVec 64) #x0000000000080000)
+(model-add var527461 () (_ BitVec 64) #x0000000000080000)
+(model-add temp176_2 () (_ BitVec 64) #x0000000000080000)
+(model-add var789605 () (_ BitVec 64) #x0000000000080000)
+(model-add temp176_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp176_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var134937 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_rtol_NAMEEND
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000000 #x8000000000000000))
+                #x0000000000000000
+                (bvsub #x0000000000000000 #x0000000000000001)))
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"tag": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "tag",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	},
+	"tensor": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "tensor",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"serialized_summary_metadata": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "serialized_summary_metadata",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	}
+}

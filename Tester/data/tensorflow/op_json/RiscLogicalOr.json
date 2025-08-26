@@ -1,0 +1,14 @@
+{
+	"x": {
+		"name": "x",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "bool"
+	},
+	"y": {
+		"name": "y",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "bool"
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"axis": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "axis",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"TI": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": true,
+		"name": "TI",
+		"type": "type",
+		"enum": [
+			"uint8",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"indices": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&TI.value",
+		"optional": null
+	},
+	"depth": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "depth",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"on_value": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "on_value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"off_value": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "off_value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

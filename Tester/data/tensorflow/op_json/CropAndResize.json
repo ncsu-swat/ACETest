@@ -1,0 +1,111 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"uint8",
+			"uint16",
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"half",
+			"float",
+			"double"
+		],
+		"optional": null
+	},
+	"method": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "bilinear",
+		"is_mid": null,
+		"name": "method",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"bilinear",
+			"nearest"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"extrapolation_value": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "extrapolation_value",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"image": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "image",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"boxes": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "boxes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"box_ind": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "box_ind",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32",
+		"optional": null
+	},
+	"crop_size": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "crop_size",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32",
+		"optional": null
+	}
+}

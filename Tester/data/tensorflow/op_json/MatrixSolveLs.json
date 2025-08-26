@@ -1,0 +1,39 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"double",
+			"float",
+			"half",
+			"complex64",
+			"complex128"
+		],
+		"is_mid": true
+	},
+	"fast": {
+		"name": "fast",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"matrix": {
+		"name": "matrix",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"rhs": {
+		"name": "rhs",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"l2_regularizer": {
+		"name": "l2_regularizer",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "double"
+	}
+}

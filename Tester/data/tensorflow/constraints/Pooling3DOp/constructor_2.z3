@@ -1,0 +1,349 @@
+(declare-fun temp4_1 () (_ BitVec 64))
+(declare-fun temp4_2 () (_ BitVec 64))
+(declare-fun var71388 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_ksize_NAMEEND_LEN () (_ BitVec 64))
+(declare-fun ARGNAME_padding_NAMEEND () (_ BitVec 64))
+(declare-fun ARGNAME_data_format_NAMEEND_STRFMT () (_ BitVec 64))
+(declare-fun temp4_3 () (_ BitVec 64))
+(declare-fun ARGNAME_strides_NAMEEND_LEN () (_ BitVec 64))
+(declare-fun var71489 () (_ BitVec 64))
+(declare-fun temp4_4 () (_ BitVec 64))
+(declare-fun temp4_5 () (_ BitVec 64))
+(declare-fun ARGNAME_ksize_NAMEEND_VAL () (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp4_6 () (_ BitVec 64))
+(declare-fun temp4_7 () (_ BitVec 64))
+(declare-fun temp4_8 () (_ BitVec 64))
+(declare-fun temp4_9 () (_ BitVec 64))
+(declare-fun temp4_10 () (_ BitVec 64))
+(declare-fun temp4_11 () (_ BitVec 64))
+(declare-fun temp4_12 () (_ BitVec 64))
+(declare-fun temp4_13 () (_ BitVec 64))
+(declare-fun temp4_14 () (_ BitVec 64))
+(declare-fun temp4_15 () (_ BitVec 64))
+(declare-fun temp4_16 () (_ BitVec 64))
+(declare-fun temp4_20 () (_ BitVec 64))
+(declare-fun temp4_21 () (_ BitVec 64))
+(declare-fun temp4_22 () (_ BitVec 64))
+(declare-fun temp4_23 () (_ BitVec 64))
+(declare-fun temp4_18 () (_ BitVec 64))
+(declare-fun temp4_24 () (_ BitVec 64))
+(declare-fun temp4_25 () (_ BitVec 64))
+(declare-fun temp4_26 () (_ BitVec 64))
+(declare-fun temp4_19 () (_ BitVec 64))
+(declare-fun temp4_28 () (_ BitVec 64))
+(declare-fun temp4_29 () (_ BitVec 64))
+(declare-fun temp4_30 () (_ BitVec 64))
+(declare-fun temp4_31 () (_ BitVec 64))
+(declare-fun temp4_17 () (_ BitVec 64))
+(declare-fun temp4_32 () (_ BitVec 64))
+(declare-fun var71551 () (_ BitVec 64))
+(declare-fun temp4_33 () (_ BitVec 64))
+(declare-fun var71552 () (_ BitVec 64))
+(declare-fun temp4_34 () (_ BitVec 64))
+(declare-fun temp4_35 () (_ BitVec 64))
+(declare-fun ARGNAME_strides_NAMEEND_VAL () (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp4_36 () (_ BitVec 64))
+(declare-fun temp4_37 () (_ BitVec 64))
+(declare-fun temp4_38 () (_ BitVec 64))
+(declare-fun temp4_39 () (_ BitVec 64))
+(declare-fun temp4_40 () (_ BitVec 64))
+(declare-fun temp4_41 () (_ BitVec 64))
+(declare-fun temp4_42 () (_ BitVec 64))
+(declare-fun temp4_43 () (_ BitVec 64))
+(declare-fun temp4_44 () (_ BitVec 64))
+(declare-fun temp4_45 () (_ BitVec 64))
+(declare-fun temp4_46 () (_ BitVec 64))
+(declare-fun temp4_50 () (_ BitVec 64))
+(declare-fun temp4_51 () (_ BitVec 64))
+(declare-fun temp4_52 () (_ BitVec 64))
+(declare-fun temp4_53 () (_ BitVec 64))
+(declare-fun temp4_48 () (_ BitVec 64))
+(declare-fun temp4_54 () (_ BitVec 64))
+(declare-fun temp4_55 () (_ BitVec 64))
+(declare-fun temp4_56 () (_ BitVec 64))
+(declare-fun temp4_49 () (_ BitVec 64))
+(declare-fun temp4_58 () (_ BitVec 64))
+(declare-fun temp4_59 () (_ BitVec 64))
+(declare-fun temp4_60 () (_ BitVec 64))
+(declare-fun temp4_61 () (_ BitVec 64))
+(declare-fun temp4_47 () (_ BitVec 64))
+(declare-fun temp4_62 () (_ BitVec 64))
+(declare-fun var71555 () (_ BitVec 64))
+(declare-fun temp4_63 () (_ BitVec 64))
+(declare-fun var71556 () (_ BitVec 64))
+(declare-fun temp4_64 () (_ BitVec 64))
+(declare-fun temp4_68 () (_ BitVec 64))
+(declare-fun temp4_69 () (_ BitVec 64))
+(declare-fun temp4_70 () (_ BitVec 64))
+(declare-fun temp4_71 () (_ BitVec 64))
+(declare-fun temp4_66 () (_ BitVec 64))
+(declare-fun temp4_72 () (_ BitVec 64))
+(declare-fun temp4_73 () (_ BitVec 64))
+(declare-fun temp4_74 () (_ BitVec 64))
+(declare-fun temp4_67 () (_ BitVec 64))
+(declare-fun temp4_76 () (_ BitVec 64))
+(declare-fun temp4_77 () (_ BitVec 64))
+(declare-fun temp4_78 () (_ BitVec 64))
+(declare-fun temp4_79 () (_ BitVec 64))
+(declare-fun temp4_80 () (_ BitVec 64))
+(declare-fun temp4_65 () (_ BitVec 64))
+(declare-fun temp4_81 () (_ BitVec 64))
+(declare-fun var71589 () (_ BitVec 64))
+(declare-fun temp4_82 () (_ BitVec 64))
+(declare-fun var71590 () (_ BitVec 64))
+(declare-fun temp4_83 () (_ BitVec 64))
+(declare-fun temp4_87 () (_ BitVec 64))
+(declare-fun temp4_88 () (_ BitVec 64))
+(declare-fun temp4_89 () (_ BitVec 64))
+(declare-fun temp4_90 () (_ BitVec 64))
+(declare-fun temp4_85 () (_ BitVec 64))
+(declare-fun temp4_91 () (_ BitVec 64))
+(declare-fun temp4_92 () (_ BitVec 64))
+(declare-fun temp4_93 () (_ BitVec 64))
+(declare-fun temp4_86 () (_ BitVec 64))
+(declare-fun temp4_95 () (_ BitVec 64))
+(declare-fun temp4_96 () (_ BitVec 64))
+(declare-fun temp4_97 () (_ BitVec 64))
+(declare-fun temp4_98 () (_ BitVec 64))
+(declare-fun temp4_99 () (_ BitVec 64))
+(declare-fun temp4_84 () (_ BitVec 64))
+(declare-fun temp4_100 () (_ BitVec 64))
+(declare-fun var71593 () (_ BitVec 64))
+(declare-fun temp4_101 () (_ BitVec 64))
+(declare-fun var71594 () (_ BitVec 64))
+(declare-fun temp4_102 () (_ BitVec 64))
+(assert (or (= ARGNAME_padding_NAMEEND #x0000000000000001)
+    (= ARGNAME_padding_NAMEEND #x0000000000000002)
+    (= ARGNAME_padding_NAMEEND #x0000000000000003)))
+(assert (or (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000000)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000001)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000002)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000003)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000004)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000005)))
+(assert (= temp4_1 #x0000000000000005))
+(assert (= var71388
+   (ite (= ARGNAME_ksize_NAMEEND_LEN temp4_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp4_2 #x0000000000000001))
+(assert (= var71388 temp4_2))
+(assert (= temp4_3 #x0000000000000005))
+(assert (= var71489
+   (ite (= ARGNAME_strides_NAMEEND_LEN temp4_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp4_4 #x0000000000000001))
+(assert (= var71489 temp4_4))
+(assert (= temp4_5 #x0000000000000000))
+(assert (= temp4_6 (select ARGNAME_ksize_NAMEEND_VAL temp4_5)))
+(assert (= temp4_7 #x0000000000000001))
+(assert (= temp4_8 (select ARGNAME_ksize_NAMEEND_VAL temp4_7)))
+(assert (= temp4_9 #x0000000000000002))
+(assert (= temp4_10 (select ARGNAME_ksize_NAMEEND_VAL temp4_9)))
+(assert (= temp4_11 #x0000000000000003))
+(assert (= temp4_12 (select ARGNAME_ksize_NAMEEND_VAL temp4_11)))
+(assert (= temp4_13 #x0000000000000004))
+(assert (= temp4_14 (select ARGNAME_ksize_NAMEEND_VAL temp4_13)))
+(assert (= temp4_15 #x0000000000000005))
+(assert (= temp4_16 (select ARGNAME_ksize_NAMEEND_VAL temp4_15)))
+(assert (= temp4_20 #x0000000000000002))
+(assert (= temp4_21 #x0000000000000003))
+(assert (= temp4_22 #x0000000000000002))
+(assert (= temp4_23 #x0000000000000003))
+(assert (= temp4_18
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_22)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_23))
+        (bvsub ARGNAME_ksize_NAMEEND_LEN temp4_21)
+        (bvsub ARGNAME_ksize_NAMEEND_LEN temp4_20))))
+(assert (= temp4_24 #x0000000000000002))
+(assert (= temp4_25 #x0000000000000003))
+(assert (= temp4_26 #x0000000000000003))
+(assert (= temp4_19 (ite (= temp4_18 temp4_26) temp4_25 temp4_24)))
+(assert (= temp4_28 #x0000000000000000))
+(assert (= temp4_29 #x0000000000000001))
+(assert (= temp4_30 #x0000000000000005))
+(assert (= temp4_31 #x0000000000000004))
+(assert (= temp4_17
+   (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_31)
+        temp4_19
+        (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_30)
+             (bvadd temp4_19 temp4_29)
+             temp4_28))))
+(assert (= temp4_32 (select ARGNAME_ksize_NAMEEND_VAL temp4_17)))
+(assert (= var71551 temp4_32))
+(assert (= temp4_33 #x0000000000000001))
+(assert (= var71552 (ite (= var71551 temp4_33) #x0000000000000001 #x0000000000000000)))
+(assert (= temp4_34 #x0000000000000001))
+(assert (= var71552 temp4_34))
+(assert (= temp4_35 #x0000000000000000))
+(assert (= temp4_36 (select ARGNAME_strides_NAMEEND_VAL temp4_35)))
+(assert (= temp4_37 #x0000000000000001))
+(assert (= temp4_38 (select ARGNAME_strides_NAMEEND_VAL temp4_37)))
+(assert (= temp4_39 #x0000000000000002))
+(assert (= temp4_40 (select ARGNAME_strides_NAMEEND_VAL temp4_39)))
+(assert (= temp4_41 #x0000000000000003))
+(assert (= temp4_42 (select ARGNAME_strides_NAMEEND_VAL temp4_41)))
+(assert (= temp4_43 #x0000000000000004))
+(assert (= temp4_44 (select ARGNAME_strides_NAMEEND_VAL temp4_43)))
+(assert (= temp4_45 #x0000000000000005))
+(assert (= temp4_46 (select ARGNAME_strides_NAMEEND_VAL temp4_45)))
+(assert (= temp4_50 #x0000000000000002))
+(assert (= temp4_51 #x0000000000000003))
+(assert (= temp4_52 #x0000000000000002))
+(assert (= temp4_53 #x0000000000000003))
+(assert (= temp4_48
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_52)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_53))
+        (bvsub ARGNAME_strides_NAMEEND_LEN temp4_51)
+        (bvsub ARGNAME_strides_NAMEEND_LEN temp4_50))))
+(assert (= temp4_54 #x0000000000000002))
+(assert (= temp4_55 #x0000000000000003))
+(assert (= temp4_56 #x0000000000000003))
+(assert (= temp4_49 (ite (= temp4_48 temp4_56) temp4_55 temp4_54)))
+(assert (= temp4_58 #x0000000000000000))
+(assert (= temp4_59 #x0000000000000001))
+(assert (= temp4_60 #x0000000000000005))
+(assert (= temp4_61 #x0000000000000004))
+(assert (= temp4_47
+   (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_61)
+        temp4_49
+        (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_60)
+             (bvadd temp4_49 temp4_59)
+             temp4_58))))
+(assert (= temp4_62 (select ARGNAME_strides_NAMEEND_VAL temp4_47)))
+(assert (= var71555 temp4_62))
+(assert (= temp4_63 #x0000000000000001))
+(assert (= var71556 (ite (= var71555 temp4_63) #x0000000000000001 #x0000000000000000)))
+(assert (= temp4_64 #x0000000000000001))
+(assert (= var71556 temp4_64))
+(assert (= temp4_68 #x0000000000000002))
+(assert (= temp4_69 #x0000000000000003))
+(assert (= temp4_70 #x0000000000000002))
+(assert (= temp4_71 #x0000000000000003))
+(assert (= temp4_66
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_70)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_71))
+        (bvsub ARGNAME_ksize_NAMEEND_LEN temp4_69)
+        (bvsub ARGNAME_ksize_NAMEEND_LEN temp4_68))))
+(assert (= temp4_72 #x0000000000000002))
+(assert (= temp4_73 #x0000000000000003))
+(assert (= temp4_74 #x0000000000000003))
+(assert (= temp4_67 (ite (= temp4_66 temp4_74) temp4_73 temp4_72)))
+(assert (= temp4_76 #x0000000000000001))
+(assert (= temp4_77 #x0000000000000005))
+(assert (= temp4_78 #x0000000000000001))
+(assert (= temp4_79 #x0000000000000001))
+(assert (= temp4_80 #x0000000000000002))
+(assert (= temp4_65
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_79)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_80))
+        temp4_78
+        (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_77)
+             temp4_67
+             (bvadd temp4_67 temp4_76)))))
+(assert (= temp4_81 (select ARGNAME_ksize_NAMEEND_VAL temp4_65)))
+(assert (= var71589 temp4_81))
+(assert (= temp4_82 #x0000000000000001))
+(assert (= var71590 (ite (= var71589 temp4_82) #x0000000000000001 #x0000000000000000)))
+(assert (= temp4_83 #x0000000000000001))
+(assert (= var71590 temp4_83))
+(assert (= temp4_87 #x0000000000000002))
+(assert (= temp4_88 #x0000000000000003))
+(assert (= temp4_89 #x0000000000000002))
+(assert (= temp4_90 #x0000000000000003))
+(assert (= temp4_85
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_89)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_90))
+        (bvsub ARGNAME_strides_NAMEEND_LEN temp4_88)
+        (bvsub ARGNAME_strides_NAMEEND_LEN temp4_87))))
+(assert (= temp4_91 #x0000000000000002))
+(assert (= temp4_92 #x0000000000000003))
+(assert (= temp4_93 #x0000000000000003))
+(assert (= temp4_86 (ite (= temp4_85 temp4_93) temp4_92 temp4_91)))
+(assert (= temp4_95 #x0000000000000001))
+(assert (= temp4_96 #x0000000000000005))
+(assert (= temp4_97 #x0000000000000001))
+(assert (= temp4_98 #x0000000000000001))
+(assert (= temp4_99 #x0000000000000002))
+(assert (= temp4_84
+   (ite (or (= ARGNAME_data_format_NAMEEND_STRFMT temp4_98)
+            (= ARGNAME_data_format_NAMEEND_STRFMT temp4_99))
+        temp4_97
+        (ite (= ARGNAME_data_format_NAMEEND_STRFMT temp4_96)
+             temp4_86
+             (bvadd temp4_86 temp4_95)))))
+(assert (= temp4_100 (select ARGNAME_strides_NAMEEND_VAL temp4_84)))
+(assert (= var71593 temp4_100))
+(assert (= temp4_101 #x0000000000000001))
+(assert (= var71594 (ite (= var71593 temp4_101) #x0000000000000001 #x0000000000000000)))
+(assert (= temp4_102 #x0000000000000001))
+(assert (= var71594 temp4_102))
+(model-add temp4_1 () (_ BitVec 64) #x0000000000000005)
+(model-add temp4_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var71388 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_ksize_NAMEEND_LEN
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000005 (bvnot #x0000000000000005)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

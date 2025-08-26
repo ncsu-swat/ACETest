@@ -1,0 +1,130 @@
+(declare-fun temp246_1 () (_ BitVec 64))
+(declare-fun var197762 () (_ BitVec 64))
+(declare-fun var197758 () (_ BitVec 64))
+(declare-fun temp246_2 () (_ BitVec 64))
+(declare-fun var131809 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun extend_965 () (_ BitVec 64))
+(declare-fun temp246_3 () (_ BitVec 64))
+(declare-fun var264184 () (_ BitVec 64))
+(declare-fun var131856 () (_ BitVec 64))
+(declare-fun var131859 () (_ BitVec 64))
+(declare-fun ARGNAME_shape_NAMEEND_LEN () (_ BitVec 64))
+(declare-fun var131860 () (_ BitVec 64))
+(declare-fun temp246_4 () (_ BitVec 64))
+(declare-fun temp246_6 () (_ BitVec 64))
+(declare-fun temp246_5 () (_ BitVec 64))
+(declare-fun temp246_8 () (_ BitVec 64))
+(declare-fun temp246_7 () (_ BitVec 64))
+(declare-fun temp246_10 () (_ BitVec 64))
+(declare-fun temp246_9 () (_ BitVec 64))
+(declare-fun temp246_12 () (_ BitVec 64))
+(declare-fun temp246_11 () (_ BitVec 64))
+(declare-fun temp246_14 () (_ BitVec 64))
+(declare-fun temp246_13 () (_ BitVec 64))
+(declare-fun temp246_15 () (_ BitVec 64))
+(declare-fun var526509 () (_ BitVec 64))
+(declare-fun temp246_16 () (_ BitVec 64))
+(declare-fun temp246_17 () (_ BitVec 64))
+(declare-fun var526523 () (_ BitVec 64))
+(declare-fun var593158 () (_ BitVec 64))
+(declare-fun temp246_18 () (_ BitVec 64))
+(declare-fun var526644 () (_ BitVec 64))
+(declare-fun temp246_19 () (_ BitVec 64))
+(declare-fun var526645 () (_ BitVec 64))
+(declare-fun temp246_20 () (_ BitVec 64))
+(declare-fun var526521 () (_ BitVec 64))
+(declare-fun var526520 () (_ BitVec 64))
+(declare-fun temp246_23 () (_ BitVec 64))
+(declare-fun var526647 () (_ BitVec 64))
+(declare-fun temp246_24 () (_ BitVec 64))
+(declare-fun var526648 () (_ BitVec 64))
+(declare-fun temp246_25 () (_ BitVec 64))
+(declare-fun temp246_26 () (_ BitVec 64))
+(declare-fun var132005 () (_ BitVec 64))
+(declare-fun temp246_27 () (_ BitVec 64))
+(assert (= temp246_1 #x0000000000000001))
+(assert (= var197762
+   (ite (= extend_965 temp246_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var197758 var197762))
+(assert (= var131809 var197758))
+(assert (= temp246_2 #x0000000000000001))
+(assert (= var131809 temp246_2))
+(assert (= temp246_3 #x00000000000000fe))
+(assert (= var264184 temp246_3))
+(assert (= var131856 var264184))
+(assert (= var131859 var131856))
+(assert (= var131860
+   (ite (bvslt ARGNAME_shape_NAMEEND_LEN var131859)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp246_4 #x0000000000000001))
+(assert (= var131860 temp246_4))
+(assert (= temp246_6 #x0000000000000001))
+(assert (= temp246_5 temp246_6))
+(assert (= temp246_8 #xffffffffffffffff))
+(assert (= temp246_7 temp246_8))
+(assert (= temp246_10 #x0000000000000001))
+(assert (= temp246_9 temp246_10))
+(assert (= temp246_12 #xffffffffffffffff))
+(assert (= temp246_11 temp246_12))
+(assert (= temp246_14 #x0000000000000000))
+(assert (= temp246_13 temp246_14))
+(assert (= temp246_15 #x0000000000000000))
+(assert (= var526509
+   (ite (bvsgt ARGNAME_shape_NAMEEND_LEN temp246_15)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp246_16 #x0000000000000001))
+(assert (= var526509 temp246_16))
+(assert (= temp246_17 #x0000000000000000))
+(assert (= var526523 temp246_17))
+(assert (= var593158 var526523))
+(assert (= temp246_18 #x0000000000000000))
+(assert (= var526644 temp246_18))
+(assert (= temp246_19 #x0000000000000000))
+(assert (= var526645
+   (ite (= var526644 temp246_19) #x0000000000000001 #x0000000000000000)))
+(assert (= temp246_20 #x0000000000000001))
+(assert (= var526521 (bvadd var526523 temp246_20)))
+(assert (= var526520
+   (ite (= var526521 ARGNAME_shape_NAMEEND_LEN)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp246_23 #x0000000000000002))
+(assert (= var526647 temp246_23))
+(assert (= temp246_24 #x0000000000000002))
+(assert (= var526648
+   (ite (= var526647 temp246_24) #x0000000000000001 #x0000000000000000)))
+(assert (= temp246_25 #x0000000000000001))
+(assert (= var526648 temp246_25))
+(assert (= temp246_26 #xffffffffffffffff))
+(assert (= var132005
+   (ite (= temp246_11 temp246_26) #x0000000000000001 #x0000000000000000)))
+(assert (= temp246_27 #x0000000000000001))
+(assert (= var132005 temp246_27))
+(model-add temp246_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var197762 () (_ BitVec 64) #x0000000000000001)
+(model-add var197758 () (_ BitVec 64) #x0000000000000001)
+(model-add temp246_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var131809 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add extend_965
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000001 (bvnot #x0000000000000001)))
+
+
+
+
+
+
+
+
+
+
+
+
+

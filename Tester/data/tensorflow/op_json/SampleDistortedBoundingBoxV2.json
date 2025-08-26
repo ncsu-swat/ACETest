@@ -1,0 +1,150 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"uint8",
+			"int8",
+			"int16",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"seed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"seed2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed2",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"aspect_ratio_range": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": [
+			0.75,
+			1.3300000429153442
+		],
+		"is_mid": null,
+		"name": "aspect_ratio_range",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "float"
+		},
+		"optional": null
+	},
+	"area_range": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": [
+			0.05000000074505806,
+			1.0
+		],
+		"is_mid": null,
+		"name": "area_range",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "float"
+		},
+		"optional": null
+	},
+	"max_attempts": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 100,
+		"is_mid": null,
+		"name": "max_attempts",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"use_image_if_no_bounding_boxes": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "use_image_if_no_bounding_boxes",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"image_size": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "image_size",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"bounding_boxes": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "bounding_boxes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"min_object_covered": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "min_object_covered",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	}
+}

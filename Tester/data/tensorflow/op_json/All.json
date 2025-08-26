@@ -1,0 +1,31 @@
+{
+	"keep_dims": {
+		"name": "keep_dims",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"Tidx": {
+		"name": "Tidx",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"default": "int32",
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "bool"
+	},
+	"reduction_indices": {
+		"name": "reduction_indices",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tidx.value"
+	}
+}

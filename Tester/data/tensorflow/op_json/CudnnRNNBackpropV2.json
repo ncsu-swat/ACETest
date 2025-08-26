@@ -1,0 +1,135 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"rnn_mode": {
+		"name": "rnn_mode",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"rnn_relu",
+			"rnn_tanh",
+			"lstm",
+			"gru"
+		],
+		"default": "lstm"
+	},
+	"input_mode": {
+		"name": "input_mode",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"linear_input",
+			"skip_input",
+			"auto_select"
+		],
+		"default": "linear_input"
+	},
+	"direction": {
+		"name": "direction",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"unidirectional",
+			"bidirectional"
+		],
+		"default": "unidirectional"
+	},
+	"dropout": {
+		"name": "dropout",
+		"input_order": -1,
+		"type": "float"
+	},
+	"seed": {
+		"name": "seed",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"seed2": {
+		"name": "seed2",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"input_h": {
+		"name": "input_h",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"input_c": {
+		"name": "input_c",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"params": {
+		"name": "params",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output": {
+		"name": "output",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output_h": {
+		"name": "output_h",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output_c": {
+		"name": "output_c",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output_backprop": {
+		"name": "output_backprop",
+		"input_order": 7,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output_h_backprop": {
+		"name": "output_h_backprop",
+		"input_order": 8,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"output_c_backprop": {
+		"name": "output_c_backprop",
+		"input_order": 9,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"reserve_space": {
+		"name": "reserve_space",
+		"input_order": 10,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"host_reserved": {
+		"name": "host_reserved",
+		"input_order": 11,
+		"type": "tensor",
+		"dtype": "int8"
+	}
+}

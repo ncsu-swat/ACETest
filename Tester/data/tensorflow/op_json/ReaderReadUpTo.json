@@ -1,0 +1,20 @@
+{
+	"reader_handle": {
+		"name": "reader_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"queue_handle": {
+		"name": "queue_handle",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"num_records": {
+		"name": "num_records",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

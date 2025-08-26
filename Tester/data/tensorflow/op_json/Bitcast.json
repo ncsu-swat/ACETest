@@ -1,0 +1,61 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double",
+			"int64",
+			"int32",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"int8",
+			"int16",
+			"complex64",
+			"complex128",
+			"qint8",
+			"quint8",
+			"qint16",
+			"quint16",
+			"qint32"
+		],
+		"is_mid": true
+	},
+	"type": {
+		"name": "type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double",
+			"int64",
+			"int32",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"int8",
+			"int16",
+			"complex64",
+			"complex128",
+			"qint8",
+			"quint8",
+			"qint16",
+			"quint16",
+			"qint32"
+		]
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

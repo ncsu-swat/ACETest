@@ -1,0 +1,67 @@
+{
+	"container": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "container",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"shared_name": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "shared_name",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": null
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {}
+	},
+	"allowed_devices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": [],
+		"is_mid": null,
+		"name": "allowed_devices",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "string"
+		}
+	}
+}

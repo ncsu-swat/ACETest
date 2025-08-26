@@ -1,0 +1,94 @@
+{
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"uint8",
+			"int32",
+			"int64",
+			"half",
+			"float",
+			"double"
+		],
+		"optional": null
+	},
+	"interpolation": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "interpolation",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"fill_mode": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "CONSTANT",
+		"is_mid": null,
+		"name": "fill_mode",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"images": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "images",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&dtype.value",
+		"optional": null
+	},
+	"transforms": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "transforms",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"output_shape": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "output_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		},
+		"optional": null
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"sequences": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "sequences",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor"
+		},
+		"optional": false
+	},
+	"batch_first": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": "False",
+		"is_mid": null,
+		"name": "batch_first",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"padding_value": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": 0.0,
+		"is_mid": null,
+		"name": "padding_value",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": false
+	}
+}

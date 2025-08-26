@@ -1,0 +1,62 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"complex64",
+			"int64",
+			"qint8",
+			"quint8",
+			"qint32",
+			"bfloat16",
+			"uint16",
+			"complex128",
+			"half",
+			"uint32",
+			"uint64"
+		],
+		"optional": null
+	},
+	"data_format": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "NHWC",
+		"is_mid": null,
+		"name": "data_format",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"NHWC",
+			"NCHW"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"out_backprop": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "out_backprop",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

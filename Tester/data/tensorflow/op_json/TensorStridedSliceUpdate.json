@@ -1,0 +1,153 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"Index": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "Index",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"begin_mask": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "begin_mask",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"end_mask": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "end_mask",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"ellipsis_mask": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "ellipsis_mask",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"new_axis_mask": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "new_axis_mask",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"shrink_axis_mask": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "shrink_axis_mask",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"begin": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "begin",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Index.value"
+	},
+	"end": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "end",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Index.value"
+	},
+	"strides": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "strides",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Index.value"
+	},
+	"value": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	}
+}

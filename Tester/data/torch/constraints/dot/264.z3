@@ -1,0 +1,36 @@
+(declare-fun temp264_1 () (_ BitVec 64))
+(declare-fun var525626 () (_ BitVec 64))
+(declare-fun temp264_2 () (_ BitVec 64))
+(declare-fun var787770 () (_ BitVec 64))
+(declare-fun temp264_3 () (_ BitVec 64))
+(declare-fun var1836346 () (_ BitVec 64))
+(declare-fun temp264_4 () (_ BitVec 64))
+(declare-fun var2098490 () (_ BitVec 64))
+(declare-fun temp264_6 () (_ BitVec 64))
+(declare-fun temp264_5 () (_ BitVec 64))
+(assert (= temp264_1 #x0000000000000000))
+(assert (= var525626 temp264_1))
+(assert (= temp264_2 #x0000000000000000))
+(assert (= var787770 temp264_2))
+(assert (= temp264_3 #x0000000000000000))
+(assert (= var1836346 temp264_3))
+(assert (= temp264_4 #x0000000000000000))
+(assert (= var2098490 temp264_4))
+(assert (= temp264_6 #x0000000000000000))
+(assert (= temp264_5 temp264_6))
+(model-add temp264_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var525626 () (_ BitVec 64) #x0000000000000000)
+(model-add temp264_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var787770 () (_ BitVec 64) #x0000000000000000)
+(model-add temp264_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var1836346 () (_ BitVec 64) #x0000000000000000)
+(model-add temp264_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var2098490 () (_ BitVec 64) #x0000000000000000)
+(model-add temp264_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp264_5 () (_ BitVec 64) #x0000000000000000)
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"half",
+			"bfloat16",
+			"float"
+		],
+		"optional": null
+	},
+	"U": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "U",
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"float"
+		],
+		"optional": null
+	},
+	"epsilon": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "epsilon",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"exponential_avg_factor": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "exponential_avg_factor",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"data_format": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "NHWC",
+		"is_mid": null,
+		"name": "data_format",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"NHWC",
+			"NCHW",
+			"NDHWC",
+			"NCDHW"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"is_training": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "is_training",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"x": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"scale": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "scale",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&U.value",
+		"optional": null
+	},
+	"offset": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "offset",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&U.value",
+		"optional": null
+	},
+	"mean": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "mean",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&U.value",
+		"optional": null
+	},
+	"variance": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "variance",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&U.value",
+		"optional": null
+	}
+}

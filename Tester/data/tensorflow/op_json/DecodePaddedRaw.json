@@ -1,0 +1,61 @@
+{
+	"out_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "out_type",
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double",
+			"int32",
+			"uint16",
+			"uint8",
+			"int16",
+			"int8",
+			"int64",
+			"bfloat16"
+		],
+		"optional": null
+	},
+	"little_endian": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "little_endian",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"input_bytes": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_bytes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string",
+		"optional": null
+	},
+	"fixed_length": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "fixed_length",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	}
+}

@@ -1,0 +1,46 @@
+(declare-fun temp410_2 () (_ BitVec 64))
+(declare-fun temp410_1 () (_ BitVec 64))
+(declare-fun temp410_4 () (_ BitVec 64))
+(declare-fun temp410_3 () (_ BitVec 64))
+(declare-fun temp410_6 () (_ BitVec 64))
+(declare-fun temp410_5 () (_ BitVec 64))
+(declare-fun temp410_7 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp410_8 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp410_9 () (_ BitVec 64))
+(declare-fun temp410_11 () (_ BitVec 64))
+(declare-fun temp410_10 () (_ BitVec 64))
+(assert (= temp410_2 #x0000000000000000))
+(assert (= temp410_1 temp410_2))
+(assert (= temp410_4 #x0000000000000000))
+(assert (= temp410_3 temp410_4))
+(assert (= temp410_6 #x0000000000000000))
+(assert (= temp410_5 temp410_6))
+(assert (= temp410_7 #x0000000000000008))
+(assert (= var198631 temp410_7))
+(assert (= temp410_8 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp410_8) #x0000000000000001 #x0000000000000000)))
+(assert (= temp410_9 #x0000000000000001))
+(assert (= var198633 temp410_9))
+(assert (= temp410_11 #xffffffffffffffff))
+(assert (= temp410_10 temp410_11))
+(model-add temp410_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp410_7 () (_ BitVec 64) #x0000000000000008)
+(model-add var198631 () (_ BitVec 64) #x0000000000000008)
+(model-add temp410_8 () (_ BitVec 64) #x0000000000000008)
+(model-add var198633 () (_ BitVec 64) #x0000000000000001)
+(model-add temp410_9 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+

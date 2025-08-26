@@ -1,0 +1,85 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"Tblock_shape": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": true,
+		"name": "Tblock_shape",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"Tcrops": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": true,
+		"name": "Tcrops",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"block_shape": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "block_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		},
+		"optional": null
+	},
+	"crops": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "crops",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tcrops.value",
+		"optional": null
+	}
+}

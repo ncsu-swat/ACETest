@@ -1,0 +1,18 @@
+{
+	"device_names": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "device_names",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "string"
+		},
+		"optional": null
+	}
+}

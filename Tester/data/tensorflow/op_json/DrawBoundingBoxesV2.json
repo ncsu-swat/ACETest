@@ -1,0 +1,31 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"half"
+		],
+		"default": "float",
+		"is_mid": true
+	},
+	"images": {
+		"name": "images",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"boxes": {
+		"name": "boxes",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"colors": {
+		"name": "colors",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

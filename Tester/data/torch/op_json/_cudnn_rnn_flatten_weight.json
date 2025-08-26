@@ -1,0 +1,59 @@
+{
+	"weight_arr": {
+		"optional": false,
+		"name": "weight_arr",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 0
+	},
+	"weight_stride0": {
+		"optional": false,
+		"name": "weight_stride0",
+		"type": "int",
+		"input_order": 1
+	},
+	"input_size": {
+		"optional": false,
+		"name": "input_size",
+		"type": "int",
+		"input_order": 2
+	},
+	"mode": {
+		"optional": false,
+		"name": "mode",
+		"type": "int",
+		"input_order": 3
+	},
+	"hidden_size": {
+		"optional": false,
+		"name": "hidden_size",
+		"type": "int",
+		"input_order": 4
+	},
+	"proj_size": {
+		"optional": false,
+		"name": "proj_size",
+		"type": "int",
+		"input_order": 5
+	},
+	"num_layers": {
+		"optional": false,
+		"name": "num_layers",
+		"type": "int",
+		"input_order": 6
+	},
+	"batch_first": {
+		"optional": false,
+		"name": "batch_first",
+		"type": "bool",
+		"input_order": 7
+	},
+	"bidirectional": {
+		"optional": false,
+		"name": "bidirectional",
+		"type": "bool",
+		"input_order": 8
+	}
+}

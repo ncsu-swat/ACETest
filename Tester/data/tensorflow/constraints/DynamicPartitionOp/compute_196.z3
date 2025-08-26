@@ -1,0 +1,41 @@
+(declare-fun temp390_2 () (_ BitVec 64))
+(declare-fun temp390_1 () (_ BitVec 64))
+(declare-fun temp390_4 () (_ BitVec 64))
+(declare-fun temp390_3 () (_ BitVec 64))
+(declare-fun temp390_6 () (_ BitVec 64))
+(declare-fun temp390_5 () (_ BitVec 64))
+(declare-fun temp390_7 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp390_8 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp390_9 () (_ BitVec 64))
+(assert (= temp390_2 #x0000000000000000))
+(assert (= temp390_1 temp390_2))
+(assert (= temp390_4 #x0000000000000000))
+(assert (= temp390_3 temp390_4))
+(assert (= temp390_6 #x0000000000000000))
+(assert (= temp390_5 temp390_6))
+(assert (= temp390_7 #x0000000000000008))
+(assert (= var198631 temp390_7))
+(assert (= temp390_8 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp390_8) #x0000000000000001 #x0000000000000000)))
+(assert (= temp390_9 #x0000000000000001))
+(assert (= var198633 temp390_9))
+(model-add temp390_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp390_7 () (_ BitVec 64) #x0000000000000008)
+(model-add var198631 () (_ BitVec 64) #x0000000000000008)
+(model-add temp390_8 () (_ BitVec 64) #x0000000000000008)
+(model-add var198633 () (_ BitVec 64) #x0000000000000001)
+(model-add temp390_9 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+

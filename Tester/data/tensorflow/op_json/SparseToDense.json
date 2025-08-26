@@ -1,0 +1,91 @@
+{
+	"validate_indices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "validate_indices",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"Tindices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "Tindices",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"sparse_indices": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tindices.value"
+	},
+	"output_shape": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	},
+	"sparse_values": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"default_value": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "default_value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	}
+}

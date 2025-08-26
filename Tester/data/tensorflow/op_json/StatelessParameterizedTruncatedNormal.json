@@ -1,0 +1,124 @@
+{
+	"S": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "S",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"Tseed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": true,
+		"name": "Tseed",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double"
+		]
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		}
+	},
+	"seed": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "seed",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tseed.value"
+	},
+	"means": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "means",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&dtype.value"
+	},
+	"stddevs": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "stddevs",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&dtype.value"
+	},
+	"minvals": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "minvals",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&dtype.value"
+	},
+	"maxvals": {
+		"input_order": 5,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "maxvals",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&dtype.value"
+	}
+}

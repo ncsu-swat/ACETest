@@ -1,0 +1,54 @@
+{
+	"max_splits": {
+		"name": "max_splits",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_buckets": {
+		"name": "num_buckets",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"node_ids": {
+		"name": "node_ids",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"gradients": {
+		"name": "gradients",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"hessians": {
+		"name": "hessians",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"feature_indices": {
+		"name": "feature_indices",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"feature_values": {
+		"name": "feature_values",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"feature_shape": {
+		"name": "feature_shape",
+		"input_order": 5,
+		"type": "list",
+		"dtype": "int32",
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	}
+}

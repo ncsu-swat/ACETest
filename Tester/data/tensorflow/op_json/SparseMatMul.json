@@ -1,0 +1,94 @@
+{
+	"transpose_a": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "transpose_a",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"transpose_b": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "transpose_b",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"a_is_sparse": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "a_is_sparse",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"b_is_sparse": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "b_is_sparse",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"Ta": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": true,
+		"name": "Ta",
+		"type": "type",
+		"enum": [
+			"float",
+			"bfloat16"
+		]
+	},
+	"Tb": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": true,
+		"name": "Tb",
+		"type": "type",
+		"enum": [
+			"float",
+			"bfloat16"
+		]
+	},
+	"a": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "a",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Ta.value"
+	},
+	"b": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "b",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tb.value"
+	}
+}

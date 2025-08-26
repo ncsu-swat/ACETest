@@ -1,0 +1,52 @@
+{
+	"batch_dims": {
+		"name": "batch_dims",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"Tparams": {
+		"name": "Tparams",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"Tindices": {
+		"name": "Tindices",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"Taxis": {
+		"name": "Taxis",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"params": {
+		"name": "params",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tparams.value"
+	},
+	"indices": {
+		"name": "indices",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tindices.value"
+	},
+	"axis": {
+		"name": "axis",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&Taxis.value"
+	}
+}

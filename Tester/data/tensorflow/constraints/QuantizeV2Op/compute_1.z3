@@ -1,0 +1,213 @@
+(declare-fun temp0_1 () (_ BitVec 64))
+(declare-fun temp0_2 () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp0_3 () (_ BitVec 64))
+(declare-fun temp0_4 () (_ BitVec 64))
+(declare-fun temp0_5 () (_ BitVec 64))
+(declare-fun temp0_6 () (_ BitVec 64))
+(declare-fun temp0_7 () (_ BitVec 64))
+(declare-fun temp0_8 () (_ BitVec 64))
+(declare-fun temp0_9 () (_ BitVec 64))
+(declare-fun temp0_10 () (_ BitVec 64))
+(declare-fun temp0_11 () (_ BitVec 64))
+(declare-fun temp0_12 () (_ BitVec 64))
+(declare-fun temp0_13 () (_ BitVec 64))
+(declare-fun temp0_14 () (_ BitVec 64))
+(declare-fun var68149 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_min_range_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp0_15 () (_ BitVec 64))
+(declare-fun ARGNAME_min_range_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp0_16 () (_ BitVec 64))
+(declare-fun temp0_17 () (_ BitVec 64))
+(declare-fun temp0_18 () (_ BitVec 64))
+(declare-fun temp0_19 () (_ BitVec 64))
+(declare-fun temp0_20 () (_ BitVec 64))
+(declare-fun temp0_21 () (_ BitVec 64))
+(declare-fun temp0_22 () (_ BitVec 64))
+(declare-fun temp0_23 () (_ BitVec 64))
+(declare-fun temp0_24 () (_ BitVec 64))
+(declare-fun temp0_25 () (_ BitVec 64))
+(declare-fun temp0_26 () (_ BitVec 64))
+(declare-fun temp0_27 () (_ BitVec 64))
+(declare-fun temp0_28 () (_ BitVec 64))
+(declare-fun var68172 () (_ BitVec 64))
+(declare-fun temp0_29 () (_ BitVec 64))
+(declare-fun ARGNAME_max_range_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun var68200 () (_ BitVec 64))
+(declare-fun temp0_30 () (_ BitVec 64))
+(declare-fun temp0_31 () (_ BitVec 64))
+(declare-fun ARGNAME_max_range_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp0_32 () (_ BitVec 64))
+(declare-fun temp0_33 () (_ BitVec 64))
+(declare-fun temp0_34 () (_ BitVec 64))
+(declare-fun temp0_35 () (_ BitVec 64))
+(declare-fun temp0_36 () (_ BitVec 64))
+(declare-fun temp0_37 () (_ BitVec 64))
+(declare-fun temp0_38 () (_ BitVec 64))
+(declare-fun temp0_39 () (_ BitVec 64))
+(declare-fun temp0_40 () (_ BitVec 64))
+(declare-fun temp0_41 () (_ BitVec 64))
+(declare-fun temp0_42 () (_ BitVec 64))
+(declare-fun temp0_43 () (_ BitVec 64))
+(declare-fun temp0_44 () (_ BitVec 64))
+(declare-fun var68221 () (_ BitVec 64))
+(declare-fun temp0_46 () (_ BitVec 64))
+(declare-fun temp0_45 () (_ BitVec 64))
+(declare-fun temp0_48 () (_ BitVec 64))
+(declare-fun temp0_47 () (_ BitVec 64))
+(declare-fun temp0_50 () (_ BitVec 64))
+(declare-fun temp0_49 () (_ BitVec 64))
+(declare-fun temp0_52 () (_ BitVec 64))
+(declare-fun temp0_51 () (_ BitVec 64))
+(declare-fun temp0_54 () (_ BitVec 64))
+(declare-fun temp0_53 () (_ BitVec 64))
+(declare-fun temp0_56 () (_ BitVec 64))
+(declare-fun temp0_55 () (_ BitVec 64))
+(declare-fun temp0_57 () (_ BitVec 64))
+(declare-fun var134777 () (_ BitVec 64))
+(declare-fun temp0_58 () (_ BitVec 64))
+(declare-fun var200313 () (_ BitVec 64))
+(assert (= temp0_1 #x0000000000000000))
+(assert (= temp0_2 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_1)))
+(assert (= temp0_3 #x0000000000000001))
+(assert (= temp0_4 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_3)))
+(assert (= temp0_5 #x0000000000000002))
+(assert (= temp0_6 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_5)))
+(assert (= temp0_7 #x0000000000000003))
+(assert (= temp0_8 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_7)))
+(assert (= temp0_9 #x0000000000000004))
+(assert (= temp0_10 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_9)))
+(assert (= temp0_11 #x0000000000000005))
+(assert (= temp0_12 (select ARGNAME_input_NAMEEND_DIMSIZE temp0_11)))
+(assert (= temp0_13 #x0000000000000001))
+(assert (= var68149
+   (ite (= ARGNAME_min_range_NAMEEND_DIM temp0_13)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp0_14 #x0000000000000001))
+(assert (= var68149 temp0_14))
+(assert (= temp0_15 #x0000000000000000))
+(assert (= temp0_16 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_15)))
+(assert (= temp0_17 #x0000000000000001))
+(assert (= temp0_18 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_17)))
+(assert (= temp0_19 #x0000000000000002))
+(assert (= temp0_20 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_19)))
+(assert (= temp0_21 #x0000000000000003))
+(assert (= temp0_22 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_21)))
+(assert (= temp0_23 #x0000000000000004))
+(assert (= temp0_24 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_23)))
+(assert (= temp0_25 #x0000000000000005))
+(assert (= temp0_26 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_25)))
+(assert (= temp0_27 #x0000000000000000))
+(assert (= temp0_28 (select ARGNAME_min_range_NAMEEND_DIMSIZE temp0_27)))
+(assert (= var68172 temp0_28))
+(assert (= temp0_29 #x0000000000000001))
+(assert (= var68200
+   (ite (= ARGNAME_max_range_NAMEEND_DIM temp0_29)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp0_30 #x0000000000000001))
+(assert (= var68200 temp0_30))
+(assert (= temp0_31 #x0000000000000000))
+(assert (= temp0_32 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_31)))
+(assert (= temp0_33 #x0000000000000001))
+(assert (= temp0_34 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_33)))
+(assert (= temp0_35 #x0000000000000002))
+(assert (= temp0_36 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_35)))
+(assert (= temp0_37 #x0000000000000003))
+(assert (= temp0_38 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_37)))
+(assert (= temp0_39 #x0000000000000004))
+(assert (= temp0_40 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_39)))
+(assert (= temp0_41 #x0000000000000005))
+(assert (= temp0_42 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_41)))
+(assert (= temp0_43 #x0000000000000000))
+(assert (= temp0_44 (select ARGNAME_max_range_NAMEEND_DIMSIZE temp0_43)))
+(assert (= var68221 temp0_44))
+(assert (= temp0_46 #x0000000000000000))
+(assert (= temp0_45 temp0_46))
+(assert (= temp0_48 #x0000000000000000))
+(assert (= temp0_47 temp0_48))
+(assert (= temp0_50 #x0000000000000000))
+(assert (= temp0_49 temp0_50))
+(assert (= temp0_52 #x0000000000000000))
+(assert (= temp0_51 temp0_52))
+(assert (= temp0_54 #x0000000000000000))
+(assert (= temp0_53 temp0_54))
+(assert (= temp0_56 #x0000000000000000))
+(assert (= temp0_55 temp0_56))
+(assert (= temp0_57 #x0000000000000000))
+(assert (= var134777 temp0_57))
+(assert (= temp0_58 #x0000000000000000))
+(assert (= var200313 temp0_58))
+(model-add temp0_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp0_2
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000000))
+(model-add temp0_3 () (_ BitVec 64) #x0000000000000001)
+(model-add temp0_4
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000001))
+(model-add temp0_5 () (_ BitVec 64) #x0000000000000002)
+(model-add temp0_6
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000002))
+(model-add temp0_7 () (_ BitVec 64) #x0000000000000003)
+(model-add temp0_8
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000003))
+(model-add temp0_9 () (_ BitVec 64) #x0000000000000004)
+(model-add temp0_10
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000004))
+(model-add temp0_11 () (_ BitVec 64) #x0000000000000005)
+(model-add temp0_12
+           ()
+           (_ BitVec 64)
+           (select ARGNAME_input_NAMEEND_DIMSIZE #x0000000000000005))
+(model-add temp0_13 () (_ BitVec 64) #x0000000000000001)
+(model-add temp0_14 () (_ BitVec 64) #x0000000000000001)
+(model-add var68149 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_min_range_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000001 (bvnot #x0000000000000001)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

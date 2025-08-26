@@ -1,0 +1,66 @@
+{
+	"x": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": false
+	},
+	"N": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "N",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": true
+	},
+	"increasing": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": "False",
+		"is_mid": null,
+		"name": "increasing",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		],
+		"optional": null
+	}
+}

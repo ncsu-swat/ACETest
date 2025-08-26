@@ -1,0 +1,37 @@
+{
+	"merge_repeated": {
+		"name": "merge_repeated",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"blank_index": {
+		"name": "blank_index",
+		"input_order": -1,
+		"type": "int",
+		"default": -1
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double"
+		],
+		"default": "float",
+		"is_mid": true
+	},
+	"inputs": {
+		"name": "inputs",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"sequence_length": {
+		"name": "sequence_length",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

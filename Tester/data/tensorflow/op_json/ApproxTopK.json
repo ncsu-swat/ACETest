@@ -1,0 +1,54 @@
+{
+	"k": {
+		"name": "k",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"reduction_dimension": {
+		"name": "reduction_dimension",
+		"input_order": -1,
+		"type": "int",
+		"default": -1
+	},
+	"recall_target": {
+		"name": "recall_target",
+		"input_order": -1,
+		"type": "float"
+	},
+	"is_max_k": {
+		"name": "is_max_k",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"reduction_input_size_override": {
+		"name": "reduction_input_size_override",
+		"input_order": -1,
+		"type": "int",
+		"default": -1
+	},
+	"aggregate_to_topk": {
+		"name": "aggregate_to_topk",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"bfloat16",
+			"float"
+		],
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

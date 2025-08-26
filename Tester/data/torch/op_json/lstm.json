@@ -1,0 +1,140 @@
+{
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": false
+	},
+	"hx": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "hx",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor"
+		},
+		"optional": false
+	},
+	"params": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "params",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor"
+		},
+		"optional": false
+	},
+	"has_biases": {
+		"is_attr": null,
+		"input_order": 3,
+		"default": null,
+		"is_mid": null,
+		"name": "has_biases",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"num_layers": {
+		"is_attr": null,
+		"input_order": 4,
+		"default": null,
+		"is_mid": null,
+		"name": "num_layers",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": false
+	},
+	"dropout": {
+		"is_attr": null,
+		"input_order": 5,
+		"default": null,
+		"is_mid": null,
+		"name": "dropout",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": false
+	},
+	"train": {
+		"is_attr": null,
+		"input_order": 6,
+		"default": null,
+		"is_mid": null,
+		"name": "train",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"bidirectional": {
+		"is_attr": null,
+		"input_order": 7,
+		"default": null,
+		"is_mid": null,
+		"name": "bidirectional",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"batch_first": {
+		"is_attr": null,
+		"input_order": 8,
+		"default": null,
+		"is_mid": null,
+		"name": "batch_first",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		],
+		"optional": null
+	}
+}

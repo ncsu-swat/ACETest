@@ -1,0 +1,20 @@
+{
+	"skip_header_lines": {
+		"name": "skip_header_lines",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

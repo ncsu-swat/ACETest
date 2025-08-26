@@ -1,0 +1,51 @@
+{
+	"start": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "start",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": false
+	},
+	"end": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "end",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": false
+	},
+	"steps": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "steps",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": false
+	},
+	"base": {
+		"is_attr": null,
+		"input_order": 3,
+		"default": 10.0,
+		"is_mid": null,
+		"name": "base",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": false
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"num_features": {
+		"name": "num_features",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"l1": {
+		"name": "l1",
+		"input_order": -1,
+		"type": "float"
+	},
+	"l2": {
+		"name": "l2",
+		"input_order": -1,
+		"type": "float"
+	},
+	"weights": {
+		"name": "weights",
+		"input_order": 0,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"length": "&num_features.value"
+	}
+}

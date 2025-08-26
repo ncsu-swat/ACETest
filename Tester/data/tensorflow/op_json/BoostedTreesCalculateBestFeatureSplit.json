@@ -1,0 +1,54 @@
+{
+	"logits_dimension": {
+		"name": "logits_dimension",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"split_type": {
+		"name": "split_type",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"inequality",
+			"equality"
+		],
+		"default": "inequality"
+	},
+	"node_id_range": {
+		"name": "node_id_range",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"stats_summary": {
+		"name": "stats_summary",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"l1": {
+		"name": "l1",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"l2": {
+		"name": "l2",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"tree_complexity": {
+		"name": "tree_complexity",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_node_weight": {
+		"name": "min_node_weight",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

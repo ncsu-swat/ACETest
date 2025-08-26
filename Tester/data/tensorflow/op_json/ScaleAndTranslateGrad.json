@@ -1,0 +1,47 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float"
+		],
+		"is_mid": true
+	},
+	"kernel_type": {
+		"name": "kernel_type",
+		"input_order": -1,
+		"type": "string",
+		"default": "lanczos3"
+	},
+	"antialias": {
+		"name": "antialias",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"grads": {
+		"name": "grads",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"original_image": {
+		"name": "original_image",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"scale": {
+		"name": "scale",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"translation": {
+		"name": "translation",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

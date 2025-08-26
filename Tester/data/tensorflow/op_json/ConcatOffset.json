@@ -1,0 +1,45 @@
+{
+	"N": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "N",
+		"type": "int",
+		"max": null,
+		"min": 2,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"concat_dim": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "concat_dim",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": "&N.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "int32"
+		},
+		"optional": null
+	}
+}

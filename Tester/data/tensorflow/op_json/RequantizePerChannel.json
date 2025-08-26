@@ -1,0 +1,59 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"default": "qint32",
+		"is_mid": true
+	},
+	"out_type": {
+		"name": "out_type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"default": "quint8"
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"input_min": {
+		"name": "input_min",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"input_max": {
+		"name": "input_max",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"requested_output_min": {
+		"name": "requested_output_min",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"requested_output_max": {
+		"name": "requested_output_max",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

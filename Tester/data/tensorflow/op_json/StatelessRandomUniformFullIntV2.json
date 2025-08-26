@@ -1,0 +1,85 @@
+{
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "uint64",
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64",
+			"uint32",
+			"uint64"
+		]
+	},
+	"Tshape": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": true,
+		"name": "Tshape",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		}
+	},
+	"key": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "key",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "uint64"
+	},
+	"counter": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "counter",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "uint64"
+	},
+	"alg": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "alg",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32"
+	}
+}

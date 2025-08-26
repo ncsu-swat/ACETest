@@ -1,0 +1,36 @@
+(declare-fun temp1_1 () (_ BitVec 64))
+(declare-fun ARGNAME_log_input_NAMEEND () (_ BitVec 64))
+(declare-fun temp1_2 () (_ BitVec 64))
+(declare-fun var330063 () (_ BitVec 64))
+(declare-fun temp1_3 () (_ BitVec 64))
+(declare-fun ARGNAME_full_NAMEEND () (_ BitVec 64))
+(declare-fun temp1_4 () (_ BitVec 64))
+(declare-fun var854351 () (_ BitVec 64))
+(declare-fun temp1_5 () (_ BitVec 64))
+(declare-fun var1706319 () (_ BitVec 64))
+(declare-fun temp1_6 () (_ BitVec 64))
+(declare-fun var1771855 () (_ BitVec 64))
+(declare-fun temp1_7 () (_ BitVec 64))
+(declare-fun ARGNAME_reduction_NAMEEND () (_ BitVec 64))
+(assert (= temp1_1 #x0000000000000001))
+(assert (= ARGNAME_log_input_NAMEEND temp1_1))
+(assert (= temp1_2 #x0000000000000001))
+(assert (= var330063 temp1_2))
+(assert (= temp1_3 #x0000000000000001))
+(assert (= ARGNAME_full_NAMEEND temp1_3))
+(assert (= temp1_4 #x0000000000000001))
+(assert (= var854351 temp1_4))
+(assert (= temp1_5 #x0000000000000001))
+(assert (= var1706319 temp1_5))
+(assert (= temp1_6 #x0000000000000000))
+(assert (= var1771855 temp1_6))
+(assert (= temp1_7 #x0000000000000001))
+(assert (or false (= ARGNAME_reduction_NAMEEND temp1_7)))
+(model-add temp1_1 () (_ BitVec 64) #x0000000000000001)
+(model-add ARGNAME_log_input_NAMEEND () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+

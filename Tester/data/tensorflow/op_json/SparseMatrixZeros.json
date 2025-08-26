@@ -1,0 +1,23 @@
+{
+	"type": {
+		"name": "type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"complex64",
+			"complex128"
+		]
+	},
+	"dense_shape": {
+		"name": "dense_shape",
+		"input_order": 0,
+		"type": "list",
+		"dtype": "int64",
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	}
+}

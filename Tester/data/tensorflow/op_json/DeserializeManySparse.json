@@ -1,0 +1,13 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"serialized_sparse": {
+		"name": "serialized_sparse",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

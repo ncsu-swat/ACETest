@@ -1,0 +1,28 @@
+{
+	"num_features": {
+		"name": "num_features",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"float_values": {
+		"name": "float_values",
+		"input_order": 0,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"length": "&num_features.value"
+	},
+	"bucket_boundaries": {
+		"name": "bucket_boundaries",
+		"input_order": 1,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"length": "&num_features.value"
+	}
+}

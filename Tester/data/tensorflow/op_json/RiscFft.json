@@ -1,0 +1,19 @@
+{
+	"Tcomplex": {
+		"name": "Tcomplex",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"complex64",
+			"complex128"
+		],
+		"default": "complex64",
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tcomplex.value"
+	}
+}

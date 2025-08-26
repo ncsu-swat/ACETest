@@ -1,0 +1,19 @@
+{
+	"SrcT": {
+		"name": "SrcT",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"DstT": {
+		"name": "DstT",
+		"input_order": -1,
+		"type": "type"
+	},
+	"x": {
+		"name": "x",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&SrcT.value"
+	}
+}

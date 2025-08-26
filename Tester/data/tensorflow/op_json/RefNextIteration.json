@@ -1,0 +1,14 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"data": {
+		"name": "data",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

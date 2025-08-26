@@ -1,0 +1,96 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"minlength": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "minlength",
+		"type": "int",
+		"max": null,
+		"min": -1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"maxlength": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "maxlength",
+		"type": "int",
+		"max": null,
+		"min": -1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"binary_output": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "binary_output",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"output_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "output_type",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64",
+			"float",
+			"double"
+		],
+		"optional": null
+	},
+	"values": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"weights": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "weights",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&output_type.value",
+		"optional": null
+	}
+}

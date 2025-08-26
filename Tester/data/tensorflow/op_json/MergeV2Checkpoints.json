@@ -1,0 +1,20 @@
+{
+	"delete_old_dirs": {
+		"name": "delete_old_dirs",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"checkpoint_prefixes": {
+		"name": "checkpoint_prefixes",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"destination_prefix": {
+		"name": "destination_prefix",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

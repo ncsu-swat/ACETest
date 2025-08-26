@@ -1,0 +1,30 @@
+{
+	"num_features": {
+		"name": "num_features",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"float_values": {
+		"name": "float_values",
+		"input_order": 0,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"length": "&num_features.value"
+	},
+	"example_weights": {
+		"name": "example_weights",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"epsilon": {
+		"name": "epsilon",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

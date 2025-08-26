@@ -1,0 +1,31 @@
+{
+	"tensors": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "tensors",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor"
+		},
+		"optional": false
+	},
+	"dim": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": 0,
+		"is_mid": null,
+		"name": "dim",
+		"type": "int",
+		"max": 6,
+		"min": -6,
+		"value": null,
+		"enum": null,
+		"optional": false
+	}
+}

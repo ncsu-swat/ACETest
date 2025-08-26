@@ -1,0 +1,42 @@
+{
+	"file_pattern": {
+		"name": "file_pattern",
+		"input_order": -1,
+		"type": "string"
+	},
+	"file_random_seed": {
+		"name": "file_random_seed",
+		"input_order": -1,
+		"type": "int",
+		"default": 301
+	},
+	"file_shuffle_shift_ratio": {
+		"name": "file_shuffle_shift_ratio",
+		"input_order": -1,
+		"type": "float"
+	},
+	"file_buffer_size": {
+		"name": "file_buffer_size",
+		"input_order": -1,
+		"type": "int",
+		"default": 10000
+	},
+	"file_parallelism": {
+		"name": "file_parallelism",
+		"input_order": -1,
+		"type": "int",
+		"default": 16
+	},
+	"batch_size": {
+		"name": "batch_size",
+		"input_order": -1,
+		"type": "int",
+		"default": 32
+	},
+	"compression_type": {
+		"name": "compression_type",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

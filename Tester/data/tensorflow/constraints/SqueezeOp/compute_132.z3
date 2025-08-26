@@ -1,0 +1,56 @@
+(declare-fun temp165_2 () (_ BitVec 64))
+(declare-fun temp165_1 () (_ BitVec 64))
+(declare-fun temp165_3 () (_ BitVec 64))
+(declare-fun var68227 () (_ BitVec 64))
+(declare-fun var68230 () (_ BitVec 64))
+(declare-fun temp165_4 () (_ BitVec 64))
+(declare-fun var2166200 () (_ BitVec 64))
+(declare-fun var2166217 () (_ BitVec 64))
+(declare-fun var2166183 () (_ BitVec 64))
+(declare-fun var2100431 () (_ BitVec 64))
+(declare-fun var2100427 () (_ BitVec 64))
+(declare-fun var68240 () (_ BitVec 64))
+(declare-fun temp165_5 () (_ BitVec 64))
+(declare-fun var68243 () (_ BitVec 64))
+(declare-fun temp165_6 () (_ BitVec 64))
+(assert (= temp165_2 #x0000000000000000))
+(assert (= temp165_1 temp165_2))
+(assert (= temp165_3 #x0000000000000000))
+(assert (= var68227 temp165_3))
+(assert (= var68230 var68227))
+(assert (= temp165_4 #x0000000000000000))
+(assert (= var2166200 temp165_4))
+(assert (= var2166217 var2166200))
+(assert (= var2166183 var2166217))
+(assert (= var2100431 var2166183))
+(assert (= var2100427 var2100431))
+(assert (= var68240 var2100427))
+(assert (= temp165_5 #x0000000000000000))
+(assert (= var68243 (ite (= var68240 temp165_5) #x0000000000000001 #x0000000000000000)))
+(assert (= temp165_6 #x0000000000000001))
+(assert (= var68243 temp165_6))
+(model-add temp165_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp165_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp165_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var68227 () (_ BitVec 64) #x0000000000000000)
+(model-add var68230 () (_ BitVec 64) #x0000000000000000)
+(model-add temp165_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166200 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166217 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166183 () (_ BitVec 64) #x0000000000000000)
+(model-add var2100431 () (_ BitVec 64) #x0000000000000000)
+(model-add var2100427 () (_ BitVec 64) #x0000000000000000)
+(model-add var68240 () (_ BitVec 64) #x0000000000000000)
+(model-add temp165_5 () (_ BitVec 64) #x0000000000000000)
+(model-add var68243 () (_ BitVec 64) #x0000000000000001)
+(model-add temp165_6 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+
+

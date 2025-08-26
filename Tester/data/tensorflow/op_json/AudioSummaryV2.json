@@ -1,0 +1,60 @@
+{
+	"max_outputs": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 3,
+		"is_mid": null,
+		"name": "max_outputs",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"tag": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "tag",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string",
+		"optional": null
+	},
+	"tensor": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "tensor",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"sample_rate": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "sample_rate",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	}
+}

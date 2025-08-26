@@ -1,0 +1,110 @@
+{
+	"depth_radius": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 5,
+		"is_mid": null,
+		"name": "depth_radius",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"bias": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "bias",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"alpha": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "alpha",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"beta": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "beta",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"half",
+			"bfloat16",
+			"float"
+		],
+		"optional": null
+	},
+	"input_grads": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_grads",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"input_image": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_image",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"output_image": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "output_image",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

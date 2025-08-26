@@ -1,0 +1,70 @@
+{
+	"RAGGED_RANK": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "RAGGED_RANK",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"Tsplits": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": true,
+		"name": "Tsplits",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"rt_nested_splits": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "rt_nested_splits",
+		"type": "list",
+		"value": null,
+		"length": "&RAGGED_RANK.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&Tsplits.value"
+		},
+		"optional": null
+	},
+	"rt_dense_values": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "rt_dense_values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

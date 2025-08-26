@@ -1,0 +1,123 @@
+(declare-fun temp6886_2 () (_ BitVec 64))
+(declare-fun temp6886_1 () (_ BitVec 64))
+(declare-fun temp6886_4 () (_ BitVec 64))
+(declare-fun temp6886_3 () (_ BitVec 64))
+(declare-fun temp6886_6 () (_ BitVec 64))
+(declare-fun temp6886_5 () (_ BitVec 64))
+(declare-fun temp6886_8 () (_ BitVec 64))
+(declare-fun temp6886_7 () (_ BitVec 64))
+(declare-fun temp6886_10 () (_ BitVec 64))
+(declare-fun temp6886_9 () (_ BitVec 64))
+(declare-fun temp6886_12 () (_ BitVec 64))
+(declare-fun temp6886_11 () (_ BitVec 64))
+(declare-fun temp6886_14 () (_ BitVec 64))
+(declare-fun temp6886_13 () (_ BitVec 64))
+(declare-fun temp6886_16 () (_ BitVec 64))
+(declare-fun temp6886_15 () (_ BitVec 64))
+(declare-fun temp6886_18 () (_ BitVec 64))
+(declare-fun temp6886_17 () (_ BitVec 64))
+(declare-fun temp6886_19 () (_ BitVec 64))
+(declare-fun temp6886_20 () (_ BitVec 64))
+(declare-fun temp6886_21 () (_ BitVec 64))
+(declare-fun temp6886_22 () (_ BitVec 64))
+(declare-fun temp6886_23 () (_ BitVec 64))
+(declare-fun var66553 () (_ BitVec 64))
+(declare-fun temp6886_24 () (_ BitVec 64))
+(declare-fun var66557 () (_ BitVec 64))
+(declare-fun temp6886_25 () (_ BitVec 64))
+(declare-fun temp6886_27 () (_ BitVec 64))
+(declare-fun temp6886_26 () (_ BitVec 64))
+(declare-fun temp6886_28 () (_ BitVec 64))
+(declare-fun var66617 () (_ BitVec 64))
+(declare-fun temp6886_29 () (_ BitVec 64))
+(declare-fun var66620 () (_ BitVec 64))
+(declare-fun temp6886_30 () (_ BitVec 64))
+(declare-fun temp6886_32 () (_ BitVec 64))
+(declare-fun temp6886_31 () (_ BitVec 64))
+(assert (= temp6886_2 #x0000000000000000))
+(assert (= temp6886_1 temp6886_2))
+(assert (= temp6886_4 #x0000000000000004))
+(assert (= temp6886_3 temp6886_4))
+(assert (= temp6886_6 #x0000000000000001))
+(assert (= temp6886_5 temp6886_6))
+(assert (= temp6886_8 #x0000000000000001))
+(assert (= temp6886_7 temp6886_8))
+(assert (= temp6886_10 #x0000000000000000))
+(assert (= temp6886_9 temp6886_10))
+(assert (= temp6886_12 #x0000000000000001))
+(assert (= temp6886_11 temp6886_12))
+(assert (= temp6886_14 #x0000000000000000))
+(assert (= temp6886_13 temp6886_14))
+(assert (= temp6886_16 #x0000000000000000))
+(assert (= temp6886_15 temp6886_16))
+(assert (= temp6886_18 #x0000000000000000))
+(assert (= temp6886_17 temp6886_18))
+(assert (= temp6886_19 #x0000000000000001))
+(assert (= temp6886_20 #x0000000000000002))
+(assert (= temp6886_21 #x0000000000000004))
+(assert (= temp6886_22 #x0000000000000008))
+(assert (or false
+    (= temp6886_7 temp6886_19)
+    (= temp6886_7 temp6886_20)
+    (= temp6886_7 temp6886_21)
+    (= temp6886_7 temp6886_22)))
+(assert (= temp6886_23 #x0000000000000000))
+(assert (= var66553 temp6886_23))
+(assert (= temp6886_24 #x0000000000000000))
+(assert (= var66557
+   (ite (= var66553 temp6886_24) #x0000000000000001 #x0000000000000000)))
+(assert (= temp6886_25 #x0000000000000001))
+(assert (= var66557 temp6886_25))
+(assert (= temp6886_27 #x0000000000000001))
+(assert (= temp6886_26 temp6886_27))
+(assert (= temp6886_28 #x0000000000000000))
+(assert (= var66617 temp6886_28))
+(assert (= temp6886_29 #x0000000000000000))
+(assert (= var66620
+   (ite (= var66617 temp6886_29) #x0000000000000001 #x0000000000000000)))
+(assert (= temp6886_30 #x0000000000000001))
+(assert (= var66620 temp6886_30))
+(assert (= temp6886_32 #x0000000000000003))
+(assert (= temp6886_31 temp6886_32))
+(model-add temp6886_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_4 () (_ BitVec 64) #x0000000000000004)
+(model-add temp6886_3 () (_ BitVec 64) #x0000000000000004)
+(model-add temp6886_6 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_5 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_8 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_7 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_10 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_9 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_12 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_11 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_14 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_13 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_16 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_15 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_18 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_17 () (_ BitVec 64) #x0000000000000000)
+(model-add temp6886_19 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6886_20 () (_ BitVec 64) #x0000000000000002)
+(model-add temp6886_21 () (_ BitVec 64) #x0000000000000004)
+(model-add temp6886_22 () (_ BitVec 64) #x0000000000000008)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

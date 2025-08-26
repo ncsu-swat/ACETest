@@ -1,0 +1,20 @@
+{
+	"scheme": {
+		"name": "scheme",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"key": {
+		"name": "key",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"value": {
+		"name": "value",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

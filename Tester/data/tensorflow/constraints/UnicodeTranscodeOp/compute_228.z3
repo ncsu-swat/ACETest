@@ -1,0 +1,72 @@
+(declare-fun temp782_2 () (_ BitVec 64))
+(declare-fun temp782_1 () (_ BitVec 64))
+(declare-fun temp782_3 () (_ BitVec 64))
+(declare-fun var396778 () (_ BitVec 64))
+(declare-fun var396779 () (_ BitVec 64))
+(declare-fun var396776 () (_ BitVec 64))
+(declare-fun var200040 () (_ BitVec 64))
+(declare-fun temp782_4 () (_ BitVec 64))
+(declare-fun var200043 () (_ BitVec 64))
+(declare-fun temp782_5 () (_ BitVec 64))
+(declare-fun temp782_6 () (_ BitVec 64))
+(declare-fun var463269 () (_ BitVec 64))
+(declare-fun temp782_8 () (_ BitVec 64))
+(declare-fun temp782_7 () (_ BitVec 64))
+(declare-fun temp782_10 () (_ BitVec 64))
+(declare-fun temp782_9 () (_ BitVec 64))
+(declare-fun temp782_12 () (_ BitVec 64))
+(declare-fun temp782_11 () (_ BitVec 64))
+(declare-fun temp782_14 () (_ BitVec 64))
+(declare-fun temp782_13 () (_ BitVec 64))
+(declare-fun temp782_15 () (_ BitVec 64))
+(declare-fun var69859 () (_ BitVec 64))
+(declare-fun temp782_16 () (_ BitVec 64))
+(declare-fun var789402 () (_ BitVec 64))
+(assert (= temp782_2 #x0000000000000000))
+(assert (= temp782_1 temp782_2))
+(assert (= temp782_3 #x0000000000000000))
+(assert (= var396778
+   (ite (bvsgt temp782_1 temp782_3) #x0000000000000001 #x0000000000000000)))
+(assert (= var396779 var396778))
+(assert (= var396776 var396779))
+(assert (= var200040 var396776))
+(assert (= temp782_4 #x0000000000000000))
+(assert (= var200043
+   (ite (= var200040 temp782_4) #x0000000000000001 #x0000000000000000)))
+(assert (= temp782_5 #x0000000000000001))
+(assert (= var200043 temp782_5))
+(assert (= temp782_6 #x0000000000000000))
+(assert (= var463269 temp782_6))
+(assert (= temp782_8 #x0000000000000000))
+(assert (= temp782_7 temp782_8))
+(assert (= temp782_10 #x0000000000000000))
+(assert (= temp782_9 temp782_10))
+(assert (= temp782_12 #x0000000000000000))
+(assert (= temp782_11 temp782_12))
+(assert (= temp782_14 #x0000000000000000))
+(assert (= temp782_13 temp782_14))
+(assert (= temp782_15 #x0000000000000000))
+(assert (= var69859 temp782_15))
+(assert (= temp782_16 #x0000000000000001))
+(assert (= var789402 temp782_16))
+(model-add temp782_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp782_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp782_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var396778 () (_ BitVec 64) #x0000000000000000)
+(model-add var396779 () (_ BitVec 64) #x0000000000000000)
+(model-add var396776 () (_ BitVec 64) #x0000000000000000)
+(model-add var200040 () (_ BitVec 64) #x0000000000000000)
+(model-add temp782_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var200043 () (_ BitVec 64) #x0000000000000001)
+(model-add temp782_5 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+
+
+

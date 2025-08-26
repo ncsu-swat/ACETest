@@ -1,0 +1,117 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"complex64",
+			"int64",
+			"qint8",
+			"quint8",
+			"qint32",
+			"bfloat16",
+			"uint16",
+			"complex128",
+			"half",
+			"uint32",
+			"uint64"
+		]
+	},
+	"a_indices": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "a_indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int64"
+	},
+	"a_values": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "a_values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"a_shape": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "a_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	},
+	"b_indices": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "b_indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int64"
+	},
+	"b_values": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "b_values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"b_shape": {
+		"is_attr": null,
+		"input_order": 5,
+		"default": null,
+		"is_mid": null,
+		"name": "b_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	}
+}

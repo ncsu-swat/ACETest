@@ -1,0 +1,58 @@
+{
+	"Treal": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": null,
+		"name": "Treal",
+		"type": "type",
+		"enum": [
+			"float",
+			"double"
+		],
+		"optional": null
+	},
+	"Tcomplex": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "complex64",
+		"is_mid": true,
+		"name": "Tcomplex",
+		"type": "type",
+		"enum": [
+			"complex64",
+			"complex128"
+		],
+		"optional": null
+	},
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tcomplex.value",
+		"optional": null
+	},
+	"fft_length": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "fft_length",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32",
+		"optional": null
+	}
+}

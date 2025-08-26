@@ -1,0 +1,89 @@
+{
+	"N": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "N",
+		"type": "int",
+		"max": null,
+		"min": 2,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"concat_dim": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "concat_dim",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"values": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "values",
+		"type": "list",
+		"value": null,
+		"length": "&N.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		},
+		"optional": null
+	},
+	"input_mins": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "input_mins",
+		"type": "list",
+		"value": null,
+		"length": "&N.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"optional": null
+	},
+	"input_maxes": {
+		"is_attr": null,
+		"input_order": 3,
+		"default": null,
+		"is_mid": null,
+		"name": "input_maxes",
+		"type": "list",
+		"value": null,
+		"length": "&N.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"optional": null
+	}
+}

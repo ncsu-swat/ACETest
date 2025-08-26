@@ -1,0 +1,87 @@
+(declare-fun temp9_2 () (_ BitVec 64))
+(declare-fun temp9_1 () (_ BitVec 64))
+(declare-fun temp9_4 () (_ BitVec 64))
+(declare-fun temp9_3 () (_ BitVec 64))
+(declare-fun temp9_6 () (_ BitVec 64))
+(declare-fun temp9_5 () (_ BitVec 64))
+(declare-fun temp9_8 () (_ BitVec 64))
+(declare-fun temp9_7 () (_ BitVec 64))
+(declare-fun temp9_10 () (_ BitVec 64))
+(declare-fun temp9_9 () (_ BitVec 64))
+(declare-fun temp9_12 () (_ BitVec 64))
+(declare-fun temp9_11 () (_ BitVec 64))
+(declare-fun temp9_14 () (_ BitVec 64))
+(declare-fun temp9_13 () (_ BitVec 64))
+(declare-fun temp9_16 () (_ BitVec 64))
+(declare-fun temp9_15 () (_ BitVec 64))
+(declare-fun temp9_17 () (_ BitVec 64))
+(declare-fun var66865 () (_ BitVec 64))
+(declare-fun var66899 () (_ BitVec 64))
+(declare-fun temp9_18 () (_ BitVec 64))
+(declare-fun var66900 () (_ BitVec 64))
+(declare-fun temp9_19 () (_ BitVec 64))
+(declare-fun temp9_20 () (_ BitVec 64))
+(declare-fun var67114 () (_ BitVec 64))
+(assert (= temp9_2 #x000000000000005f))
+(assert (= temp9_1 temp9_2))
+(assert (= temp9_4 #x0000000000000000))
+(assert (= temp9_3 temp9_4))
+(assert (= temp9_6 #x0000000000000000))
+(assert (= temp9_5 temp9_6))
+(assert (= temp9_8 #x0000000000000001))
+(assert (= temp9_7 temp9_8))
+(assert (= temp9_10 #x0000000000000001))
+(assert (= temp9_9 temp9_10))
+(assert (= temp9_12 #x000000000000012c))
+(assert (= temp9_11 temp9_12))
+(assert (= temp9_14 #x000000000000012c))
+(assert (= temp9_13 temp9_14))
+(assert (= temp9_16 #x0000000000000000))
+(assert (= temp9_15 temp9_16))
+(assert (= temp9_17 #x0000000000000003))
+(assert (= var66865 temp9_17))
+(assert (= var66899 var66865))
+(assert (= temp9_18 #x0000000000000065))
+(assert (= var66900
+   (ite (bvslt var66899 temp9_18) #x0000000000000001 #x0000000000000000)))
+(assert (= temp9_19 #x0000000000000001))
+(assert (= var66900 temp9_19))
+(assert (= temp9_20 #x0000000000000002))
+(assert (= var67114 temp9_20))
+(model-add temp9_2 () (_ BitVec 64) #x000000000000005f)
+(model-add temp9_1 () (_ BitVec 64) #x000000000000005f)
+(model-add temp9_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_8 () (_ BitVec 64) #x0000000000000001)
+(model-add temp9_7 () (_ BitVec 64) #x0000000000000001)
+(model-add temp9_10 () (_ BitVec 64) #x0000000000000001)
+(model-add temp9_9 () (_ BitVec 64) #x0000000000000001)
+(model-add temp9_12 () (_ BitVec 64) #x000000000000012c)
+(model-add temp9_11 () (_ BitVec 64) #x000000000000012c)
+(model-add temp9_14 () (_ BitVec 64) #x000000000000012c)
+(model-add temp9_13 () (_ BitVec 64) #x000000000000012c)
+(model-add temp9_16 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_15 () (_ BitVec 64) #x0000000000000000)
+(model-add temp9_17 () (_ BitVec 64) #x0000000000000003)
+(model-add var66865 () (_ BitVec 64) #x0000000000000003)
+(model-add var66899 () (_ BitVec 64) #x0000000000000003)
+(model-add temp9_18 () (_ BitVec 64) #x0000000000000065)
+(model-add var66900 () (_ BitVec 64) #x0000000000000001)
+(model-add temp9_19 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

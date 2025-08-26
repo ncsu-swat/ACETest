@@ -1,0 +1,93 @@
+{
+	"query": {
+		"optional": false,
+		"name": "query",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"key": {
+		"optional": false,
+		"name": "key",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"value": {
+		"optional": false,
+		"name": "value",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"embed_dim": {
+		"optional": false,
+		"name": "embed_dim",
+		"type": "int",
+		"input_order": 3
+	},
+	"num_head": {
+		"optional": false,
+		"name": "num_head",
+		"type": "int",
+		"input_order": 4
+	},
+	"qkv_weight": {
+		"optional": false,
+		"name": "qkv_weight",
+		"type": "tensor",
+		"input_order": 5,
+		"dtype": "&T.value"
+	},
+	"qkv_bias": {
+		"optional": false,
+		"name": "qkv_bias",
+		"type": "tensor",
+		"input_order": 6,
+		"dtype": "&T.value"
+	},
+	"proj_weight": {
+		"optional": false,
+		"name": "proj_weight",
+		"type": "tensor",
+		"input_order": 7,
+		"dtype": "&T.value"
+	},
+	"proj_bias": {
+		"optional": false,
+		"name": "proj_bias",
+		"type": "tensor",
+		"input_order": 8,
+		"dtype": "&T.value"
+	},
+	"mask": {
+		"optional": true,
+		"name": "mask",
+		"type": "tensor",
+		"input_order": 9,
+		"dtype": "&T.value"
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

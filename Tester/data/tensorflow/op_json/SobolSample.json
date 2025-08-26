@@ -1,0 +1,50 @@
+{
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"float",
+			"double"
+		]
+	},
+	"dim": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "dim",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"num_results": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_results",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"skip": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "skip",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	}
+}

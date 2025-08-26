@@ -1,0 +1,36 @@
+(declare-fun temp306_2 () (_ BitVec 64))
+(declare-fun temp306_1 () (_ BitVec 64))
+(declare-fun temp306_3 () (_ BitVec 64))
+(declare-fun var287753 () (_ BitVec 64))
+(declare-fun temp306_5 () (_ BitVec 64))
+(declare-fun temp306_4 () (_ BitVec 64))
+(declare-fun temp306_6 () (_ BitVec 64))
+(declare-fun var1183047 () (_ BitVec 64))
+(declare-fun var1248594 () (_ BitVec 64))
+(declare-fun temp306_7 () (_ BitVec 64))
+(declare-fun var2235005 () (_ BitVec 64))
+(declare-fun var2234989 () (_ BitVec 64))
+(declare-fun var1005804 () (_ BitVec 64))
+(declare-fun temp306_9 () (_ BitVec 64))
+(declare-fun var1005891 () (_ BitVec 64))
+(assert (= temp306_2 #x0000000000000c77))
+(assert (= temp306_1 temp306_2))
+(assert (= temp306_3 #x0000000000000000))
+(assert (= var287753 temp306_3))
+(assert (= temp306_5 #x0000000000000000))
+(assert (= temp306_4 temp306_5))
+(assert (= temp306_6 #x0000000000000000))
+(assert (= var1183047 temp306_6))
+(assert (= var1248594 var1183047))
+(assert (= temp306_7 #x0000000000000000))
+(assert (= var2235005 temp306_7))
+(assert (= var2234989 var2235005))
+(assert (= var1005804 var2234989))
+(assert (= temp306_9 #x0000000000000000))
+(assert (= var1005891 temp306_9))
+
+
+
+
+
+

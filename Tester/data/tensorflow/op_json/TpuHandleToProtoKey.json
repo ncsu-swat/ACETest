@@ -1,0 +1,8 @@
+{
+	"uid": {
+		"name": "uid",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

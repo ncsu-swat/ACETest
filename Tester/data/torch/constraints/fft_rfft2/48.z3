@@ -1,0 +1,25 @@
+(declare-fun temp96_2 () (_ BitVec 64))
+(declare-fun temp96_1 () (_ BitVec 64))
+(declare-fun temp96_3 () (_ BitVec 64))
+(declare-fun var3606326 () (_ BitVec 64))
+(declare-fun var3805404 () (_ BitVec 64))
+(declare-fun temp96_4 () (_ BitVec 64))
+(declare-fun var4524911 () (_ BitVec 64))
+(assert (= temp96_2 #x0000000000000000))
+(assert (= temp96_1 temp96_2))
+(assert (= temp96_3 #x0000000000000000))
+(assert (= var3606326 temp96_3))
+(assert (= var3805404 var3606326))
+(assert (= temp96_4 #x0000000000000050))
+(assert (= var4524911 temp96_4))
+(model-add temp96_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp96_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp96_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var3606326 () (_ BitVec 64) #x0000000000000000)
+(model-add var3805404 () (_ BitVec 64) #x0000000000000000)
+(model-add temp96_4 () (_ BitVec 64) #x0000000000000050)
+(model-add var4524911 () (_ BitVec 64) #x0000000000000050)
+
+
+
+

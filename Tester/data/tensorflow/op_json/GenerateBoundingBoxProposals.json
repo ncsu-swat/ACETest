@@ -1,0 +1,50 @@
+{
+	"post_nms_topn": {
+		"name": "post_nms_topn",
+		"input_order": -1,
+		"type": "int",
+		"default": 300
+	},
+	"scores": {
+		"name": "scores",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"bbox_deltas": {
+		"name": "bbox_deltas",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"image_info": {
+		"name": "image_info",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"anchors": {
+		"name": "anchors",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"nms_threshold": {
+		"name": "nms_threshold",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"pre_nms_topn": {
+		"name": "pre_nms_topn",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"min_size": {
+		"name": "min_size",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

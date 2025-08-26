@@ -1,0 +1,52 @@
+(declare-fun temp33_1 () (_ BitVec 64))
+(declare-fun temp33_2 () (_ BitVec 64))
+(declare-fun var133900 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_log_probs_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp33_3 () (_ BitVec 64))
+(declare-fun var592479 () (_ BitVec 64))
+(declare-fun temp33_4 () (_ BitVec 64))
+(declare-fun var592480 () (_ BitVec 64))
+(declare-fun temp33_5 () (_ BitVec 64))
+(declare-fun var592481 () (_ BitVec 64))
+(declare-fun temp33_6 () (_ BitVec 64))
+(declare-fun ARGNAME_zero_infinity_NAMEEND () (_ BitVec 64))
+(declare-fun temp33_7 () (_ BitVec 64))
+(declare-fun ARGNAME_reduction_NAMEEND () (_ BitVec 64))
+(declare-fun temp33_8 () (_ BitVec 64))
+(declare-fun temp33_9 () (_ BitVec 64))
+(assert (= temp33_1 #x0000000000000003))
+(assert (= var133900
+   (ite (= ARGNAME_log_probs_NAMEEND_DIM temp33_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp33_2 #x0000000000000000))
+(assert (= var133900 temp33_2))
+(assert (= temp33_3 #x0000000000000004))
+(assert (= var592479 temp33_3))
+(assert (= temp33_4 #x0000000000000000))
+(assert (= var592480 temp33_4))
+(assert (= temp33_5 #x0000000000000000))
+(assert (= var592481 temp33_5))
+(assert (= temp33_6 #x0000000000000001))
+(assert (= ARGNAME_zero_infinity_NAMEEND temp33_6))
+(assert (= temp33_7 #x0000000000000001))
+(assert (distinct ARGNAME_reduction_NAMEEND temp33_7))
+(assert (= temp33_8 #x0000000000000002))
+(assert (distinct ARGNAME_reduction_NAMEEND temp33_8))
+(assert (= temp33_9 #x0000000000000000))
+(assert (= var133900 temp33_9))
+(model-add temp33_1 () (_ BitVec 64) #x0000000000000003)
+(model-add temp33_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var133900 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_log_probs_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000003 (bvnot #x0000000000000003)))
+
+
+
+
+
+

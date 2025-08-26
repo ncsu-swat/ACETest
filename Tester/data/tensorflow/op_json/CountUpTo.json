@@ -1,0 +1,23 @@
+{
+	"limit": {
+		"name": "limit",
+		"input_order": -1,
+		"type": "int"
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"ref": {
+		"name": "ref",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

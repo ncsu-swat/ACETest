@@ -1,0 +1,53 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"complex64",
+			"int64",
+			"qint8",
+			"quint8",
+			"qint32",
+			"bfloat16",
+			"uint16",
+			"complex128",
+			"half",
+			"uint32",
+			"uint64"
+		]
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"reduction_type": {
+		"name": "reduction_type",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"MEAN",
+			"SUM"
+		],
+		"default": "MEAN"
+	}
+}

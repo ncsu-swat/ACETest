@@ -1,0 +1,47 @@
+{
+	"SrcT": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "SrcT",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"DstT": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "DstT",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"Truncate": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "Truncate",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"x": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&SrcT.value",
+		"optional": null
+	}
+}

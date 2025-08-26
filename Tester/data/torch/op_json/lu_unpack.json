@@ -1,0 +1,53 @@
+{
+	"LU_data": {
+		"optional": false,
+		"name": "LU_data",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"LU_pivots": {
+		"optional": false,
+		"name": "LU_pivots",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"unpack_data": {
+		"optional": false,
+		"name": "unpack_data",
+		"type": "bool",
+		"default": "True",
+		"input_order": 2
+	},
+	"unpack_pivots": {
+		"optional": false,
+		"name": "unpack_pivots",
+		"type": "bool",
+		"default": "True",
+		"input_order": 3
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

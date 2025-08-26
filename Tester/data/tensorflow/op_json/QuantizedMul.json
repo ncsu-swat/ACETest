@@ -1,0 +1,140 @@
+{
+	"T1": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T1",
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"optional": null
+	},
+	"T2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T2",
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"optional": null
+	},
+	"Toutput": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "qint32",
+		"is_mid": null,
+		"name": "Toutput",
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"optional": null
+	},
+	"x": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T1.value",
+		"optional": null
+	},
+	"y": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "y",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T2.value",
+		"optional": null
+	},
+	"min_x": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "min_x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"max_x": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "max_x",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"min_y": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "min_y",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"max_y": {
+		"input_order": 5,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "max_y",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	}
+}

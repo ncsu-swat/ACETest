@@ -1,0 +1,112 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"observer_on": {
+		"optional": false,
+		"name": "observer_on",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"fake_quant_on": {
+		"optional": false,
+		"name": "fake_quant_on",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"running_min": {
+		"optional": false,
+		"name": "running_min",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"running_max": {
+		"optional": false,
+		"name": "running_max",
+		"type": "tensor",
+		"input_order": 4,
+		"dtype": "&T.value"
+	},
+	"scale": {
+		"optional": false,
+		"name": "scale",
+		"type": "tensor",
+		"input_order": 5,
+		"dtype": "&T.value"
+	},
+	"zero_point": {
+		"optional": false,
+		"name": "zero_point",
+		"type": "tensor",
+		"input_order": 6,
+		"dtype": "&T.value"
+	},
+	"averaging_const": {
+		"optional": false,
+		"name": "averaging_const",
+		"type": "float",
+		"input_order": 7
+	},
+	"quant_min": {
+		"optional": false,
+		"name": "quant_min",
+		"type": "int",
+		"input_order": 8
+	},
+	"quant_max": {
+		"optional": false,
+		"name": "quant_max",
+		"type": "int",
+		"input_order": 9
+	},
+	"ch_axis": {
+		"optional": false,
+		"name": "ch_axis",
+		"type": "int",
+		"input_order": 10
+	},
+	"per_row_fake_quant": {
+		"optional": false,
+		"name": "per_row_fake_quant",
+		"type": "bool",
+		"default": "False",
+		"input_order": 11
+	},
+	"symmetric_quant": {
+		"optional": false,
+		"name": "symmetric_quant",
+		"type": "bool",
+		"default": "False",
+		"input_order": 12
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

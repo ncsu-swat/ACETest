@@ -1,0 +1,57 @@
+(declare-fun temp194_2 () (_ BitVec 64))
+(declare-fun temp194_1 () (_ BitVec 64))
+(declare-fun temp194_4 () (_ BitVec 64))
+(declare-fun temp194_3 () (_ BitVec 64))
+(declare-fun temp194_6 () (_ BitVec 64))
+(declare-fun temp194_5 () (_ BitVec 64))
+(declare-fun temp194_7 () (_ BitVec 64))
+(declare-fun var198564 () (_ BitVec 64))
+(declare-fun var264647 () (_ BitVec 64))
+(declare-fun temp194_8 () (_ BitVec 64))
+(declare-fun var198628 () (_ BitVec 64))
+(declare-fun temp194_9 () (_ BitVec 64))
+(declare-fun var198629 () (_ BitVec 64))
+(declare-fun temp194_10 () (_ BitVec 64))
+(declare-fun var198549 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp194_12 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp194_13 () (_ BitVec 64))
+(declare-fun temp194_15 () (_ BitVec 64))
+(declare-fun temp194_14 () (_ BitVec 64))
+(declare-fun temp194_16 () (_ BitVec 64))
+(declare-fun var789543 () (_ BitVec 64))
+(assert (= temp194_2 #x0000000000000000))
+(assert (= temp194_1 temp194_2))
+(assert (= temp194_4 #x0000000000000000))
+(assert (= temp194_3 temp194_4))
+(assert (= temp194_6 #x0000000000000000))
+(assert (= temp194_5 temp194_6))
+(assert (= temp194_7 #x0000000000000000))
+(assert (= var198564 temp194_7))
+(assert (= var264647 var198564))
+(assert (= temp194_8 #x0000000000000000))
+(assert (= var198628 temp194_8))
+(assert (= temp194_9 #x0000000000000000))
+(assert (= var198629
+   (ite (= var198628 temp194_9) #x0000000000000001 #x0000000000000000)))
+(assert (= temp194_10 #x0000000000000001))
+(assert (= var198549 (bvadd var198564 temp194_10)))
+(assert (= var198631 var198628))
+(assert (= temp194_12 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp194_12) #x0000000000000001 #x0000000000000000)))
+(assert (= temp194_13 #x0000000000000000))
+(assert (= var198633 temp194_13))
+(assert (= temp194_15 #x0000000055555555))
+(assert (= temp194_14 temp194_15))
+(assert (= temp194_16 #x0000000000000001))
+(assert (= var789543 temp194_16))
+
+
+
+
+
+
+
+

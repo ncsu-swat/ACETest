@@ -1,0 +1,29 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape",
+		"default": []
+	},
+	"layout": {
+		"name": "layout",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"default": []
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&dtype.value"
+	}
+}

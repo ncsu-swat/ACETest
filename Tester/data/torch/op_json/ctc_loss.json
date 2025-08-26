@@ -1,0 +1,130 @@
+{
+	"log_probs": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "log_probs",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": false
+	},
+	"targets": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "targets",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": false
+	},
+	"input_lengths": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "input_lengths",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": false
+	},
+	"target_lengths": {
+		"is_attr": null,
+		"input_order": 3,
+		"default": null,
+		"is_mid": null,
+		"name": "target_lengths",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": false
+	},
+	"blank": {
+		"is_attr": null,
+		"input_order": 4,
+		"default": 0,
+		"is_mid": null,
+		"name": "blank",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": false
+	},
+	"reduction": {
+		"is_attr": null,
+		"input_order": 5,
+		"default": 1,
+		"is_mid": null,
+		"name": "reduction",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": [
+			0,
+			1,
+			2
+		],
+		"optional": false
+	},
+	"zero_infinity": {
+		"is_attr": null,
+		"input_order": 6,
+		"default": "False",
+		"is_mid": null,
+		"name": "zero_infinity",
+		"type": "bool",
+		"value": null,
+		"optional": false
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		],
+		"optional": null
+	}
+}

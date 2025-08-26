@@ -1,0 +1,75 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"complex64",
+			"int64",
+			"qint8",
+			"quint8",
+			"qint32",
+			"bfloat16",
+			"uint16",
+			"complex128",
+			"half",
+			"uint32",
+			"uint64"
+		],
+		"is_mid": true
+	},
+	"use_locking": {
+		"name": "use_locking",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"var": {
+		"name": "var",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"m": {
+		"name": "m",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"lr": {
+		"name": "lr",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"alpha": {
+		"name": "alpha",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"sign_decay": {
+		"name": "sign_decay",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"beta": {
+		"name": "beta",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"grad": {
+		"name": "grad",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

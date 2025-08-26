@@ -1,0 +1,40 @@
+{
+	"op_type": {
+		"name": "op_type",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"ADD",
+			"SUB",
+			"MUL",
+			"DIV",
+			"REM",
+			"MIN",
+			"POW"
+		]
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"x": {
+		"name": "x",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"y": {
+		"name": "y",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

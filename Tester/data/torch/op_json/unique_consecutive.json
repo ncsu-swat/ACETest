@@ -1,0 +1,54 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"return_inverse": {
+		"optional": false,
+		"name": "return_inverse",
+		"type": "bool",
+		"default": "False",
+		"input_order": 1
+	},
+	"return_counts": {
+		"optional": false,
+		"name": "return_counts",
+		"type": "bool",
+		"default": "False",
+		"input_order": 2
+	},
+	"dim": {
+		"optional": true,
+		"name": "dim",
+		"type": "int",
+		"input_order": 3,
+		"max": 6,
+		"min": -6
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"output_types": {
+		"name": "output_types",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 1
+	},
+	"output_shapes": {
+		"name": "output_shapes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "shape"
+		},
+		"min_len": 1
+	},
+	"compression": {
+		"name": "compression",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"version": {
+		"name": "version",
+		"input_order": -1,
+		"type": "int"
+	},
+	"shard_dir": {
+		"name": "shard_dir",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"start_index": {
+		"name": "start_index",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

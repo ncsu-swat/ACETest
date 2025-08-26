@@ -1,0 +1,31 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"frame_name": {
+		"name": "frame_name",
+		"input_order": -1,
+		"type": "string"
+	},
+	"is_constant": {
+		"name": "is_constant",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"parallel_iterations": {
+		"name": "parallel_iterations",
+		"input_order": -1,
+		"type": "int",
+		"default": 10
+	},
+	"data": {
+		"name": "data",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

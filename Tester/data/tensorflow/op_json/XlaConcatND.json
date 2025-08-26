@@ -1,0 +1,41 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"N": {
+		"name": "N",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_concats": {
+		"name": "num_concats",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		}
+	},
+	"paddings": {
+		"name": "paddings",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"default": []
+	},
+	"inputs": {
+		"name": "inputs",
+		"input_order": 0,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		},
+		"length": "&N.value"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"Index": {
+		"name": "Index",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"begin": {
+		"name": "begin",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Index.value"
+	},
+	"size": {
+		"name": "size",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&Index.value"
+	}
+}

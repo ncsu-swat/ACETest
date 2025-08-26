@@ -1,0 +1,52 @@
+{
+	"Tinput": {
+		"name": "Tinput",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"is_mid": true
+	},
+	"out_type": {
+		"name": "out_type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"default": "quint8"
+	},
+	"features": {
+		"name": "features",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tinput.value"
+	},
+	"max_value": {
+		"name": "max_value",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_features": {
+		"name": "min_features",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"max_features": {
+		"name": "max_features",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

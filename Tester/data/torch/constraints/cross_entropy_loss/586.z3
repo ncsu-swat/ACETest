@@ -1,0 +1,85 @@
+(declare-fun temp586_1 () (_ BitVec 64))
+(declare-fun var267855 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun ARGNAME_target_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp586_2 () (_ BitVec 64))
+(declare-fun ARGNAME_label_smoothing_NAMEEND () (_ BitVec 64))
+(declare-fun var70865 () (_ BitVec 64))
+(declare-fun temp586_3 () (_ BitVec 64))
+(declare-fun temp586_4 () (_ BitVec 64))
+(declare-fun var70867 () (_ BitVec 64))
+(declare-fun temp586_5 () (_ BitVec 64))
+(declare-fun temp586_6 () (_ BitVec 64))
+(declare-fun var921507 () (_ BitVec 64))
+(declare-fun var921510 () (_ BitVec 64))
+(declare-fun var1117505 () (_ BitVec 64))
+(declare-fun temp586_7 () (_ BitVec 64))
+(declare-fun var2362881 () (_ BitVec 64))
+(declare-fun temp586_9 () (_ BitVec 64))
+(declare-fun temp586_8 () (_ BitVec 64))
+(declare-fun temp586_10 () (_ BitVec 64))
+(declare-fun var3216162 () (_ BitVec 64))
+(declare-fun temp586_11 () (_ BitVec 64))
+(declare-fun temp586_12 () (_ BitVec 64))
+(declare-fun var3216163 () (_ BitVec 64))
+(declare-fun var3216170 () (_ BitVec 64))
+(declare-fun temp586_14 () (_ BitVec 64))
+(declare-fun temp586_13 () (_ BitVec 64))
+(declare-fun temp586_15 () (_ BitVec 64))
+(declare-fun ARGNAME_reduction_NAMEEND () (_ BitVec 64))
+(assert (= var267855
+   (ite (= ARGNAME_input_NAMEEND_DIM ARGNAME_target_NAMEEND_DIM)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp586_1 #x0000000000000001))
+(assert (= var267855 temp586_1))
+(assert (= temp586_2 #x0000000000000000))
+(assert (= var70865
+   (ite (bvsgt ARGNAME_label_smoothing_NAMEEND temp586_2)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp586_3 #x0000000000000001))
+(assert (= var70865 temp586_3))
+(assert (= temp586_4 #x0000000000000001))
+(assert (= var70867
+   (ite (bvsgt ARGNAME_label_smoothing_NAMEEND temp586_4)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp586_5 #x0000000000000000))
+(assert (= var70867 temp586_5))
+(assert (= temp586_6 #x0000000000000001))
+(assert (= var921507
+   (ite (distinct ARGNAME_input_NAMEEND_DIM temp586_6)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var921510 var921507))
+(assert (= var1117505 var921510))
+(assert (= temp586_7 #x0000000000000000))
+(assert (= var2362881 temp586_7))
+(assert (= temp586_9 #x0000000000000001))
+(assert (= temp586_8 temp586_9))
+(assert (= temp586_10 #x0000000000000000))
+(assert (= var3216162
+   (ite (bvslt temp586_8 temp586_10) #x0000000000000001 #x0000000000000000)))
+(assert (= temp586_11 #x0000000000000000))
+(assert (= temp586_12 #xffffffffffffffff))
+(assert (= var3216163 (ite (= var3216162 #x0000000000000001) temp586_11 temp586_12)))
+(assert (= var3216170 var3216163))
+(assert (= temp586_14 #x0000000000000005))
+(assert (= temp586_13 temp586_14))
+(assert (= temp586_15 #x0000000000000002))
+(assert (or false (= ARGNAME_reduction_NAMEEND temp586_15)))
+(model-add temp586_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var267855 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0
+                ARGNAME_target_NAMEEND_DIM
+                (bvnot ARGNAME_target_NAMEEND_DIM)))
+
+
+
+

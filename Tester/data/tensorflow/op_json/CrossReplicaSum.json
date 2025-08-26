@@ -1,0 +1,28 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"bfloat16",
+			"float",
+			"double",
+			"int32",
+			"uint32"
+		],
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"group_assignment": {
+		"name": "group_assignment",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"max_images": {
+		"name": "max_images",
+		"input_order": -1,
+		"type": "int",
+		"min": 1,
+		"default": 3
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"uint8",
+			"float",
+			"half",
+			"double"
+		],
+		"default": "float",
+		"is_mid": true
+	},
+	"bad_color": {
+		"name": "bad_color",
+		"input_order": -1,
+		"type": "tensor"
+	},
+	"tag": {
+		"name": "tag",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"tensor": {
+		"name": "tensor",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

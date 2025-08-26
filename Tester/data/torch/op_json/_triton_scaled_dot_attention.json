@@ -1,0 +1,53 @@
+{
+	"q": {
+		"optional": false,
+		"name": "q",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"k": {
+		"optional": false,
+		"name": "k",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"v": {
+		"optional": false,
+		"name": "v",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"dropout_p": {
+		"optional": false,
+		"name": "dropout_p",
+		"type": "float",
+		"default": 0.0,
+		"input_order": 3
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

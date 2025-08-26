@@ -1,0 +1,56 @@
+(declare-fun temp26_2 () (_ BitVec 64))
+(declare-fun temp26_1 () (_ BitVec 64))
+(declare-fun temp26_3 () (_ BitVec 64))
+(declare-fun var68227 () (_ BitVec 64))
+(declare-fun var68230 () (_ BitVec 64))
+(declare-fun temp26_4 () (_ BitVec 64))
+(declare-fun var2166200 () (_ BitVec 64))
+(declare-fun var2166217 () (_ BitVec 64))
+(declare-fun var2166183 () (_ BitVec 64))
+(declare-fun var2100431 () (_ BitVec 64))
+(declare-fun var2100427 () (_ BitVec 64))
+(declare-fun var68240 () (_ BitVec 64))
+(declare-fun temp26_5 () (_ BitVec 64))
+(declare-fun var68243 () (_ BitVec 64))
+(declare-fun temp26_6 () (_ BitVec 64))
+(assert (= temp26_2 #x0000000000000000))
+(assert (= temp26_1 temp26_2))
+(assert (= temp26_3 #x0000000000000000))
+(assert (= var68227 temp26_3))
+(assert (= var68230 var68227))
+(assert (= temp26_4 #x0000000000000000))
+(assert (= var2166200 temp26_4))
+(assert (= var2166217 var2166200))
+(assert (= var2166183 var2166217))
+(assert (= var2100431 var2166183))
+(assert (= var2100427 var2100431))
+(assert (= var68240 var2100427))
+(assert (= temp26_5 #x0000000000000000))
+(assert (= var68243 (ite (= var68240 temp26_5) #x0000000000000001 #x0000000000000000)))
+(assert (= temp26_6 #x0000000000000001))
+(assert (= var68243 temp26_6))
+(model-add temp26_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp26_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp26_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var68227 () (_ BitVec 64) #x0000000000000000)
+(model-add var68230 () (_ BitVec 64) #x0000000000000000)
+(model-add temp26_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166200 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166217 () (_ BitVec 64) #x0000000000000000)
+(model-add var2166183 () (_ BitVec 64) #x0000000000000000)
+(model-add var2100431 () (_ BitVec 64) #x0000000000000000)
+(model-add var2100427 () (_ BitVec 64) #x0000000000000000)
+(model-add var68240 () (_ BitVec 64) #x0000000000000000)
+(model-add temp26_5 () (_ BitVec 64) #x0000000000000000)
+(model-add var68243 () (_ BitVec 64) #x0000000000000001)
+(model-add temp26_6 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+
+

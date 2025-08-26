@@ -1,0 +1,43 @@
+{
+	"channels": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "channels",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "uint8",
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"uint8",
+			"uint16"
+		],
+		"optional": null
+	},
+	"contents": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "contents",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string",
+		"optional": null
+	}
+}

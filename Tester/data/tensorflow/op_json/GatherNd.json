@@ -1,0 +1,56 @@
+{
+	"Tparams": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "Tparams",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"Tindices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "Tindices",
+		"type": "type",
+		"enum": [
+			"int16",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"params": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "params",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tparams.value",
+		"optional": null
+	},
+	"indices": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tindices.value",
+		"optional": null
+	}
+}

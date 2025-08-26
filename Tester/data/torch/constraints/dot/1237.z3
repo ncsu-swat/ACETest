@@ -1,0 +1,71 @@
+(declare-fun temp10237_1 () (_ BitVec 64))
+(declare-fun var525626 () (_ BitVec 64))
+(declare-fun temp10237_2 () (_ BitVec 64))
+(declare-fun var787770 () (_ BitVec 64))
+(declare-fun temp10237_3 () (_ BitVec 64))
+(declare-fun var1574202 () (_ BitVec 64))
+(declare-fun temp10237_4 () (_ BitVec 64))
+(declare-fun var1836346 () (_ BitVec 64))
+(declare-fun temp10237_5 () (_ BitVec 64))
+(declare-fun temp10237_6 () (_ BitVec 64))
+(declare-fun var2494799 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp10237_7 () (_ BitVec 64))
+(declare-fun ARGNAME_tensor_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun var2494803 () (_ BitVec 64))
+(declare-fun temp10237_8 () (_ BitVec 64))
+(declare-fun ARGNAME_tensor_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun var2494866 () (_ BitVec 64))
+(declare-fun temp10237_9 () (_ BitVec 64))
+(assert (= temp10237_1 #x0000000000000000))
+(assert (= var525626 temp10237_1))
+(assert (= temp10237_2 #x0000000000000000))
+(assert (= var787770 temp10237_2))
+(assert (= temp10237_3 #x0000000000000000))
+(assert (= var1574202 temp10237_3))
+(assert (= temp10237_4 #x0000000000000000))
+(assert (= var1836346 temp10237_4))
+(assert (= temp10237_5 #x0000000000000001))
+(assert (= var2494799
+   (ite (= ARGNAME_input_NAMEEND_DIM temp10237_5)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp10237_6 #x0000000000000001))
+(assert (= var2494799 temp10237_6))
+(assert (= temp10237_7 #x0000000000000001))
+(assert (= var2494803
+   (ite (= ARGNAME_tensor_NAMEEND_DIM temp10237_7)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp10237_8 #x0000000000000001))
+(assert (= var2494803 temp10237_8))
+(assert (= var2494866
+   (ite (= ARGNAME_input_NAMEEND_NUMELEMENT ARGNAME_tensor_NAMEEND_NUMELEMENT)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp10237_9 #x0000000000000001))
+(assert (= var2494866 temp10237_9))
+(model-add temp10237_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var525626 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10237_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var787770 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10237_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var1574202 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10237_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var1836346 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10237_5 () (_ BitVec 64) #x0000000000000001)
+(model-add temp10237_6 () (_ BitVec 64) #x0000000000000001)
+(model-add var2494799 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000001 (bvnot #x0000000000000001)))
+
+
+
+
+
+

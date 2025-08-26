@@ -1,0 +1,33 @@
+{
+	"element_dtype": {
+		"name": "element_dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"shape_type": {
+		"name": "shape_type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"element_shape": {
+		"name": "element_shape",
+		"input_order": 0,
+		"type": "list",
+		"dtype": "&shape_type.value",
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	},
+	"num_elements": {
+		"name": "num_elements",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

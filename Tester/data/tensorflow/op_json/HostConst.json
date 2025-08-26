@@ -1,0 +1,12 @@
+{
+	"value": {
+		"name": "value",
+		"input_order": -1,
+		"type": "tensor"
+	},
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	}
+}

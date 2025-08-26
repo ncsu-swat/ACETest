@@ -1,0 +1,74 @@
+{
+	"output_types": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_types",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 1,
+		"child_prop": {
+			"type": "type"
+		}
+	},
+	"output_shapes": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_shapes",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 1,
+		"child_prop": {
+			"type": "shape"
+		}
+	},
+	"driver_name": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "driver_name",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	},
+	"data_source_name": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "data_source_name",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	},
+	"query": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "query",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	}
+}

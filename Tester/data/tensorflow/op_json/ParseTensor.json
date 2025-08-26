@@ -1,0 +1,27 @@
+{
+	"out_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "out_type",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"serialized": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "serialized",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string",
+		"optional": null
+	}
+}

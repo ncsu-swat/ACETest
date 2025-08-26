@@ -1,0 +1,13 @@
+{
+	"elem_type": {
+		"name": "elem_type",
+		"input_order": -1,
+		"type": "type"
+	},
+	"stack_name": {
+		"name": "stack_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

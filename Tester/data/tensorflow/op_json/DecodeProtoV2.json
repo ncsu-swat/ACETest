@@ -1,0 +1,48 @@
+{
+	"message_type": {
+		"name": "message_type",
+		"input_order": -1,
+		"type": "string"
+	},
+	"field_names": {
+		"name": "field_names",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "string"
+		}
+	},
+	"output_types": {
+		"name": "output_types",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 0
+	},
+	"descriptor_source": {
+		"name": "descriptor_source",
+		"input_order": -1,
+		"type": "string",
+		"default": "local://"
+	},
+	"message_format": {
+		"name": "message_format",
+		"input_order": -1,
+		"type": "string",
+		"default": "binary"
+	},
+	"sanitize": {
+		"name": "sanitize",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"bytes": {
+		"name": "bytes",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

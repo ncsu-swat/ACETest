@@ -1,0 +1,79 @@
+{
+	"num_true": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_true",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"num_sampled": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_sampled",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"unique": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "unique",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"seed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"seed2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed2",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"true_classes": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "true_classes",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int64",
+		"optional": null
+	}
+}

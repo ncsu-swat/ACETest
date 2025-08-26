@@ -1,0 +1,146 @@
+(declare-fun temp1026_1 () (_ BitVec 64))
+(declare-fun var211890 () (_ BitVec 64))
+(declare-fun var274637 () (_ BitVec 64))
+(declare-fun temp1026_2 () (_ BitVec 64))
+(declare-fun var274638 () (_ BitVec 64))
+(declare-fun var274639 () (_ BitVec 64))
+(declare-fun var274636 () (_ BitVec 64))
+(declare-fun var211891 () (_ BitVec 64))
+(declare-fun temp1026_3 () (_ BitVec 64))
+(declare-fun temp1026_5 () (_ BitVec 64))
+(declare-fun temp1026_4 () (_ BitVec 64))
+(declare-fun temp1026_7 () (_ BitVec 64))
+(declare-fun temp1026_6 () (_ BitVec 64))
+(declare-fun temp1026_8 () (_ BitVec 64))
+(declare-fun var539605 () (_ BitVec 64))
+(declare-fun temp1026_9 () (_ BitVec 64))
+(declare-fun temp1026_10 () (_ BitVec 64))
+(declare-fun var539606 () (_ BitVec 64))
+(declare-fun var539609 () (_ BitVec 64))
+(declare-fun temp1026_11 () (_ BitVec 64))
+(declare-fun var605150 () (_ BitVec 64))
+(declare-fun temp1026_12 () (_ BitVec 64))
+(declare-fun temp1026_13 () (_ BitVec 64))
+(declare-fun var605151 () (_ BitVec 64))
+(declare-fun var605153 () (_ BitVec 64))
+(declare-fun var605154 () (_ BitVec 64))
+(declare-fun temp1026_15 () (_ BitVec 64))
+(declare-fun temp1026_14 () (_ BitVec 64))
+(declare-fun temp1026_17 () (_ BitVec 64))
+(declare-fun temp1026_16 () (_ BitVec 64))
+(declare-fun temp1026_19 () (_ BitVec 64))
+(declare-fun temp1026_18 () (_ BitVec 64))
+(declare-fun temp1026_21 () (_ BitVec 64))
+(declare-fun temp1026_20 () (_ BitVec 64))
+(declare-fun temp1026_23 () (_ BitVec 64))
+(declare-fun temp1026_22 () (_ BitVec 64))
+(declare-fun temp1026_24 () (_ BitVec 64))
+(declare-fun var143091 () (_ BitVec 64))
+(declare-fun temp1026_25 () (_ BitVec 64))
+(declare-fun var143093 () (_ BitVec 64))
+(declare-fun temp1026_26 () (_ BitVec 64))
+(declare-fun temp1026_27 () (_ BitVec 64))
+(declare-fun var1260485 () (_ BitVec 64))
+(declare-fun temp1026_28 () (_ BitVec 64))
+(declare-fun var1260486 () (_ BitVec 64))
+(declare-fun var1260487 () (_ BitVec 64))
+(declare-fun var1323213 () (_ BitVec 64))
+(declare-fun temp1026_29 () (_ BitVec 64))
+(declare-fun var1323214 () (_ BitVec 64))
+(declare-fun var1323215 () (_ BitVec 64))
+(declare-fun var1323212 () (_ BitVec 64))
+(declare-fun var1260488 () (_ BitVec 64))
+(declare-fun temp1026_30 () (_ BitVec 64))
+(assert (= temp1026_1 #x0000000000000005))
+(assert (= var211890 temp1026_1))
+(assert (= var274637 var211890))
+(assert (= temp1026_2 #x000000000000ffff))
+(assert (= var274638 temp1026_2))
+(assert (= var274639 (bvand var274638 var274637)))
+(assert (= var274636 var274639))
+(assert (= var211891 var274636))
+(assert (= temp1026_3 #x0000000000000005))
+(assert (or false (= var211890 temp1026_3)))
+(assert (= temp1026_5 #x0000000000000000))
+(assert (= temp1026_4 temp1026_5))
+(assert (= temp1026_7 #x0000000000000000))
+(assert (= temp1026_6 temp1026_7))
+(assert (= temp1026_8 #x0000000000000001))
+(assert (= var539605 temp1026_8))
+(assert (= temp1026_9 #x0000000000000004))
+(assert (= temp1026_10 #x0000000000000000))
+(assert (= var539606 (ite (= var539605 #x0000000000000001) temp1026_9 temp1026_10)))
+(assert (= var539609 (bvor temp1026_4 var539606)))
+(assert (= temp1026_11 #x0000000000000001))
+(assert (= var605150 temp1026_11))
+(assert (= temp1026_12 #x0000000000000002))
+(assert (= temp1026_13 #x0000000000000000))
+(assert (= var605151 (ite (= var605150 #x0000000000000001) temp1026_12 temp1026_13)))
+(assert (= var605153 var539609))
+(assert (= var605154 (bvor var605153 var605151)))
+(assert (= temp1026_15 #x0000000000000000))
+(assert (= temp1026_14 temp1026_15))
+(assert (= temp1026_17 #x0000000000000000))
+(assert (= temp1026_16 temp1026_17))
+(assert (= temp1026_19 #x0000000000000000))
+(assert (= temp1026_18 temp1026_19))
+(assert (= temp1026_21 #x0000000000000001))
+(assert (= temp1026_20 temp1026_21))
+(assert (= temp1026_23 #x0000000000000000))
+(assert (= temp1026_22 temp1026_23))
+(assert (= temp1026_24 #x0000000000000000))
+(assert (= var143091 temp1026_24))
+(assert (= temp1026_25 #x0000000000000000))
+(assert (= var143093
+   (ite (= var143091 temp1026_25) #x0000000000000001 #x0000000000000000)))
+(assert (= temp1026_26 #x0000000000000001))
+(assert (= var143093 temp1026_26))
+(assert (= temp1026_27 #x0000000000000001))
+(assert (= var1260485 temp1026_27))
+(assert (= temp1026_28 #x0000000000000005))
+(assert (= var1260486 temp1026_28))
+(assert (= var1260487 var1260485))
+(assert (= var1323213 var1260486))
+(assert (= temp1026_29 #x000000000000ffff))
+(assert (= var1323214 temp1026_29))
+(assert (= var1323215 (bvand var1323214 var1323213)))
+(assert (= var1323212 var1323215))
+(assert (= var1260488 var1323212))
+(assert (= temp1026_30 #x0000000000000005))
+(assert (or false (= var1260486 temp1026_30)))
+(model-add temp1026_1 () (_ BitVec 64) #x0000000000000005)
+(model-add var211890 () (_ BitVec 64) #x0000000000000005)
+(model-add var274637 () (_ BitVec 64) #x0000000000000005)
+(model-add temp1026_2 () (_ BitVec 64) #x000000000000ffff)
+(model-add var274638 () (_ BitVec 64) #x000000000000ffff)
+(model-add var274639 () (_ BitVec 64) #x0000000000000005)
+(model-add var274636 () (_ BitVec 64) #x0000000000000005)
+(model-add var211891 () (_ BitVec 64) #x0000000000000005)
+(model-add temp1026_3 () (_ BitVec 64) #x0000000000000005)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

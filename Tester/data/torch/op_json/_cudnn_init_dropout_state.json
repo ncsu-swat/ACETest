@@ -1,0 +1,20 @@
+{
+	"dropout": {
+		"optional": false,
+		"name": "dropout",
+		"type": "float",
+		"input_order": 0
+	},
+	"train": {
+		"optional": false,
+		"name": "train",
+		"type": "bool",
+		"input_order": 1
+	},
+	"dropout_seed": {
+		"optional": false,
+		"name": "dropout_seed",
+		"type": "int",
+		"input_order": 2
+	}
+}

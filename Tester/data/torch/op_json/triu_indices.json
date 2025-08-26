@@ -1,0 +1,21 @@
+{
+	"row": {
+		"optional": false,
+		"name": "row",
+		"type": "int",
+		"input_order": 0
+	},
+	"col": {
+		"optional": false,
+		"name": "col",
+		"type": "int",
+		"input_order": 1
+	},
+	"offset": {
+		"optional": false,
+		"name": "offset",
+		"type": "int",
+		"default": 0,
+		"input_order": 2
+	}
+}

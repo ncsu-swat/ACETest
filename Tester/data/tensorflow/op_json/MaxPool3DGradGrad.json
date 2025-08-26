@@ -1,0 +1,136 @@
+{
+	"ksize": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "ksize",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 5,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": null
+	},
+	"strides": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "strides",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 5,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": null
+	},
+	"padding": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "padding",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"SAME",
+			"VALID"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"data_format": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "NDHWC",
+		"is_mid": null,
+		"name": "data_format",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"NDHWC",
+			"NCDHW"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"uint8",
+			"int16",
+			"int8",
+			"int64",
+			"bfloat16",
+			"uint16",
+			"half",
+			"uint32",
+			"uint64"
+		],
+		"optional": null
+	},
+	"orig_input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "orig_input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"orig_output": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "orig_output",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	},
+	"grad": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "grad",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"value": {
+		"input_order": -1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": null,
+		"optional": null
+	},
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	}
+}

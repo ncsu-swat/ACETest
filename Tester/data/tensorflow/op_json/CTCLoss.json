@@ -1,0 +1,55 @@
+{
+	"preprocess_collapse_repeated": {
+		"name": "preprocess_collapse_repeated",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"ctc_merge_repeated": {
+		"name": "ctc_merge_repeated",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"ignore_longer_outputs_than_inputs": {
+		"name": "ignore_longer_outputs_than_inputs",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"double"
+		],
+		"default": "float",
+		"is_mid": true
+	},
+	"inputs": {
+		"name": "inputs",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"labels_indices": {
+		"name": "labels_indices",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int64"
+	},
+	"labels_values": {
+		"name": "labels_values",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"sequence_length": {
+		"name": "sequence_length",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

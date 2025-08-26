@@ -1,0 +1,36 @@
+(declare-fun temp5_1 () (_ BitVec 64))
+(declare-fun var133677 () (_ BitVec 64))
+(declare-fun var201521 () (_ BitVec 64))
+(declare-fun var201560 () (_ BitVec 64))
+(declare-fun temp5_2 () (_ BitVec 64))
+(declare-fun ARGNAME_padding_value_NAMEEND () (_ BitVec 64))
+(declare-fun temp5_4 () (_ BitVec 64))
+(declare-fun temp5_3 () (_ BitVec 64))
+(declare-fun temp5_5 () (_ BitVec 64))
+(declare-fun var727887 () (_ BitVec 64))
+(declare-fun var793434 () (_ BitVec 64))
+(declare-fun var592123 () (_ BitVec 64))
+(assert (= temp5_1 #x0000000000000001))
+(assert (= var133677 temp5_1))
+(assert (= var201521 var133677))
+(assert (= var201560 var201521))
+(assert (= temp5_2 #x0000000000000000))
+(assert (= ARGNAME_padding_value_NAMEEND temp5_2))
+(assert (= temp5_4 #x0000000000000000))
+(assert (= temp5_3 temp5_4))
+(assert (= temp5_5 #x0000000000000000))
+(assert (= var727887 temp5_5))
+(assert (= var793434 var727887))
+(assert (= var592123 var793434))
+(model-add temp5_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var133677 () (_ BitVec 64) #x0000000000000001)
+(model-add var201521 () (_ BitVec 64) #x0000000000000001)
+(model-add var201560 () (_ BitVec 64) #x0000000000000001)
+(model-add temp5_2 () (_ BitVec 64) #x0000000000000000)
+(model-add ARGNAME_padding_value_NAMEEND () (_ BitVec 64) #x0000000000000000)
+
+
+
+
+
+

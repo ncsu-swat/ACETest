@@ -1,0 +1,91 @@
+{
+	"centered": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "centered",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"normalized": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "normalized",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"uniform_noise": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "uniform_noise",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"noise": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "uniform",
+		"is_mid": null,
+		"name": "noise",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"input": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	},
+	"size": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "size",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32",
+		"optional": null
+	},
+	"offsets": {
+		"input_order": 2,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "offsets",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float",
+		"optional": null
+	}
+}

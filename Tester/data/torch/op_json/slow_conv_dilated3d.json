@@ -1,0 +1,90 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"weight": {
+		"optional": false,
+		"name": "weight",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"kernel_size": {
+		"optional": false,
+		"name": "kernel_size",
+		"type": "list",
+		"length": 3,
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 2
+	},
+	"bias": {
+		"optional": true,
+		"name": "bias",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"stride": {
+		"optional": false,
+		"name": "stride",
+		"type": "list",
+		"length": 3,
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 4
+	},
+	"padding": {
+		"optional": false,
+		"name": "padding",
+		"type": "list",
+		"length": 3,
+		"child_prop": {
+			"type": "int"
+		},
+		"enum": [
+			"same",
+			"valid"
+		],
+		"input_order": 5
+	},
+	"dilation": {
+		"optional": false,
+		"name": "dilation",
+		"type": "list",
+		"length": 3,
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 6
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

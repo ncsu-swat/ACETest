@@ -1,0 +1,38 @@
+(declare-fun temp44_2 () (_ BitVec 64))
+(declare-fun temp44_1 () (_ BitVec 64))
+(declare-fun temp44_4 () (_ BitVec 64))
+(declare-fun temp44_3 () (_ BitVec 64))
+(declare-fun temp44_6 () (_ BitVec 64))
+(declare-fun temp44_5 () (_ BitVec 64))
+(declare-fun temp44_8 () (_ BitVec 64))
+(declare-fun temp44_7 () (_ BitVec 64))
+(assert (= temp44_2 #x0000000000000000))
+(assert (= temp44_1 temp44_2))
+(assert (= temp44_4 #x0000000000000000))
+(assert (= temp44_3 temp44_4))
+(assert (= temp44_6 #x0000000000000000))
+(assert (= temp44_5 temp44_6))
+(assert (= temp44_8 #xffffffffffffffff))
+(assert (= temp44_7 temp44_8))
+(model-add temp44_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp44_8 () (_ BitVec 64) #xffffffffffffffff)
+(model-add temp44_7 () (_ BitVec 64) #xffffffffffffffff)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+{
+	"func_true": {
+		"name": "func_true",
+		"input_order": -1,
+		"type": "func"
+	},
+	"func_false": {
+		"name": "func_false",
+		"input_order": -1,
+		"type": "func"
+	},
+	"SrcT": {
+		"name": "SrcT",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"DstT": {
+		"name": "DstT",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		]
+	},
+	"pred": {
+		"name": "pred",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "bool"
+	},
+	"input_true": {
+		"name": "input_true",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&SrcT.value"
+	},
+	"input_false": {
+		"name": "input_false",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&SrcT.value"
+	}
+}

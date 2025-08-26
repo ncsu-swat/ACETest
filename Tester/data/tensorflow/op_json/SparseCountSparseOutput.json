@@ -1,0 +1,120 @@
+{
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"minlength": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "minlength",
+		"type": "int",
+		"max": null,
+		"min": -1,
+		"value": null,
+		"enum": null
+	},
+	"maxlength": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": -1,
+		"is_mid": null,
+		"name": "maxlength",
+		"type": "int",
+		"max": null,
+		"min": -1,
+		"value": null,
+		"enum": null
+	},
+	"binary_output": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "binary_output",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"output_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "output_type",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64",
+			"float",
+			"double"
+		]
+	},
+	"indices": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "indices",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int64"
+	},
+	"values": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value"
+	},
+	"dense_shape": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "dense_shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	},
+	"weights": {
+		"input_order": 3,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "weights",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&output_type.value"
+	}
+}

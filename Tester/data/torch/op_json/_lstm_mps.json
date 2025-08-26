@@ -1,0 +1,86 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"hx": {
+		"optional": false,
+		"name": "hx",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 1
+	},
+	"params": {
+		"optional": false,
+		"name": "params",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 2
+	},
+	"has_biases": {
+		"optional": false,
+		"name": "has_biases",
+		"type": "bool",
+		"input_order": 3
+	},
+	"num_layers": {
+		"optional": false,
+		"name": "num_layers",
+		"type": "int",
+		"input_order": 4
+	},
+	"dropout": {
+		"optional": false,
+		"name": "dropout",
+		"type": "float",
+		"input_order": 5
+	},
+	"train": {
+		"optional": false,
+		"name": "train",
+		"type": "bool",
+		"input_order": 6
+	},
+	"bidirectional": {
+		"optional": false,
+		"name": "bidirectional",
+		"type": "bool",
+		"input_order": 7
+	},
+	"batch_first": {
+		"optional": false,
+		"name": "batch_first",
+		"type": "bool",
+		"input_order": 8
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

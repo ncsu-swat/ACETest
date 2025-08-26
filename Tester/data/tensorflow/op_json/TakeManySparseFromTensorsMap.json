@@ -1,0 +1,25 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"sparse_handles": {
+		"name": "sparse_handles",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

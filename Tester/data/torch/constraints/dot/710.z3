@@ -1,0 +1,28 @@
+(declare-fun temp710_1 () (_ BitVec 64))
+(declare-fun var525626 () (_ BitVec 64))
+(declare-fun temp710_2 () (_ BitVec 64))
+(declare-fun var787770 () (_ BitVec 64))
+(declare-fun temp710_3 () (_ BitVec 64))
+(declare-fun var1836346 () (_ BitVec 64))
+(declare-fun temp710_4 () (_ BitVec 64))
+(declare-fun var2098490 () (_ BitVec 64))
+(assert (= temp710_1 #x0000000000000000))
+(assert (= var525626 temp710_1))
+(assert (= temp710_2 #x0000000000000000))
+(assert (= var787770 temp710_2))
+(assert (= temp710_3 #x0000000000000000))
+(assert (= var1836346 temp710_3))
+(assert (= temp710_4 #x0000000000000000))
+(assert (= var2098490 temp710_4))
+(model-add temp710_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var525626 () (_ BitVec 64) #x0000000000000000)
+(model-add temp710_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var787770 () (_ BitVec 64) #x0000000000000000)
+(model-add temp710_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var1836346 () (_ BitVec 64) #x0000000000000000)
+(model-add temp710_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var2098490 () (_ BitVec 64) #x0000000000000000)
+
+
+
+

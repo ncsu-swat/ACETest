@@ -1,0 +1,90 @@
+{
+	"errors": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "replace",
+		"is_mid": null,
+		"name": "errors",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"ignore",
+			"replace",
+			"strict"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"output_encoding": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_encoding",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"UTF-8",
+			"UTF-16-BE",
+			"UTF-32-BE"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"replacement_char": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 65533,
+		"is_mid": null,
+		"name": "replacement_char",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null
+	},
+	"Tsplits": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": true,
+		"name": "Tsplits",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"input_values": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_values",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "int32"
+	},
+	"input_splits": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "input_splits",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tsplits.value"
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"hx": {
+		"optional": false,
+		"name": "hx",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"w_ih": {
+		"optional": false,
+		"name": "w_ih",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"w_hh": {
+		"optional": false,
+		"name": "w_hh",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"b_ih": {
+		"optional": false,
+		"name": "b_ih",
+		"type": "tensor",
+		"input_order": 4,
+		"dtype": "&T.value"
+	},
+	"b_hh": {
+		"optional": false,
+		"name": "b_hh",
+		"type": "tensor",
+		"input_order": 5,
+		"dtype": "&T.value"
+	},
+	"packed_ih": {
+		"optional": false,
+		"name": "packed_ih",
+		"type": "tensor",
+		"input_order": 6,
+		"dtype": "&T.value"
+	},
+	"packed_hh": {
+		"optional": false,
+		"name": "packed_hh",
+		"type": "tensor",
+		"input_order": 7,
+		"dtype": "&T.value"
+	},
+	"col_offsets_ih": {
+		"optional": false,
+		"name": "col_offsets_ih",
+		"type": "tensor",
+		"input_order": 8,
+		"dtype": "&T.value"
+	},
+	"col_offsets_hh": {
+		"optional": false,
+		"name": "col_offsets_hh",
+		"type": "tensor",
+		"input_order": 9,
+		"dtype": "&T.value"
+	},
+	"scale_ih": {
+		"optional": false,
+		"name": "scale_ih",
+		"type": "float",
+		"input_order": 10
+	},
+	"scale_hh": {
+		"optional": false,
+		"name": "scale_hh",
+		"type": "float",
+		"input_order": 11
+	},
+	"zero_point_ih": {
+		"optional": false,
+		"name": "zero_point_ih",
+		"type": "float",
+		"input_order": 12
+	},
+	"zero_point_hh": {
+		"optional": false,
+		"name": "zero_point_hh",
+		"type": "float",
+		"input_order": 13
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"Tindices": {
+		"name": "Tindices",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"use_locking": {
+		"name": "use_locking",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"ref": {
+		"name": "ref",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"indices": {
+		"name": "indices",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tindices.value"
+	},
+	"updates": {
+		"name": "updates",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

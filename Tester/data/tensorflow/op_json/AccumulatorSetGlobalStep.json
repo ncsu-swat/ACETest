@@ -1,0 +1,14 @@
+{
+	"handle": {
+		"name": "handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"new_global_step": {
+		"name": "new_global_step",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

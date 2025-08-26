@@ -1,0 +1,50 @@
+{
+	"num_rows": {
+		"name": "num_rows",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"num_cols": {
+		"name": "num_cols",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"max_rows_in_memory": {
+		"name": "max_rows_in_memory",
+		"input_order": -1,
+		"type": "int",
+		"default": -1
+	},
+	"ckpt_path": {
+		"name": "ckpt_path",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"old_tensor_name": {
+		"name": "old_tensor_name",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"row_remapping": {
+		"name": "row_remapping",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int64"
+	},
+	"col_remapping": {
+		"name": "col_remapping",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "int64"
+	},
+	"initializing_values": {
+		"name": "initializing_values",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

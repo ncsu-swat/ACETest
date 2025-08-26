@@ -1,0 +1,56 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int8",
+			"uint8",
+			"int16",
+			"uint16",
+			"int32",
+			"int64",
+			"bfloat16",
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"kernel_type": {
+		"name": "kernel_type",
+		"input_order": -1,
+		"type": "string",
+		"default": "lanczos3"
+	},
+	"antialias": {
+		"name": "antialias",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"images": {
+		"name": "images",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"size": {
+		"name": "size",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"scale": {
+		"name": "scale",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"translation": {
+		"name": "translation",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

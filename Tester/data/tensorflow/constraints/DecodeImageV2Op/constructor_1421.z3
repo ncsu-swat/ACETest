@@ -1,0 +1,140 @@
+(declare-fun temp1678_2 () (_ BitVec 64))
+(declare-fun temp1678_1 () (_ BitVec 64))
+(declare-fun temp1678_4 () (_ BitVec 64))
+(declare-fun temp1678_3 () (_ BitVec 64))
+(declare-fun temp1678_6 () (_ BitVec 64))
+(declare-fun temp1678_5 () (_ BitVec 64))
+(declare-fun temp1678_8 () (_ BitVec 64))
+(declare-fun temp1678_7 () (_ BitVec 64))
+(declare-fun temp1678_10 () (_ BitVec 64))
+(declare-fun temp1678_9 () (_ BitVec 64))
+(declare-fun temp1678_12 () (_ BitVec 64))
+(declare-fun temp1678_11 () (_ BitVec 64))
+(declare-fun temp1678_14 () (_ BitVec 64))
+(declare-fun temp1678_13 () (_ BitVec 64))
+(declare-fun temp1678_16 () (_ BitVec 64))
+(declare-fun temp1678_15 () (_ BitVec 64))
+(declare-fun temp1678_18 () (_ BitVec 64))
+(declare-fun temp1678_17 () (_ BitVec 64))
+(declare-fun temp1678_19 () (_ BitVec 64))
+(declare-fun temp1678_20 () (_ BitVec 64))
+(declare-fun temp1678_21 () (_ BitVec 64))
+(declare-fun temp1678_22 () (_ BitVec 64))
+(declare-fun temp1678_23 () (_ BitVec 64))
+(declare-fun var66553 () (_ BitVec 64))
+(declare-fun temp1678_24 () (_ BitVec 64))
+(declare-fun var66557 () (_ BitVec 64))
+(declare-fun temp1678_25 () (_ BitVec 64))
+(declare-fun temp1678_27 () (_ BitVec 64))
+(declare-fun temp1678_26 () (_ BitVec 64))
+(declare-fun temp1678_28 () (_ BitVec 64))
+(declare-fun var66617 () (_ BitVec 64))
+(declare-fun temp1678_29 () (_ BitVec 64))
+(declare-fun var66620 () (_ BitVec 64))
+(declare-fun temp1678_30 () (_ BitVec 64))
+(declare-fun temp1678_31 () (_ BitVec 64))
+(declare-fun temp1678_32 () (_ BitVec 64))
+(declare-fun temp1678_33 () (_ BitVec 64))
+(declare-fun temp1678_34 () (_ BitVec 64))
+(declare-fun temp1678_35 () (_ BitVec 64))
+(declare-fun temp1678_36 () (_ BitVec 64))
+(assert (= temp1678_2 #x0000000000000000))
+(assert (= temp1678_1 temp1678_2))
+(assert (= temp1678_4 #x0000000000000004))
+(assert (= temp1678_3 temp1678_4))
+(assert (= temp1678_6 #x0000000000000001))
+(assert (= temp1678_5 temp1678_6))
+(assert (= temp1678_8 #x0000000000000001))
+(assert (= temp1678_7 temp1678_8))
+(assert (= temp1678_10 #x0000000000000000))
+(assert (= temp1678_9 temp1678_10))
+(assert (= temp1678_12 #x0000000000000001))
+(assert (= temp1678_11 temp1678_12))
+(assert (= temp1678_14 #x0000000000000000))
+(assert (= temp1678_13 temp1678_14))
+(assert (= temp1678_16 #x0000000000000000))
+(assert (= temp1678_15 temp1678_16))
+(assert (= temp1678_18 #x0000000000000000))
+(assert (= temp1678_17 temp1678_18))
+(assert (= temp1678_19 #x0000000000000001))
+(assert (= temp1678_20 #x0000000000000002))
+(assert (= temp1678_21 #x0000000000000004))
+(assert (= temp1678_22 #x0000000000000008))
+(assert (or false
+    (= temp1678_7 temp1678_19)
+    (= temp1678_7 temp1678_20)
+    (= temp1678_7 temp1678_21)
+    (= temp1678_7 temp1678_22)))
+(assert (= temp1678_23 #x0000000000000000))
+(assert (= var66553 temp1678_23))
+(assert (= temp1678_24 #x0000000000000000))
+(assert (= var66557
+   (ite (= var66553 temp1678_24) #x0000000000000001 #x0000000000000000)))
+(assert (= temp1678_25 #x0000000000000001))
+(assert (= var66557 temp1678_25))
+(assert (= temp1678_27 #x0000000000000001))
+(assert (= temp1678_26 temp1678_27))
+(assert (= temp1678_28 #x0000000000000000))
+(assert (= var66617 temp1678_28))
+(assert (= temp1678_29 #x0000000000000000))
+(assert (= var66620
+   (ite (= var66617 temp1678_29) #x0000000000000001 #x0000000000000000)))
+(assert (= temp1678_30 #x0000000000000001))
+(assert (= var66620 temp1678_30))
+(assert (= temp1678_31 #x0000000000000004))
+(assert (= temp1678_32 #x0000000000000011))
+(assert (or false (= temp1678_3 temp1678_31) (= temp1678_3 temp1678_32)))
+(assert (= temp1678_33 #x0000000000000000))
+(assert (= temp1678_34 #x0000000000000001))
+(assert (= temp1678_35 #x0000000000000003))
+(assert (= temp1678_36 #x0000000000000004))
+(assert (or false
+    (= temp1678_1 temp1678_33)
+    (= temp1678_1 temp1678_34)
+    (= temp1678_1 temp1678_35)
+    (= temp1678_1 temp1678_36)))
+(model-add temp1678_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_4 () (_ BitVec 64) #x0000000000000004)
+(model-add temp1678_3 () (_ BitVec 64) #x0000000000000004)
+(model-add temp1678_6 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_5 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_8 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_7 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_10 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_9 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_12 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_11 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_14 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_13 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_16 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_15 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_18 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_17 () (_ BitVec 64) #x0000000000000000)
+(model-add temp1678_19 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1678_20 () (_ BitVec 64) #x0000000000000002)
+(model-add temp1678_21 () (_ BitVec 64) #x0000000000000004)
+(model-add temp1678_22 () (_ BitVec 64) #x0000000000000008)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

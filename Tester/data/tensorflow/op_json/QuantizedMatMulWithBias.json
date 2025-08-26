@@ -1,0 +1,115 @@
+{
+	"T1": {
+		"name": "T1",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"is_mid": true
+	},
+	"T2": {
+		"name": "T2",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"is_mid": true
+	},
+	"Tbias": {
+		"name": "Tbias",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"float",
+			"qint32"
+		],
+		"is_mid": true
+	},
+	"Toutput": {
+		"name": "Toutput",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"default": "qint32"
+	},
+	"transpose_a": {
+		"name": "transpose_a",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"transpose_b": {
+		"name": "transpose_b",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"input_quant_mode": {
+		"name": "input_quant_mode",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"MIN_FIRST",
+			"SCALED"
+		],
+		"default": "MIN_FIRST"
+	},
+	"a": {
+		"name": "a",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T1.value"
+	},
+	"b": {
+		"name": "b",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T2.value"
+	},
+	"bias": {
+		"name": "bias",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&Tbias.value"
+	},
+	"min_a": {
+		"name": "min_a",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"max_a": {
+		"name": "max_a",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_b": {
+		"name": "min_b",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"max_b": {
+		"name": "max_b",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

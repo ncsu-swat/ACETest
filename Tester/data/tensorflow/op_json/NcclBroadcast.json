@@ -1,0 +1,26 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double",
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

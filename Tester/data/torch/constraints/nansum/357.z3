@@ -1,0 +1,26 @@
+(declare-fun temp357_1 () (_ BitVec 64))
+(declare-fun var135910 () (_ BitVec 64))
+(declare-fun temp357_2 () (_ BitVec 64))
+(declare-fun var1314467 () (_ BitVec 64))
+(declare-fun temp357_3 () (_ BitVec 64))
+(declare-fun ARGNAME_keepdim_NAMEEND () (_ BitVec 64))
+(declare-fun temp357_4 () (_ BitVec 64))
+(declare-fun var5384305 () (_ BitVec 64))
+(assert (= temp357_1 #x0000000000000001))
+(assert (= var135910 temp357_1))
+(assert (= temp357_2 #x0000000000000005))
+(assert (= var1314467 temp357_2))
+(assert (= temp357_3 #x0000000000000000))
+(assert (= ARGNAME_keepdim_NAMEEND temp357_3))
+(assert (= temp357_4 #x0000000000000000))
+(assert (= var5384305 temp357_4))
+(model-add temp357_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var135910 () (_ BitVec 64) #x0000000000000001)
+(model-add temp357_2 () (_ BitVec 64) #x0000000000000005)
+(model-add var1314467 () (_ BitVec 64) #x0000000000000005)
+(model-add temp357_3 () (_ BitVec 64) #x0000000000000000)
+(model-add ARGNAME_keepdim_NAMEEND () (_ BitVec 64) #x0000000000000000)
+
+
+
+

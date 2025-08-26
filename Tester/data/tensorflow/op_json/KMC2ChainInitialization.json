@@ -1,0 +1,14 @@
+{
+	"distances": {
+		"name": "distances",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"seed": {
+		"name": "seed",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

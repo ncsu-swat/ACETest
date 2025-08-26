@@ -1,0 +1,108 @@
+(declare-fun temp1_1 () (_ BitVec 64))
+(declare-fun var133682 () (_ BitVec 64))
+(declare-fun var133676 () (_ BitVec 64))
+(declare-fun temp1_2 () (_ BitVec 64))
+(declare-fun var67404 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_a_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp1_3 () (_ BitVec 64))
+(declare-fun ARGNAME_b_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun var199218 () (_ BitVec 64))
+(declare-fun var199212 () (_ BitVec 64))
+(declare-fun var67433 () (_ BitVec 64))
+(declare-fun temp1_4 () (_ BitVec 64))
+(declare-fun temp1_5 () (_ BitVec 64))
+(declare-fun ARGNAME_a_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp1_6 () (_ BitVec 64))
+(declare-fun temp1_7 () (_ BitVec 64))
+(declare-fun temp1_8 () (_ BitVec 64))
+(declare-fun temp1_9 () (_ BitVec 64))
+(declare-fun temp1_10 () (_ BitVec 64))
+(declare-fun temp1_11 () (_ BitVec 64))
+(declare-fun temp1_12 () (_ BitVec 64))
+(declare-fun temp1_13 () (_ BitVec 64))
+(declare-fun temp1_14 () (_ BitVec 64))
+(declare-fun temp1_15 () (_ BitVec 64))
+(declare-fun temp1_16 () (_ BitVec 64))
+(declare-fun temp1_17 () (_ BitVec 64))
+(declare-fun ARGNAME_b_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp1_18 () (_ BitVec 64))
+(declare-fun temp1_19 () (_ BitVec 64))
+(declare-fun temp1_20 () (_ BitVec 64))
+(declare-fun temp1_21 () (_ BitVec 64))
+(declare-fun temp1_22 () (_ BitVec 64))
+(declare-fun temp1_23 () (_ BitVec 64))
+(declare-fun temp1_24 () (_ BitVec 64))
+(declare-fun temp1_25 () (_ BitVec 64))
+(declare-fun temp1_26 () (_ BitVec 64))
+(declare-fun temp1_27 () (_ BitVec 64))
+(declare-fun temp1_28 () (_ BitVec 64))
+(assert (= temp1_1 #x0000000000000002))
+(assert (= var133682
+   (ite (= ARGNAME_a_NAMEEND_DIM temp1_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var133676 var133682))
+(assert (= var67404 var133676))
+(assert (= temp1_2 #x0000000000000001))
+(assert (= var67404 temp1_2))
+(assert (= temp1_3 #x0000000000000002))
+(assert (= var199218
+   (ite (= ARGNAME_b_NAMEEND_DIM temp1_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var199212 var199218))
+(assert (= var67433 var199212))
+(assert (= temp1_4 #x0000000000000001))
+(assert (= var67433 temp1_4))
+(assert (= temp1_5 #x0000000000000000))
+(assert (= temp1_6 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_5)))
+(assert (= temp1_7 #x0000000000000001))
+(assert (= temp1_8 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_7)))
+(assert (= temp1_9 #x0000000000000002))
+(assert (= temp1_10 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_9)))
+(assert (= temp1_11 #x0000000000000003))
+(assert (= temp1_12 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_11)))
+(assert (= temp1_13 #x0000000000000004))
+(assert (= temp1_14 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_13)))
+(assert (= temp1_15 #x0000000000000005))
+(assert (= temp1_16 (select ARGNAME_a_NAMEEND_DIMSIZE temp1_15)))
+(assert (= temp1_17 #x0000000000000000))
+(assert (= temp1_18 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_17)))
+(assert (= temp1_19 #x0000000000000001))
+(assert (= temp1_20 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_19)))
+(assert (= temp1_21 #x0000000000000002))
+(assert (= temp1_22 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_21)))
+(assert (= temp1_23 #x0000000000000003))
+(assert (= temp1_24 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_23)))
+(assert (= temp1_25 #x0000000000000004))
+(assert (= temp1_26 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_25)))
+(assert (= temp1_27 #x0000000000000005))
+(assert (= temp1_28 (select ARGNAME_b_NAMEEND_DIMSIZE temp1_27)))
+(model-add temp1_1 () (_ BitVec 64) #x0000000000000002)
+(model-add var133682 () (_ BitVec 64) #x0000000000000001)
+(model-add var133676 () (_ BitVec 64) #x0000000000000001)
+(model-add temp1_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var67404 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_a_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000002 (bvnot #x0000000000000002)))
+
+
+
+
+
+
+
+
+
+
+
+
+

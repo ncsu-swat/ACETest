@@ -1,0 +1,78 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"weight": {
+		"optional": false,
+		"name": "weight",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"bias": {
+		"optional": true,
+		"name": "bias",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"running_mean": {
+		"optional": true,
+		"name": "running_mean",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"running_var": {
+		"optional": true,
+		"name": "running_var",
+		"type": "tensor",
+		"input_order": 4,
+		"dtype": "&T.value"
+	},
+	"training": {
+		"optional": false,
+		"name": "training",
+		"type": "bool",
+		"input_order": 5
+	},
+	"exponential_average_factor": {
+		"optional": false,
+		"name": "exponential_average_factor",
+		"type": "float",
+		"input_order": 6
+	},
+	"epsilon": {
+		"optional": false,
+		"name": "epsilon",
+		"type": "float",
+		"input_order": 7
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

@@ -1,0 +1,129 @@
+{
+	"Tinput": {
+		"name": "Tinput",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"is_mid": true
+	},
+	"Tfilter": {
+		"name": "Tfilter",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"is_mid": true
+	},
+	"out_type": {
+		"name": "out_type",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"qint8",
+			"quint8",
+			"qint32",
+			"qint16",
+			"quint16"
+		],
+		"default": "qint32"
+	},
+	"strides": {
+		"name": "strides",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		}
+	},
+	"padding": {
+		"name": "padding",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"SAME",
+			"VALID"
+		]
+	},
+	"dilations": {
+		"name": "dilations",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"default": [
+			1,
+			1,
+			1,
+			1
+		]
+	},
+	"padding_list": {
+		"name": "padding_list",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"default": []
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tinput.value"
+	},
+	"filter": {
+		"name": "filter",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tfilter.value"
+	},
+	"bias": {
+		"name": "bias",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_input": {
+		"name": "min_input",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"max_input": {
+		"name": "max_input",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_filter": {
+		"name": "min_filter",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"max_filter": {
+		"name": "max_filter",
+		"input_order": 6,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"summand": {
+		"name": "summand",
+		"input_order": 7,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

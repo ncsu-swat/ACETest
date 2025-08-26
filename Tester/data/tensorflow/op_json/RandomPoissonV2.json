@@ -1,0 +1,104 @@
+{
+	"seed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"seed2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed2",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"S": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "S",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"R": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "double",
+		"is_mid": true,
+		"name": "R",
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": null,
+		"name": "dtype",
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"shape": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "shape",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "int"
+		},
+		"optional": null
+	},
+	"rate": {
+		"input_order": 1,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "rate",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&R.value",
+		"optional": null
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double"
+		],
+		"is_mid": true
+	},
+	"num_params_weights": {
+		"name": "num_params_weights",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_params_biases": {
+		"name": "num_params_biases",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"rnn_mode": {
+		"name": "rnn_mode",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"rnn_relu",
+			"rnn_tanh",
+			"lstm",
+			"gru"
+		],
+		"default": "lstm"
+	},
+	"input_mode": {
+		"name": "input_mode",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"linear_input",
+			"skip_input",
+			"auto_select"
+		],
+		"default": "linear_input"
+	},
+	"direction": {
+		"name": "direction",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"unidirectional",
+			"bidirectional"
+		],
+		"default": "unidirectional"
+	},
+	"dropout": {
+		"name": "dropout",
+		"input_order": -1,
+		"type": "float"
+	},
+	"seed": {
+		"name": "seed",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"seed2": {
+		"name": "seed2",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"num_proj": {
+		"name": "num_proj",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"num_layers": {
+		"name": "num_layers",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"num_units": {
+		"name": "num_units",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"input_size": {
+		"name": "input_size",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"weights": {
+		"name": "weights",
+		"input_order": 3,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		},
+		"length": "&num_params_weights.value"
+	},
+	"biases": {
+		"name": "biases",
+		"input_order": 4,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		},
+		"length": "&num_params_biases.value"
+	}
+}

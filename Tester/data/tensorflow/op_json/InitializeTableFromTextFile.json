@@ -1,0 +1,45 @@
+{
+	"key_index": {
+		"name": "key_index",
+		"input_order": -1,
+		"type": "int",
+		"min": -2
+	},
+	"value_index": {
+		"name": "value_index",
+		"input_order": -1,
+		"type": "int",
+		"min": -2
+	},
+	"vocab_size": {
+		"name": "vocab_size",
+		"input_order": -1,
+		"type": "int",
+		"min": -1,
+		"default": -1
+	},
+	"delimiter": {
+		"name": "delimiter",
+		"input_order": -1,
+		"type": "string",
+		"default": "\t"
+	},
+	"offset": {
+		"name": "offset",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"table_handle": {
+		"name": "table_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"filename": {
+		"name": "filename",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

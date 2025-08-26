@@ -1,0 +1,56 @@
+(declare-fun temp425_1 () (_ BitVec 64))
+(declare-fun var135910 () (_ BitVec 64))
+(declare-fun temp425_2 () (_ BitVec 64))
+(declare-fun var394978 () (_ BitVec 64))
+(declare-fun temp425_3 () (_ BitVec 64))
+(declare-fun temp425_4 () (_ BitVec 64))
+(declare-fun var1183786 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun var1707311 () (_ BitVec 64))
+(declare-fun temp425_5 () (_ BitVec 64))
+(declare-fun var1838755 () (_ BitVec 64))
+(declare-fun temp425_6 () (_ BitVec 64))
+(declare-fun var3681594 () (_ BitVec 64))
+(declare-fun var3942457 () (_ BitVec 64))
+(declare-fun var4270236 () (_ BitVec 64))
+(declare-fun var4401377 () (_ BitVec 64))
+(assert (= temp425_1 #x0000000000000001))
+(assert (= var135910 temp425_1))
+(assert (= temp425_2 #x0000000000000000))
+(assert (= var394978 temp425_2))
+(assert (= temp425_3 #x0000000000000040))
+(assert (= var1183786
+   (ite (bvsgt ARGNAME_input_NAMEEND_DIM temp425_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp425_4 #x0000000000000000))
+(assert (= var1183786 temp425_4))
+(assert (= var1707311 var394978))
+(assert (= temp425_5 #x0000000000000005))
+(assert (= var1838755 temp425_5))
+(assert (= temp425_6 #x0000000000000000))
+(assert (= var3681594 temp425_6))
+(assert (= var3942457 var3681594))
+(assert (= var4270236 var3942457))
+(assert (= var4401377 var4270236))
+(model-add temp425_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var135910 () (_ BitVec 64) #x0000000000000001)
+(model-add temp425_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var394978 () (_ BitVec 64) #x0000000000000000)
+(model-add temp425_3 () (_ BitVec 64) #x0000000000000040)
+(model-add temp425_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var1183786 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000040 #x7fffffffffffffff))
+                #x0000000000000040
+                (bvadd #x0000000000000040 #x0000000000000001)))
+
+
+
+
+
+

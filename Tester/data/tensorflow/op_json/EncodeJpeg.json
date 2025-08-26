@@ -1,0 +1,135 @@
+{
+	"format": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "format",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"",
+			"grayscale",
+			"rgb"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"quality": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 95,
+		"is_mid": null,
+		"name": "quality",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"progressive": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "progressive",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"optimize_size": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "optimize_size",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"chroma_downsampling": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": true,
+		"is_mid": null,
+		"name": "chroma_downsampling",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"density_unit": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "in",
+		"is_mid": null,
+		"name": "density_unit",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"in",
+			"cm"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"x_density": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 300,
+		"is_mid": null,
+		"name": "x_density",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"y_density": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 300,
+		"is_mid": null,
+		"name": "y_density",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"xmp_metadata": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "",
+		"is_mid": null,
+		"name": "xmp_metadata",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"image": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "image",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "uint8",
+		"optional": null
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"component_types": {
+		"name": "component_types",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 1
+	},
+	"timeout_ms": {
+		"name": "timeout_ms",
+		"input_order": -1,
+		"type": "int",
+		"default": -1
+	},
+	"handle": {
+		"name": "handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"n": {
+		"name": "n",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

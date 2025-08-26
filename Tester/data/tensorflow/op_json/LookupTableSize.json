@@ -1,0 +1,8 @@
+{
+	"table_handle": {
+		"name": "table_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

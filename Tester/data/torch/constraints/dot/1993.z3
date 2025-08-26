@@ -1,0 +1,50 @@
+(declare-fun temp10993_1 () (_ BitVec 64))
+(declare-fun var525626 () (_ BitVec 64))
+(declare-fun temp10993_2 () (_ BitVec 64))
+(declare-fun var787770 () (_ BitVec 64))
+(declare-fun temp10993_3 () (_ BitVec 64))
+(declare-fun var1574202 () (_ BitVec 64))
+(declare-fun temp10993_4 () (_ BitVec 64))
+(declare-fun var1836346 () (_ BitVec 64))
+(declare-fun temp10993_5 () (_ BitVec 64))
+(declare-fun temp10993_6 () (_ BitVec 64))
+(declare-fun var2888019 () (_ BitVec 64))
+(declare-fun k!1 () Bool)
+(declare-fun ARGNAME_tensor_NAMEEND_DIM () (_ BitVec 64))
+(assert (= temp10993_1 #x0000000000000000))
+(assert (= var525626 temp10993_1))
+(assert (= temp10993_2 #x0000000000000000))
+(assert (= var787770 temp10993_2))
+(assert (= temp10993_3 #x0000000000000000))
+(assert (= var1574202 temp10993_3))
+(assert (= temp10993_4 #x0000000000000000))
+(assert (= var1836346 temp10993_4))
+(assert (= temp10993_5 #x0000000000000001))
+(assert (= var2888019
+   (ite (= ARGNAME_tensor_NAMEEND_DIM temp10993_5)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp10993_6 #x0000000000000001))
+(assert (= var2888019 temp10993_6))
+(model-add temp10993_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var525626 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10993_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var787770 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10993_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var1574202 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10993_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var1836346 () (_ BitVec 64) #x0000000000000000)
+(model-add temp10993_5 () (_ BitVec 64) #x0000000000000001)
+(model-add temp10993_6 () (_ BitVec 64) #x0000000000000001)
+(model-add var2888019 () (_ BitVec 64) #x0000000000000001)
+(model-del k!1)
+(model-add ARGNAME_tensor_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!1 #x0000000000000001 (bvnot #x0000000000000001)))
+
+
+
+
+
+

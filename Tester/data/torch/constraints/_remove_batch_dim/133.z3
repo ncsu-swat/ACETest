@@ -1,0 +1,53 @@
+(declare-fun temp923_1 () (_ BitVec 64))
+(declare-fun var461171 () (_ BitVec 64))
+(declare-fun temp923_2 () (_ BitVec 64))
+(declare-fun var1903991 () (_ BitVec 64))
+(declare-fun var1903993 () (_ BitVec 64))
+(declare-fun var1969680 () (_ BitVec 64))
+(declare-fun var2035224 () (_ BitVec 64))
+(declare-fun temp923_3 () (_ BitVec 64))
+(declare-fun var2952649 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIMSIZE () (_ BitVec 64))
+(declare-fun var2952646 () (_ BitVec 64))
+(declare-fun temp923_4 () (_ BitVec 64))
+(declare-fun var3804364 () (_ BitVec 64))
+(declare-fun temp923_5 () (_ BitVec 64))
+(declare-fun var4588471 () (_ BitVec 64))
+(assert (= temp923_1 #x0000000000000020))
+(assert (= var461171 temp923_1))
+(assert (= temp923_2 #x0000000000000008))
+(assert (= var1903991 temp923_2))
+(assert (= var1903993 var1903991))
+(assert (= var1969680 var1903993))
+(assert (= var2035224 var1969680))
+(assert (= var2952649
+   (ite (= ARGNAME_input_NAMEEND_DIMSIZE var2952646)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp923_3 #x0000000000000001))
+(assert (= var2952649 temp923_3))
+(assert (= temp923_4 #x0000000000000001))
+(assert (= var3804364 temp923_4))
+(assert (= temp923_5 #x0000000000000000))
+(assert (= var4588471 temp923_5))
+(model-add temp923_1 () (_ BitVec 64) #x0000000000000020)
+(model-add var461171 () (_ BitVec 64) #x0000000000000020)
+(model-add temp923_2 () (_ BitVec 64) #x0000000000000008)
+(model-add var1903991 () (_ BitVec 64) #x0000000000000008)
+(model-add var1903993 () (_ BitVec 64) #x0000000000000008)
+(model-add var1969680 () (_ BitVec 64) #x0000000000000008)
+(model-add var2035224 () (_ BitVec 64) #x0000000000000008)
+(model-add temp923_3 () (_ BitVec 64) #x0000000000000001)
+(model-add var2952649 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIMSIZE
+           ()
+           (_ BitVec 64)
+           (ite k!0 var2952646 (bvnot var2952646)))
+
+
+
+
+
+

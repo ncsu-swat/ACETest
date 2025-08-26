@@ -1,0 +1,34 @@
+(declare-fun ARGNAME_data_format_NAMEEND_STRFMT () (_ BitVec 64))
+(declare-fun ARGNAME_padding_NAMEEND () (_ BitVec 64))
+(assert (or (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000000)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000001)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000002)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000003)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000004)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000005)))
+(assert (or (= ARGNAME_padding_NAMEEND #x0000000000000001)
+    (= ARGNAME_padding_NAMEEND #x0000000000000002)
+    (= ARGNAME_padding_NAMEEND #x0000000000000003)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

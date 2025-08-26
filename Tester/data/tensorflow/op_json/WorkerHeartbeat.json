@@ -1,0 +1,8 @@
+{
+	"request": {
+		"name": "request",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

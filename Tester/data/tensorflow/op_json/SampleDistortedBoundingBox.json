@@ -1,0 +1,80 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"uint8",
+			"int8",
+			"int16",
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"seed": {
+		"name": "seed",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"seed2": {
+		"name": "seed2",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"min_object_covered": {
+		"name": "min_object_covered",
+		"input_order": -1,
+		"type": "float"
+	},
+	"aspect_ratio_range": {
+		"name": "aspect_ratio_range",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "float"
+		},
+		"default": [
+			0.75,
+			1.3300000429153442
+		]
+	},
+	"area_range": {
+		"name": "area_range",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "float"
+		},
+		"default": [
+			0.05000000074505806,
+			1.0
+		]
+	},
+	"max_attempts": {
+		"name": "max_attempts",
+		"input_order": -1,
+		"type": "int",
+		"default": 100
+	},
+	"use_image_if_no_bounding_boxes": {
+		"name": "use_image_if_no_bounding_boxes",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"image_size": {
+		"name": "image_size",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"bounding_boxes": {
+		"name": "bounding_boxes",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"ref": {
+		"name": "ref",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&dtype.value"
+	}
+}

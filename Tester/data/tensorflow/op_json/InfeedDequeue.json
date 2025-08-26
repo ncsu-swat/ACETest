@@ -1,0 +1,12 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	}
+}

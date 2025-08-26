@@ -1,0 +1,57 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"grid": {
+		"optional": false,
+		"name": "grid",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"interpolation_mode": {
+		"optional": false,
+		"name": "interpolation_mode",
+		"type": "int",
+		"input_order": 2
+	},
+	"padding_mode": {
+		"optional": false,
+		"name": "padding_mode",
+		"type": "int",
+		"input_order": 3
+	},
+	"align_corners": {
+		"optional": false,
+		"name": "align_corners",
+		"type": "bool",
+		"input_order": 4
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

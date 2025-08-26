@@ -1,0 +1,54 @@
+{
+	"max_splits": {
+		"name": "max_splits",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_features": {
+		"name": "num_features",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"node_id_range": {
+		"name": "node_id_range",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"stats_summary_list": {
+		"name": "stats_summary_list",
+		"input_order": 1,
+		"type": "list",
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		},
+		"length": "&num_features.value"
+	},
+	"l1": {
+		"name": "l1",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"l2": {
+		"name": "l2",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"tree_complexity": {
+		"name": "tree_complexity",
+		"input_order": 4,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"min_node_weight": {
+		"name": "min_node_weight",
+		"input_order": 5,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

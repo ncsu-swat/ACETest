@@ -1,0 +1,11 @@
+{
+	"size": {
+		"optional": false,
+		"name": "size",
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 0
+	}
+}

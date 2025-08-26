@@ -1,0 +1,64 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"growth_tracker": {
+		"optional": false,
+		"name": "growth_tracker",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"found_inf": {
+		"optional": false,
+		"name": "found_inf",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"scale_growth_factor": {
+		"optional": false,
+		"name": "scale_growth_factor",
+		"type": "float",
+		"input_order": 3
+	},
+	"scale_backoff_factor": {
+		"optional": false,
+		"name": "scale_backoff_factor",
+		"type": "float",
+		"input_order": 4
+	},
+	"growth_interval": {
+		"optional": false,
+		"name": "growth_interval",
+		"type": "int",
+		"input_order": 5
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

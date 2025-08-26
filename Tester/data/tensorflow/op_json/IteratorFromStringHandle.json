@@ -1,0 +1,28 @@
+{
+	"output_types": {
+		"name": "output_types",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 0,
+		"default": []
+	},
+	"output_shapes": {
+		"name": "output_shapes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "shape"
+		},
+		"min_len": 0,
+		"default": []
+	},
+	"string_handle": {
+		"name": "string_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

@@ -1,0 +1,75 @@
+(declare-fun temp384_2 () (_ BitVec 64))
+(declare-fun temp384_1 () (_ BitVec 64))
+(declare-fun var1249840 () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp384_3 () (_ BitVec 64))
+(declare-fun temp384_4 () (_ BitVec 64))
+(declare-fun var1315381 () (_ BitVec 64))
+(declare-fun var1380928 () (_ BitVec 64))
+(declare-fun temp384_6 () (_ BitVec 64))
+(declare-fun temp384_5 () (_ BitVec 64))
+(declare-fun temp384_7 () (_ BitVec 64))
+(declare-fun var2101558 () (_ BitVec 64))
+(declare-fun var2167105 () (_ BitVec 64))
+(declare-fun temp384_9 () (_ BitVec 64))
+(declare-fun temp384_8 () (_ BitVec 64))
+(declare-fun temp384_10 () (_ BitVec 64))
+(declare-fun var3215670 () (_ BitVec 64))
+(declare-fun var3281217 () (_ BitVec 64))
+(assert (= temp384_2 #x0000000000000000))
+(assert (= temp384_1 temp384_2))
+(assert (= var1249840
+   (ite (bvslt temp384_1 ARGNAME_input_NAMEEND_DIM)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp384_3
+   (ite (= var1249840 #x0000000000000001) ARGNAME_input_NAMEEND_DIM temp384_1)))
+(assert (= temp384_4 #x0000000000000000))
+(assert (= var1315381 temp384_4))
+(assert (= var1380928 var1315381))
+(assert (= temp384_6 #x0000000000000000))
+(assert (= temp384_5 temp384_6))
+(assert (= temp384_7 #x0000000000000000))
+(assert (= var2101558 temp384_7))
+(assert (= var2167105 var2101558))
+(assert (= temp384_9 #x0000000000000000))
+(assert (= temp384_8 temp384_9))
+(assert (= temp384_10 #x0000000000000000))
+(assert (= var3215670 temp384_10))
+(assert (= var3281217 var3215670))
+(model-add temp384_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var1249840
+           ()
+           (_ BitVec 64)
+           (ite (bvsle ARGNAME_input_NAMEEND_DIM #x0000000000000000)
+                #x0000000000000000
+                #x0000000000000001))
+(model-add temp384_3
+           ()
+           (_ BitVec 64)
+           (ite (= (ite (bvsle ARGNAME_input_NAMEEND_DIM #x0000000000000000)
+                        #x0000000000000000
+                        #x0000000000000001)
+                   #x0000000000000001)
+                ARGNAME_input_NAMEEND_DIM
+                #x0000000000000000))
+(model-add temp384_4 () (_ BitVec 64) #x0000000000000000)
+(model-add var1315381 () (_ BitVec 64) #x0000000000000000)
+(model-add var1380928 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_7 () (_ BitVec 64) #x0000000000000000)
+(model-add var2101558 () (_ BitVec 64) #x0000000000000000)
+(model-add var2167105 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_9 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_8 () (_ BitVec 64) #x0000000000000000)
+(model-add temp384_10 () (_ BitVec 64) #x0000000000000000)
+(model-add var3215670 () (_ BitVec 64) #x0000000000000000)
+(model-add var3281217 () (_ BitVec 64) #x0000000000000000)
+
+
+
+
+
+

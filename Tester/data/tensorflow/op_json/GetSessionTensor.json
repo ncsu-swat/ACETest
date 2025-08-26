@@ -1,0 +1,13 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"handle": {
+		"name": "handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

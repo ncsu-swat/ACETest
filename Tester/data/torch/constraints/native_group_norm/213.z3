@@ -1,0 +1,61 @@
+(declare-fun temp6209_1 () (_ BitVec 64))
+(declare-fun temp6209_2 () (_ BitVec 64))
+(declare-fun var393929 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_group_NAMEEND () (_ BitVec 64))
+(declare-fun ARGNAME_C_NAMEEND () (_ BitVec 64))
+(declare-fun var393960 () (_ BitVec 64))
+(declare-fun temp6209_3 () (_ BitVec 64))
+(declare-fun var393961 () (_ BitVec 64))
+(declare-fun temp6209_4 () (_ BitVec 64))
+(declare-fun temp6209_5 () (_ BitVec 64))
+(declare-fun var67220 () (_ BitVec 64))
+(declare-fun var722993 () (_ BitVec 64))
+(declare-fun var856370 () (_ BitVec 64))
+(declare-fun temp6209_6 () (_ BitVec 64))
+(declare-fun var918884 () (_ BitVec 64))
+(declare-fun var918892 () (_ BitVec 64))
+(declare-fun temp6209_8 () (_ BitVec 64))
+(declare-fun temp6209_7 () (_ BitVec 64))
+(declare-fun temp6209_10 () (_ BitVec 64))
+(declare-fun temp6209_9 () (_ BitVec 64))
+(assert (= temp6209_1 #x0000000000000001))
+(assert (= var393929
+   (ite (bvslt ARGNAME_group_NAMEEND temp6209_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp6209_2 #x0000000000000000))
+(assert (= var393929 temp6209_2))
+(assert (= var393960 (bvsmod ARGNAME_C_NAMEEND ARGNAME_group_NAMEEND)))
+(assert (= temp6209_3 #x0000000000000000))
+(assert (= var393961
+   (ite (= var393960 temp6209_3) #x0000000000000001 #x0000000000000000)))
+(assert (= temp6209_4 #x0000000000000001))
+(assert (= var393961 temp6209_4))
+(assert (= temp6209_5 #x0000000000000000))
+(assert (= var67220 temp6209_5))
+(assert (= var722993 var67220))
+(assert (= var856370 var722993))
+(assert (= temp6209_6 #x0000000000000001))
+(assert (= var918884 temp6209_6))
+(assert (= var918892 var918884))
+(assert (= temp6209_8 #x0000000000000002))
+(assert (= temp6209_7 temp6209_8))
+(assert (= temp6209_10 #x0000000000000002))
+(assert (= temp6209_9 temp6209_10))
+(model-add temp6209_1 () (_ BitVec 64) #x0000000000000001)
+(model-add temp6209_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var393929 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_group_NAMEEND
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000001 #x8000000000000000))
+                #x0000000000000001
+                (bvsub #x0000000000000001 #x0000000000000001)))
+
+
+
+
+
+

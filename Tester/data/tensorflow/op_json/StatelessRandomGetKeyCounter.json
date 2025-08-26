@@ -1,0 +1,28 @@
+{
+	"Tseed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int64",
+		"is_mid": true,
+		"name": "Tseed",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"seed": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "seed",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&Tseed.value"
+	}
+}

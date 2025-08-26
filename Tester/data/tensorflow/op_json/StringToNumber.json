@@ -1,0 +1,30 @@
+{
+	"out_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "float",
+		"is_mid": null,
+		"name": "out_type",
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"int64"
+		]
+	},
+	"string_tensor": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "string_tensor",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "string"
+	}
+}

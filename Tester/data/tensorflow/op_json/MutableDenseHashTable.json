@@ -1,0 +1,54 @@
+{
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"use_node_name_sharing": {
+		"name": "use_node_name_sharing",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"key_dtype": {
+		"name": "key_dtype",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"value_dtype": {
+		"name": "value_dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"value_shape": {
+		"name": "value_shape",
+		"input_order": -1,
+		"type": "shape",
+		"default": []
+	},
+	"initial_num_buckets": {
+		"name": "initial_num_buckets",
+		"input_order": -1,
+		"type": "int",
+		"default": 131072
+	},
+	"max_load_factor": {
+		"name": "max_load_factor",
+		"input_order": -1,
+		"type": "float"
+	},
+	"empty_key": {
+		"name": "empty_key",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&key_dtype.value"
+	}
+}

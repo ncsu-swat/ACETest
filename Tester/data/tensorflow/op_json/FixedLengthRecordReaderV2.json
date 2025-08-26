@@ -1,0 +1,43 @@
+{
+	"header_bytes": {
+		"name": "header_bytes",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"record_bytes": {
+		"name": "record_bytes",
+		"input_order": -1,
+		"type": "int"
+	},
+	"footer_bytes": {
+		"name": "footer_bytes",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"hop_bytes": {
+		"name": "hop_bytes",
+		"input_order": -1,
+		"type": "int",
+		"default": 0
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"encoding": {
+		"name": "encoding",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"pooling_ratio": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "pooling_ratio",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 4,
+		"child_prop": {
+			"type": "float"
+		},
+		"optional": null
+	},
+	"pseudo_random": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "pseudo_random",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"overlapping": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "overlapping",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"deterministic": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "deterministic",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"seed": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"seed2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": 0,
+		"is_mid": null,
+		"name": "seed2",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": [
+			"float",
+			"double",
+			"int32",
+			"int64"
+		],
+		"optional": null
+	},
+	"value": {
+		"input_order": 0,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "value",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "&T.value",
+		"optional": null
+	}
+}

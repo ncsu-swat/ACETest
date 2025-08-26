@@ -1,0 +1,58 @@
+(declare-fun temp428_2 () (_ BitVec 64))
+(declare-fun temp428_1 () (_ BitVec 64))
+(declare-fun temp428_4 () (_ BitVec 64))
+(declare-fun temp428_3 () (_ BitVec 64))
+(declare-fun temp428_6 () (_ BitVec 64))
+(declare-fun temp428_5 () (_ BitVec 64))
+(declare-fun temp428_7 () (_ BitVec 64))
+(declare-fun var198631 () (_ BitVec 64))
+(declare-fun temp428_8 () (_ BitVec 64))
+(declare-fun var198633 () (_ BitVec 64))
+(declare-fun temp428_9 () (_ BitVec 64))
+(declare-fun temp428_11 () (_ BitVec 64))
+(declare-fun temp428_10 () (_ BitVec 64))
+(declare-fun temp428_12 () (_ BitVec 64))
+(declare-fun var1051687 () (_ BitVec 64))
+(declare-fun temp428_13 () (_ BitVec 64))
+(declare-fun var67098 () (_ BitVec 64))
+(declare-fun var1116615 () (_ BitVec 64))
+(assert (= temp428_2 #x0000000000000000))
+(assert (= temp428_1 temp428_2))
+(assert (= temp428_4 #x0000000000000000))
+(assert (= temp428_3 temp428_4))
+(assert (= temp428_6 #x0000000000000000))
+(assert (= temp428_5 temp428_6))
+(assert (= temp428_7 #x0000000000000008))
+(assert (= var198631 temp428_7))
+(assert (= temp428_8 #x0000000000000008))
+(assert (= var198633
+   (ite (= var198631 temp428_8) #x0000000000000001 #x0000000000000000)))
+(assert (= temp428_9 #x0000000000000001))
+(assert (= var198633 temp428_9))
+(assert (= temp428_11 #x0000000055555555))
+(assert (= temp428_10 temp428_11))
+(assert (= temp428_12 #x0000000000000001))
+(assert (= var1051687 temp428_12))
+(assert (= temp428_13 #x0000000000000000))
+(assert (= var67098 temp428_13))
+(assert (= var1116615 var67098))
+(model-add temp428_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_1 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_4 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_3 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_6 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_5 () (_ BitVec 64) #x0000000000000000)
+(model-add temp428_7 () (_ BitVec 64) #x0000000000000008)
+(model-add var198631 () (_ BitVec 64) #x0000000000000008)
+(model-add temp428_8 () (_ BitVec 64) #x0000000000000008)
+(model-add var198633 () (_ BitVec 64) #x0000000000000001)
+(model-add temp428_9 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+
+
+
+
+

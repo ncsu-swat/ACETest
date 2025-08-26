@@ -1,0 +1,27 @@
+{
+	"compute_v": {
+		"name": "compute_v",
+		"input_order": -1,
+		"type": "bool",
+		"default": true
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"double",
+			"float",
+			"half",
+			"complex64",
+			"complex128"
+		],
+		"is_mid": true
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

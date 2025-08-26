@@ -1,0 +1,75 @@
+{
+	"log_probs": {
+		"optional": false,
+		"name": "log_probs",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"targets": {
+		"optional": false,
+		"name": "targets",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"input_lengths": {
+		"optional": false,
+		"name": "input_lengths",
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 2
+	},
+	"target_lengths": {
+		"optional": false,
+		"name": "target_lengths",
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 3
+	},
+	"blank": {
+		"optional": false,
+		"name": "blank",
+		"type": "int",
+		"input_order": 4
+	},
+	"deterministic": {
+		"optional": false,
+		"name": "deterministic",
+		"type": "bool",
+		"input_order": 5
+	},
+	"zero_infinity": {
+		"optional": false,
+		"name": "zero_infinity",
+		"type": "bool",
+		"input_order": 6
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

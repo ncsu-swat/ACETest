@@ -1,0 +1,148 @@
+(declare-fun temp11_1 () (_ BitVec 64))
+(declare-fun var140153 () (_ BitVec 64))
+(declare-fun var140147 () (_ BitVec 64))
+(declare-fun temp11_2 () (_ BitVec 64))
+(declare-fun var75982 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_filter_sizes_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun ARGNAME_padding_NAMEEND () (_ BitVec 64))
+(declare-fun ARGNAME_data_format_NAMEEND_STRFMT () (_ BitVec 64))
+(declare-fun temp11_3 () (_ BitVec 64))
+(declare-fun var76149 () (_ BitVec 64))
+(declare-fun temp11_4 () (_ BitVec 64))
+(declare-fun temp11_5 () (_ BitVec 64))
+(declare-fun ARGNAME_explicit_paddings_NAMEEND_VAL
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp11_6 () (_ BitVec 64))
+(declare-fun temp11_7 () (_ BitVec 64))
+(declare-fun temp11_8 () (_ BitVec 64))
+(declare-fun temp11_9 () (_ BitVec 64))
+(declare-fun temp11_10 () (_ BitVec 64))
+(declare-fun temp11_11 () (_ BitVec 64))
+(declare-fun temp11_12 () (_ BitVec 64))
+(declare-fun temp11_13 () (_ BitVec 64))
+(declare-fun temp11_14 () (_ BitVec 64))
+(declare-fun temp11_15 () (_ BitVec 64))
+(declare-fun temp11_16 () (_ BitVec 64))
+(declare-fun temp11_17 () (_ BitVec 64))
+(declare-fun temp11_19 () (_ BitVec 64))
+(declare-fun temp11_18 () (_ BitVec 64))
+(declare-fun temp11_20 () (_ BitVec 64))
+(declare-fun temp11_22 () (_ BitVec 64))
+(declare-fun temp11_21 () (_ BitVec 64))
+(declare-fun temp11_23 () (_ BitVec 64))
+(declare-fun temp11_25 () (_ BitVec 64))
+(declare-fun temp11_24 () (_ BitVec 64))
+(declare-fun temp11_26 () (_ BitVec 64))
+(declare-fun temp11_28 () (_ BitVec 64))
+(declare-fun temp11_27 () (_ BitVec 64))
+(declare-fun temp11_29 () (_ BitVec 64))
+(declare-fun var339508 () (_ BitVec 64))
+(declare-fun temp11_30 () (_ BitVec 64))
+(declare-fun var339526 () (_ BitVec 64))
+(declare-fun temp11_31 () (_ BitVec 64))
+(declare-fun temp11_32 () (_ BitVec 64))
+(declare-fun temp11_33 () (_ BitVec 64))
+(declare-fun var470580 () (_ BitVec 64))
+(declare-fun temp11_34 () (_ BitVec 64))
+(declare-fun var470598 () (_ BitVec 64))
+(declare-fun temp11_35 () (_ BitVec 64))
+(declare-fun temp11_36 () (_ BitVec 64))
+(assert (or (= ARGNAME_padding_NAMEEND #x0000000000000001)
+    (= ARGNAME_padding_NAMEEND #x0000000000000002)
+    (= ARGNAME_padding_NAMEEND #x0000000000000003)))
+(assert (or (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000000)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000001)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000002)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000003)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000004)
+    (= ARGNAME_data_format_NAMEEND_STRFMT #x0000000000000005)))
+(assert (= temp11_1 #x0000000000000001))
+(assert (= var140153
+   (ite (= ARGNAME_filter_sizes_NAMEEND_DIM temp11_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var140147 var140153))
+(assert (= var75982 var140147))
+(assert (= temp11_2 #x0000000000000001))
+(assert (= var75982 temp11_2))
+(assert (= temp11_3 #x0000000000000003))
+(assert (= var76149
+   (ite (= ARGNAME_padding_NAMEEND temp11_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp11_4 #x0000000000000001))
+(assert (= var76149 temp11_4))
+(assert (= temp11_5 #x0000000000000000))
+(assert (= temp11_6 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_5)))
+(assert (= temp11_7 #x0000000000000001))
+(assert (= temp11_8 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_7)))
+(assert (= temp11_9 #x0000000000000002))
+(assert (= temp11_10 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_9)))
+(assert (= temp11_11 #x0000000000000003))
+(assert (= temp11_12 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_11)))
+(assert (= temp11_13 #x0000000000000004))
+(assert (= temp11_14 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_13)))
+(assert (= temp11_15 #x0000000000000005))
+(assert (= temp11_16 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_15)))
+(assert (= temp11_17 #x0000000000000002))
+(assert (= temp11_19 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_17)))
+(assert (= temp11_18 temp11_19))
+(assert (= temp11_20 #x0000000000000003))
+(assert (= temp11_22 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_20)))
+(assert (= temp11_21 temp11_22))
+(assert (= temp11_23 #x0000000000000004))
+(assert (= temp11_25 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_23)))
+(assert (= temp11_24 temp11_25))
+(assert (= temp11_26 #x0000000000000005))
+(assert (= temp11_28 (select ARGNAME_explicit_paddings_NAMEEND_VAL temp11_26)))
+(assert (= temp11_27 temp11_28))
+(assert (= temp11_29 #x0000000000000001))
+(assert (= var339508 temp11_29))
+(assert (= temp11_30 #x0000000000000001))
+(assert (= var339526
+   (ite (bvslt var339508 temp11_30) #x0000000000000001 #x0000000000000000)))
+(assert (= temp11_31 #x0000000000000000))
+(assert (= var339526 temp11_31))
+(assert (= temp11_32 #x0000000000000003))
+(assert (or false (= ARGNAME_padding_NAMEEND temp11_32)))
+(assert (= temp11_33 #x0000000000000001))
+(assert (= var470580 temp11_33))
+(assert (= temp11_34 #x0000000000000001))
+(assert (= var470598
+   (ite (bvslt var470580 temp11_34) #x0000000000000001 #x0000000000000000)))
+(assert (= temp11_35 #x0000000000000000))
+(assert (= var470598 temp11_35))
+(assert (= temp11_36 #x0000000000000003))
+(assert (or false (= ARGNAME_padding_NAMEEND temp11_36)))
+(model-add temp11_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var140153 () (_ BitVec 64) #x0000000000000001)
+(model-add var140147 () (_ BitVec 64) #x0000000000000001)
+(model-add temp11_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var75982 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_filter_sizes_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000001 (bvnot #x0000000000000001)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

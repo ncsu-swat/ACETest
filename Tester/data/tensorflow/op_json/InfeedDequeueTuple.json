@@ -1,0 +1,19 @@
+{
+	"dtypes": {
+		"name": "dtypes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 1
+	},
+	"shapes": {
+		"name": "shapes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "shape"
+		}
+	}
+}

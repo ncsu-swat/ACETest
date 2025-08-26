@@ -1,0 +1,81 @@
+{
+	"weight": {
+		"optional": false,
+		"name": "weight",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"indices": {
+		"optional": false,
+		"name": "indices",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"offsets": {
+		"optional": false,
+		"name": "offsets",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"scale_grad_by_freq": {
+		"optional": false,
+		"name": "scale_grad_by_freq",
+		"type": "bool",
+		"default": "False",
+		"input_order": 3
+	},
+	"mode": {
+		"optional": false,
+		"name": "mode",
+		"type": "int",
+		"default": 0,
+		"input_order": 4
+	},
+	"sparse": {
+		"optional": false,
+		"name": "sparse",
+		"type": "bool",
+		"default": "False",
+		"input_order": 5
+	},
+	"per_sample_weights": {
+		"optional": true,
+		"name": "per_sample_weights",
+		"type": "tensor",
+		"input_order": 6,
+		"dtype": "&T.value"
+	},
+	"include_last_offset": {
+		"optional": false,
+		"name": "include_last_offset",
+		"type": "bool",
+		"default": "False",
+		"input_order": 7
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

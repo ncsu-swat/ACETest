@@ -1,0 +1,26 @@
+{
+	"points": {
+		"name": "points",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"num_to_sample": {
+		"name": "num_to_sample",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "int64"
+	},
+	"seed": {
+		"name": "seed",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int64"
+	},
+	"num_retries_per_sample": {
+		"name": "num_retries_per_sample",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

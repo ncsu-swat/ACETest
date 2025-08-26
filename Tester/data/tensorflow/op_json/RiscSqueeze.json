@@ -1,0 +1,24 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"squeeze_dims": {
+		"name": "squeeze_dims",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"min_len": 0,
+		"default": []
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

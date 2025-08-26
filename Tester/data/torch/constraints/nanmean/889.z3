@@ -1,0 +1,15 @@
+(declare-fun temp889_1 () (_ BitVec 64))
+(declare-fun var791270 () (_ BitVec 64))
+(declare-fun temp889_2 () (_ BitVec 64))
+(assert (= temp889_1 #x0000000000000001))
+(assert (= var791270 temp889_1))
+(assert (= temp889_2 #x0000000000000001))
+(assert (= var791270 temp889_2))
+(model-add temp889_1 () (_ BitVec 64) #x0000000000000001)
+(model-add var791270 () (_ BitVec 64) #x0000000000000001)
+(model-add temp889_2 () (_ BitVec 64) #x0000000000000001)
+
+
+
+
+

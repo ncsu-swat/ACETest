@@ -1,0 +1,14 @@
+{
+	"cancel_pending_enqueues": {
+		"name": "cancel_pending_enqueues",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"handle": {
+		"name": "handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

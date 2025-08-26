@@ -1,0 +1,51 @@
+{
+	"N": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "N",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null
+	},
+	"T": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": true,
+		"name": "T",
+		"type": "type",
+		"enum": null
+	},
+	"out_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": "int32",
+		"is_mid": null,
+		"name": "out_type",
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		]
+	},
+	"input": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "input",
+		"type": "list",
+		"value": null,
+		"length": "&N.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "&T.value"
+		}
+	}
+}

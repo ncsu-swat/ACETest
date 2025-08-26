@@ -1,0 +1,42 @@
+{
+	"reduction": {
+		"name": "reduction",
+		"input_order": -1,
+		"type": "string",
+		"enum": [
+			"min",
+			"max",
+			"prod",
+			"sum"
+		]
+	},
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"half",
+			"float",
+			"double",
+			"int32",
+			"int64"
+		],
+		"is_mid": true
+	},
+	"num_devices": {
+		"name": "num_devices",
+		"input_order": -1,
+		"type": "int"
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string"
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"separator": {
+		"name": "separator",
+		"input_order": -1,
+		"type": "string"
+	},
+	"ngram_widths": {
+		"name": "ngram_widths",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"min_len": 0
+	},
+	"left_pad": {
+		"name": "left_pad",
+		"input_order": -1,
+		"type": "string"
+	},
+	"right_pad": {
+		"name": "right_pad",
+		"input_order": -1,
+		"type": "string"
+	},
+	"pad_width": {
+		"name": "pad_width",
+		"input_order": -1,
+		"type": "int"
+	},
+	"preserve_short_sequences": {
+		"name": "preserve_short_sequences",
+		"input_order": -1,
+		"type": "bool"
+	},
+	"Tsplits": {
+		"name": "Tsplits",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"default": "int64",
+		"is_mid": true
+	},
+	"data": {
+		"name": "data",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"data_splits": {
+		"name": "data_splits",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tsplits.value"
+	}
+}

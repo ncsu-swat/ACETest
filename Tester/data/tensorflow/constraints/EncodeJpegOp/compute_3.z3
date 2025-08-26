@@ -1,0 +1,110 @@
+(declare-fun temp2_1 () (_ BitVec 64))
+(declare-fun temp2_2 () (_ BitVec 64))
+(declare-fun var67623 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_image_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp2_3 () (_ BitVec 64))
+(declare-fun var131945 () (_ BitVec 64))
+(declare-fun var67659 () (_ BitVec 64))
+(declare-fun var67660 () (_ BitVec 64))
+(declare-fun ARGNAME_image_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun var67661 () (_ BitVec 64))
+(declare-fun temp2_4 () (_ BitVec 64))
+(declare-fun temp2_5 () (_ BitVec 64))
+(declare-fun ARGNAME_image_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp2_6 () (_ BitVec 64))
+(declare-fun temp2_7 () (_ BitVec 64))
+(declare-fun temp2_8 () (_ BitVec 64))
+(declare-fun temp2_9 () (_ BitVec 64))
+(declare-fun temp2_10 () (_ BitVec 64))
+(declare-fun temp2_11 () (_ BitVec 64))
+(declare-fun temp2_12 () (_ BitVec 64))
+(declare-fun temp2_13 () (_ BitVec 64))
+(declare-fun temp2_14 () (_ BitVec 64))
+(declare-fun temp2_15 () (_ BitVec 64))
+(declare-fun temp2_16 () (_ BitVec 64))
+(declare-fun temp2_17 () (_ BitVec 64))
+(declare-fun temp2_18 () (_ BitVec 64))
+(declare-fun var67681 () (_ BitVec 64))
+(declare-fun var67682 () (_ BitVec 64))
+(declare-fun temp2_19 () (_ BitVec 64))
+(declare-fun temp2_20 () (_ BitVec 64))
+(declare-fun var67683 () (_ BitVec 64))
+(declare-fun var67684 () (_ BitVec 64))
+(declare-fun temp2_21 () (_ BitVec 64))
+(declare-fun temp2_22 () (_ BitVec 64))
+(declare-fun var67685 () (_ BitVec 64))
+(declare-fun var67686 () (_ BitVec 64))
+(declare-fun temp2_23 () (_ BitVec 64))
+(declare-fun ARGNAME_y_density_NAMEEND () (_ BitVec 64))
+(declare-fun temp2_24 () (_ BitVec 64))
+(assert (= temp2_1 #x0000000000000003))
+(assert (= var67623
+   (ite (= ARGNAME_image_NAMEEND_DIM temp2_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp2_2 #x0000000000000001))
+(assert (= var67623 temp2_2))
+(assert (= temp2_3 #x000000007fffffff))
+(assert (= var131945 temp2_3))
+(assert (= var67659 var131945))
+(assert (= var67660 var67659))
+(assert (= var67661
+   (ite (bvslt ARGNAME_image_NAMEEND_NUMELEMENT var67660)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp2_4 #x0000000000000001))
+(assert (= var67661 temp2_4))
+(assert (= temp2_5 #x0000000000000000))
+(assert (= temp2_6 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_5)))
+(assert (= temp2_7 #x0000000000000001))
+(assert (= temp2_8 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_7)))
+(assert (= temp2_9 #x0000000000000002))
+(assert (= temp2_10 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_9)))
+(assert (= temp2_11 #x0000000000000003))
+(assert (= temp2_12 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_11)))
+(assert (= temp2_13 #x0000000000000004))
+(assert (= temp2_14 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_13)))
+(assert (= temp2_15 #x0000000000000005))
+(assert (= temp2_16 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_15)))
+(assert (= temp2_17 #x0000000000000000))
+(assert (= temp2_18 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_17)))
+(assert (= var67681 temp2_18))
+(assert (= var67682 var67681))
+(assert (= temp2_19 #x0000000000000001))
+(assert (= temp2_20 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_19)))
+(assert (= var67683 temp2_20))
+(assert (= var67684 var67683))
+(assert (= temp2_21 #x0000000000000002))
+(assert (= temp2_22 (select ARGNAME_image_NAMEEND_DIMSIZE temp2_21)))
+(assert (= var67685 temp2_22))
+(assert (= var67686 var67685))
+(assert (= temp2_23 #x0000000000000000))
+(assert (or false (= ARGNAME_y_density_NAMEEND temp2_23)))
+(assert (= temp2_24 #x0000000000000003))
+(assert (or false (= var67686 temp2_24)))
+(model-add temp2_1 () (_ BitVec 64) #x0000000000000003)
+(model-add temp2_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var67623 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_image_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000003 (bvnot #x0000000000000003)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

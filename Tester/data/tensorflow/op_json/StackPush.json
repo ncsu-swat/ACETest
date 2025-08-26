@@ -1,0 +1,26 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"swap_memory": {
+		"name": "swap_memory",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"handle": {
+		"name": "handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"elem": {
+		"name": "elem",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

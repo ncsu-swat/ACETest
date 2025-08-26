@@ -1,0 +1,38 @@
+{
+	"max_splits": {
+		"name": "max_splits",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"num_buckets": {
+		"name": "num_buckets",
+		"input_order": -1,
+		"type": "int",
+		"min": 1
+	},
+	"node_ids": {
+		"name": "node_ids",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	},
+	"gradients": {
+		"name": "gradients",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"hessians": {
+		"name": "hessians",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"feature": {
+		"name": "feature",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

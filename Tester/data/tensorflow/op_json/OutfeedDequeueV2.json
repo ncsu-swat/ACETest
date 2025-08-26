@@ -1,0 +1,18 @@
+{
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	},
+	"device_ordinal": {
+		"name": "device_ordinal",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "int32"
+	}
+}

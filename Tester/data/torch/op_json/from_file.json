@@ -1,0 +1,39 @@
+{
+	"filename": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "filename",
+		"type": "string",
+		"value": null,
+		"enum": null,
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": false
+	},
+	"shared": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "shared",
+		"type": "bool",
+		"value": null,
+		"optional": true
+	},
+	"size": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": 0,
+		"is_mid": null,
+		"name": "size",
+		"type": "int",
+		"max": null,
+		"min": null,
+		"value": null,
+		"enum": null,
+		"optional": true
+	}
+}

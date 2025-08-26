@@ -1,0 +1,57 @@
+(declare-fun temp4_1 () (_ BitVec 64))
+(declare-fun temp4_2 () (_ BitVec 64))
+(declare-fun var73286 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp4_4 () (_ BitVec 64))
+(declare-fun temp4_3 () (_ BitVec 64))
+(declare-fun temp4_5 () (_ BitVec 64))
+(declare-fun ARGNAME_input_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun var73356 () (_ BitVec 64))
+(declare-fun temp4_6 () (_ BitVec 64))
+(declare-fun temp4_7 () (_ BitVec 64))
+(declare-fun var2564898 () (_ BitVec 64))
+(declare-fun temp4_8 () (_ BitVec 64))
+(declare-fun var2564899 () (_ BitVec 64))
+(declare-fun temp4_9 () (_ BitVec 64))
+(declare-fun var2892619 () (_ BitVec 64))
+(declare-fun temp4_10 () (_ BitVec 64))
+(declare-fun var3482443 () (_ BitVec 64))
+(assert (= temp4_1 #x0000000000000001))
+(assert (= var73286
+   (ite (bvsgt ARGNAME_input_NAMEEND_DIM temp4_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp4_2 #x0000000000000001))
+(assert (= var73286 temp4_2))
+(assert (= temp4_4 #x0000000000000007))
+(assert (= temp4_3 temp4_4))
+(assert (= temp4_5 #x0000000000000000))
+(assert (= var73356
+   (ite (= ARGNAME_input_NAMEEND_NUMELEMENT temp4_5)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp4_6 #x0000000000000001))
+(assert (= var73356 temp4_6))
+(assert (= temp4_7 #x0000000000000001))
+(assert (= var2564898 temp4_7))
+(assert (= temp4_8 #x0000000000000001))
+(assert (= var2564899 temp4_8))
+(assert (= temp4_9 #xfffffffffffffffe))
+(assert (= var2892619 temp4_9))
+(assert (= temp4_10 #x0000000000000000))
+(assert (= var3482443 temp4_10))
+(model-add temp4_1 () (_ BitVec 64) #x0000000000000001)
+(model-add temp4_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var73286 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000001 #x7fffffffffffffff))
+                #x0000000000000001
+                (bvadd #x0000000000000001 #x0000000000000001)))
+
+
+
+

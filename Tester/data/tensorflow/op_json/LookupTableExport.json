@@ -1,0 +1,18 @@
+{
+	"Tkeys": {
+		"name": "Tkeys",
+		"input_order": -1,
+		"type": "type"
+	},
+	"Tvalues": {
+		"name": "Tvalues",
+		"input_order": -1,
+		"type": "type"
+	},
+	"table_handle": {
+		"name": "table_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

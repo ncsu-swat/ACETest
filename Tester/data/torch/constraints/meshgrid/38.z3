@@ -1,0 +1,36 @@
+(declare-fun temp90_2 () (_ BitVec 64))
+(declare-fun temp90_1 () (_ BitVec 64))
+(declare-fun temp90_3 () (_ BitVec 64))
+(declare-fun var287753 () (_ BitVec 64))
+(declare-fun temp90_5 () (_ BitVec 64))
+(declare-fun temp90_4 () (_ BitVec 64))
+(declare-fun temp90_6 () (_ BitVec 64))
+(declare-fun var1183047 () (_ BitVec 64))
+(declare-fun var1248594 () (_ BitVec 64))
+(declare-fun temp90_7 () (_ BitVec 64))
+(declare-fun var2235005 () (_ BitVec 64))
+(declare-fun var2234989 () (_ BitVec 64))
+(declare-fun var1005804 () (_ BitVec 64))
+(declare-fun temp90_9 () (_ BitVec 64))
+(declare-fun var1005891 () (_ BitVec 64))
+(assert (= temp90_2 #x0000000000000c77))
+(assert (= temp90_1 temp90_2))
+(assert (= temp90_3 #x0000000000000000))
+(assert (= var287753 temp90_3))
+(assert (= temp90_5 #x0000000000000000))
+(assert (= temp90_4 temp90_5))
+(assert (= temp90_6 #x0000000000000000))
+(assert (= var1183047 temp90_6))
+(assert (= var1248594 var1183047))
+(assert (= temp90_7 #x0000000000000000))
+(assert (= var2235005 temp90_7))
+(assert (= var2234989 var2235005))
+(assert (= var1005804 var2234989))
+(assert (= temp90_9 #x0000000000000000))
+(assert (= var1005891 temp90_9))
+
+
+
+
+
+

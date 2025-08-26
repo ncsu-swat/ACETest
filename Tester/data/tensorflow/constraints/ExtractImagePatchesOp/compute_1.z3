@@ -1,0 +1,134 @@
+(declare-fun temp0_1 () (_ BitVec 64))
+(declare-fun temp0_2 () (_ BitVec 64))
+(declare-fun var68130 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_images_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp0_3 () (_ BitVec 64))
+(declare-fun ARGNAME_images_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp0_4 () (_ BitVec 64))
+(declare-fun temp0_5 () (_ BitVec 64))
+(declare-fun temp0_6 () (_ BitVec 64))
+(declare-fun temp0_7 () (_ BitVec 64))
+(declare-fun temp0_8 () (_ BitVec 64))
+(declare-fun temp0_9 () (_ BitVec 64))
+(declare-fun temp0_10 () (_ BitVec 64))
+(declare-fun temp0_11 () (_ BitVec 64))
+(declare-fun temp0_12 () (_ BitVec 64))
+(declare-fun temp0_13 () (_ BitVec 64))
+(declare-fun temp0_14 () (_ BitVec 64))
+(declare-fun temp0_15 () (_ BitVec 64))
+(declare-fun temp0_16 () (_ BitVec 64))
+(declare-fun var68174 () (_ BitVec 64))
+(declare-fun temp0_17 () (_ BitVec 64))
+(declare-fun temp0_18 () (_ BitVec 64))
+(declare-fun var68177 () (_ BitVec 64))
+(declare-fun temp0_19 () (_ BitVec 64))
+(declare-fun temp0_20 () (_ BitVec 64))
+(declare-fun var68178 () (_ BitVec 64))
+(declare-fun temp0_21 () (_ BitVec 64))
+(declare-fun temp0_22 () (_ BitVec 64))
+(declare-fun var68180 () (_ BitVec 64))
+(declare-fun var68182 () (_ BitVec 64))
+(declare-fun temp0_24 () (_ BitVec 64))
+(declare-fun temp0_23 () (_ BitVec 64))
+(declare-fun temp0_26 () (_ BitVec 64))
+(declare-fun temp0_25 () (_ BitVec 64))
+(declare-fun temp0_28 () (_ BitVec 64))
+(declare-fun temp0_27 () (_ BitVec 64))
+(declare-fun temp0_30 () (_ BitVec 64))
+(declare-fun temp0_29 () (_ BitVec 64))
+(declare-fun temp0_31 () (_ BitVec 64))
+(declare-fun var68217 () (_ BitVec 64))
+(declare-fun temp0_32 () (_ BitVec 64))
+(declare-fun var68218 () (_ BitVec 64))
+(declare-fun var134583 () (_ BitVec 64))
+(declare-fun temp0_33 () (_ BitVec 64))
+(declare-fun var68248 () (_ BitVec 64))
+(declare-fun temp0_34 () (_ BitVec 64))
+(declare-fun var68249 () (_ BitVec 64))
+(declare-fun var200119 () (_ BitVec 64))
+(assert (= temp0_1 #x0000000000000004))
+(assert (= var68130
+   (ite (= ARGNAME_images_NAMEEND_DIM temp0_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp0_2 #x0000000000000001))
+(assert (= var68130 temp0_2))
+(assert (= temp0_3 #x0000000000000000))
+(assert (= temp0_4 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_3)))
+(assert (= temp0_5 #x0000000000000001))
+(assert (= temp0_6 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_5)))
+(assert (= temp0_7 #x0000000000000002))
+(assert (= temp0_8 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_7)))
+(assert (= temp0_9 #x0000000000000003))
+(assert (= temp0_10 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_9)))
+(assert (= temp0_11 #x0000000000000004))
+(assert (= temp0_12 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_11)))
+(assert (= temp0_13 #x0000000000000005))
+(assert (= temp0_14 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_13)))
+(assert (= temp0_15 #x0000000000000000))
+(assert (= temp0_16 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_15)))
+(assert (= var68174 temp0_16))
+(assert (= temp0_17 #x0000000000000001))
+(assert (= temp0_18 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_17)))
+(assert (= var68177 temp0_18))
+(assert (= temp0_19 #x0000000000000002))
+(assert (= temp0_20 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_19)))
+(assert (= var68178 temp0_20))
+(assert (= temp0_21 #x0000000000000003))
+(assert (= temp0_22 (select ARGNAME_images_NAMEEND_DIMSIZE temp0_21)))
+(assert (= var68180 temp0_22))
+(assert (= var68182 var68180))
+(assert (= temp0_24 #x0000000000000000))
+(assert (= temp0_23 temp0_24))
+(assert (= temp0_26 #x0000000000000000))
+(assert (= temp0_25 temp0_26))
+(assert (= temp0_28 #x0000000000000000))
+(assert (= temp0_27 temp0_28))
+(assert (= temp0_30 #x0000000000000000))
+(assert (= temp0_29 temp0_30))
+(assert (= temp0_31 #x0000000000000020))
+(assert (= var68217 (bvshl var68177 temp0_31)))
+(assert (= temp0_32 #x0000000000000020))
+(assert (= var68218 (bvashr var68217 temp0_32)))
+(assert (= var134583 var68218))
+(assert (= temp0_33 #x0000000000000020))
+(assert (= var68248 (bvshl var68178 temp0_33)))
+(assert (= temp0_34 #x0000000000000020))
+(assert (= var68249 (bvashr var68248 temp0_34)))
+(assert (= var200119 var68249))
+(model-add temp0_1 () (_ BitVec 64) #x0000000000000004)
+(model-add temp0_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var68130 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_images_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000004 (bvnot #x0000000000000004)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+{
+	"shape": {
+		"name": "shape",
+		"input_order": -1,
+		"type": "shape"
+	},
+	"dtype": {
+		"name": "dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

@@ -1,0 +1,102 @@
+(declare-fun temp224_1 () (_ BitVec 64))
+(declare-fun var136368 () (_ BitVec 64))
+(declare-fun var136362 () (_ BitVec 64))
+(declare-fun temp224_2 () (_ BitVec 64))
+(declare-fun var70098 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_params_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp224_3 () (_ BitVec 64))
+(declare-fun extend_359 () (_ BitVec 64))
+(declare-fun var464123 () (_ BitVec 64))
+(declare-fun var464119 () (_ BitVec 64))
+(declare-fun var70135 () (_ BitVec 64))
+(declare-fun temp224_4 () (_ BitVec 64))
+(declare-fun temp224_5 () (_ BitVec 64))
+(declare-fun var70215 () (_ BitVec 64))
+(declare-fun temp224_6 () (_ BitVec 64))
+(declare-fun ARGNAME_params_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp224_7 () (_ BitVec 64))
+(declare-fun temp224_8 () (_ BitVec 64))
+(declare-fun temp224_9 () (_ BitVec 64))
+(declare-fun temp224_10 () (_ BitVec 64))
+(declare-fun temp224_11 () (_ BitVec 64))
+(declare-fun temp224_12 () (_ BitVec 64))
+(declare-fun temp224_13 () (_ BitVec 64))
+(declare-fun temp224_14 () (_ BitVec 64))
+(declare-fun temp224_15 () (_ BitVec 64))
+(declare-fun temp224_16 () (_ BitVec 64))
+(declare-fun temp224_17 () (_ BitVec 64))
+(declare-fun temp224_18 () (_ BitVec 64))
+(declare-fun var923835 () (_ BitVec 64))
+(declare-fun var70396 () (_ BitVec 64))
+(declare-fun temp224_19 () (_ BitVec 64))
+(declare-fun var70461 () (_ BitVec 64))
+(declare-fun temp224_20 () (_ BitVec 64))
+(declare-fun ARGNAME_indices_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun var70553 () (_ BitVec 64))
+(assert (= temp224_1 #x0000000000000000))
+(assert (= var136368
+   (ite (bvsgt ARGNAME_params_NAMEEND_DIM temp224_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var136362 var136368))
+(assert (= var70098 var136362))
+(assert (= temp224_2 #x0000000000000001))
+(assert (= var70098 temp224_2))
+(assert (= temp224_3 #x0000000000000000))
+(assert (= var464123
+   (ite (= extend_359 temp224_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var464119 var464123))
+(assert (= var70135 var464119))
+(assert (= temp224_4 #x0000000000000001))
+(assert (= var70135 temp224_4))
+(assert (= temp224_5 #x0000000000000001))
+(assert (= var70215 temp224_5))
+(assert (= temp224_6 #x0000000000000000))
+(assert (= temp224_7 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_6)))
+(assert (= temp224_8 #x0000000000000001))
+(assert (= temp224_9 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_8)))
+(assert (= temp224_10 #x0000000000000002))
+(assert (= temp224_11 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_10)))
+(assert (= temp224_12 #x0000000000000003))
+(assert (= temp224_13 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_12)))
+(assert (= temp224_14 #x0000000000000004))
+(assert (= temp224_15 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_14)))
+(assert (= temp224_16 #x0000000000000005))
+(assert (= temp224_17 (select ARGNAME_params_NAMEEND_DIMSIZE temp224_16)))
+(assert (= temp224_18 #xffffffffffffffff))
+(assert (= var923835 temp224_18))
+(assert (= var70396 var923835))
+(assert (= temp224_19 #x0000000000000001))
+(assert (= var70461 temp224_19))
+(assert (= temp224_20 #x0000000000000000))
+(assert (= var70553
+   (ite (= ARGNAME_indices_NAMEEND_NUMELEMENT temp224_20)
+        #x0000000000000001
+        #x0000000000000000)))
+(model-add temp224_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var136368 () (_ BitVec 64) #x0000000000000001)
+(model-add var136362 () (_ BitVec 64) #x0000000000000001)
+(model-add temp224_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var70098 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_params_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000000 #x7fffffffffffffff))
+                #x0000000000000000
+                (bvadd #x0000000000000000 #x0000000000000001)))
+
+
+
+
+
+
+
+
+
+

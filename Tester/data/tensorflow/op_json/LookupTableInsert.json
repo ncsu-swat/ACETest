@@ -1,0 +1,32 @@
+{
+	"Tin": {
+		"name": "Tin",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"Tout": {
+		"name": "Tout",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"table_handle": {
+		"name": "table_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"keys": {
+		"name": "keys",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&Tin.value"
+	},
+	"values": {
+		"name": "values",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "&Tout.value"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"dataset_factory": {
+		"name": "dataset_factory",
+		"input_order": -1,
+		"type": "func"
+	},
+	"output_types": {
+		"name": "output_types",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "type"
+		},
+		"min_len": 1
+	},
+	"output_shapes": {
+		"name": "output_shapes",
+		"input_order": -1,
+		"type": "list",
+		"child_prop": {
+			"type": "shape"
+		},
+		"min_len": 1
+	},
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	}
+}

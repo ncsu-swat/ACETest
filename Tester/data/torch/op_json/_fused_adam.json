@@ -1,0 +1,77 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"grads": {
+		"optional": false,
+		"name": "grads",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 1
+	},
+	"exp_avgs": {
+		"optional": false,
+		"name": "exp_avgs",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 2
+	},
+	"exp_avg_sqs": {
+		"optional": false,
+		"name": "exp_avg_sqs",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 3
+	},
+	"max_exp_avg_sqs": {
+		"optional": false,
+		"name": "max_exp_avg_sqs",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 4
+	},
+	"state_steps": {
+		"optional": false,
+		"name": "state_steps",
+		"type": "list",
+		"child_prop": {
+			"type": "tensor"
+		},
+		"input_order": 5
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

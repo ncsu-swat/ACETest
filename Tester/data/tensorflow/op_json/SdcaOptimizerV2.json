@@ -1,0 +1,268 @@
+{
+	"loss_type": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "loss_type",
+		"type": "string",
+		"value": null,
+		"enum": [
+			"logistic_loss",
+			"squared_loss",
+			"hinge_loss",
+			"smooth_hinge_loss",
+			"poisson_loss"
+		],
+		"length": null,
+		"max_len": null,
+		"min_len": null,
+		"optional": null
+	},
+	"adaptive": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": false,
+		"is_mid": null,
+		"name": "adaptive",
+		"type": "bool",
+		"value": null,
+		"optional": null
+	},
+	"num_sparse_features": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_sparse_features",
+		"type": "int",
+		"max": null,
+		"min": 0,
+		"value": null,
+		"enum": null
+	},
+	"num_sparse_features_with_values": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_sparse_features_with_values",
+		"type": "int",
+		"max": null,
+		"min": 0,
+		"value": null,
+		"enum": null
+	},
+	"num_dense_features": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_dense_features",
+		"type": "int",
+		"max": null,
+		"min": 0,
+		"value": null,
+		"enum": null
+	},
+	"l1": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "l1",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null
+	},
+	"l2": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "l2",
+		"type": "float",
+		"max": null,
+		"min": null,
+		"value": null
+	},
+	"num_loss_partitions": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_loss_partitions",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null
+	},
+	"num_inner_iterations": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "num_inner_iterations",
+		"type": "int",
+		"max": null,
+		"min": 1,
+		"value": null,
+		"enum": null
+	},
+	"sparse_example_indices": {
+		"is_attr": null,
+		"input_order": 0,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_example_indices",
+		"type": "list",
+		"value": null,
+		"length": "&num_sparse_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "int64"
+		}
+	},
+	"sparse_feature_indices": {
+		"is_attr": null,
+		"input_order": 1,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_feature_indices",
+		"type": "list",
+		"value": null,
+		"length": "&num_sparse_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "int64"
+		}
+	},
+	"sparse_feature_values": {
+		"is_attr": null,
+		"input_order": 2,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_feature_values",
+		"type": "list",
+		"value": null,
+		"length": "&num_sparse_features_with_values.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		}
+	},
+	"dense_features": {
+		"is_attr": null,
+		"input_order": 3,
+		"default": null,
+		"is_mid": null,
+		"name": "dense_features",
+		"type": "list",
+		"value": null,
+		"length": "&num_dense_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		}
+	},
+	"example_weights": {
+		"input_order": 4,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "example_weights",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float"
+	},
+	"example_labels": {
+		"input_order": 5,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "example_labels",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float"
+	},
+	"sparse_indices": {
+		"is_attr": null,
+		"input_order": 6,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_indices",
+		"type": "list",
+		"value": null,
+		"length": "&num_sparse_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "int64"
+		}
+	},
+	"sparse_weights": {
+		"is_attr": null,
+		"input_order": 7,
+		"default": null,
+		"is_mid": null,
+		"name": "sparse_weights",
+		"type": "list",
+		"value": null,
+		"length": "&num_sparse_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		}
+	},
+	"dense_weights": {
+		"is_attr": null,
+		"input_order": 8,
+		"default": null,
+		"is_mid": null,
+		"name": "dense_weights",
+		"type": "list",
+		"value": null,
+		"length": "&num_dense_features.value",
+		"max_len": null,
+		"min_len": null,
+		"child_prop": {
+			"type": "tensor",
+			"dtype": "float"
+		}
+	},
+	"example_state_data": {
+		"input_order": 9,
+		"is_attr": null,
+		"default": null,
+		"is_mid": null,
+		"name": "example_state_data",
+		"type": "tensor",
+		"value": null,
+		"shape": null,
+		"ndim": null,
+		"max_ndim": null,
+		"min_ndim": null,
+		"dtype": "float"
+	}
+}

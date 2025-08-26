@@ -1,0 +1,68 @@
+(declare-fun temp356_1 () (_ BitVec 64))
+(declare-fun temp356_2 () (_ BitVec 64))
+(declare-fun var1445930 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp356_3 () (_ BitVec 64))
+(declare-fun var1445956 () (_ BitVec 64))
+(declare-fun temp356_4 () (_ BitVec 64))
+(declare-fun temp356_6 () (_ BitVec 64))
+(declare-fun temp356_5 () (_ BitVec 64))
+(declare-fun temp356_7 () (_ BitVec 64))
+(declare-fun var2036022 () (_ BitVec 64))
+(declare-fun var2101569 () (_ BitVec 64))
+(declare-fun temp356_9 () (_ BitVec 64))
+(declare-fun temp356_8 () (_ BitVec 64))
+(declare-fun temp356_10 () (_ BitVec 64))
+(declare-fun var2953526 () (_ BitVec 64))
+(declare-fun var3019073 () (_ BitVec 64))
+(declare-fun temp356_12 () (_ BitVec 64))
+(declare-fun temp356_11 () (_ BitVec 64))
+(declare-fun temp356_13 () (_ BitVec 64))
+(declare-fun var3674422 () (_ BitVec 64))
+(declare-fun var3739969 () (_ BitVec 64))
+(assert (= temp356_1 #x0000000000000040))
+(assert (= var1445930
+   (ite (bvsgt ARGNAME_input_NAMEEND_DIM temp356_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp356_2 #x0000000000000000))
+(assert (= var1445930 temp356_2))
+(assert (= temp356_3 #x0000000000000000))
+(assert (= var1445956
+   (ite (bvsgt ARGNAME_input_NAMEEND_DIM temp356_3)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp356_4 #x0000000000000000))
+(assert (= var1445956 temp356_4))
+(assert (= temp356_6 #x0000000000000000))
+(assert (= temp356_5 temp356_6))
+(assert (= temp356_7 #x0000000000000000))
+(assert (= var2036022 temp356_7))
+(assert (= var2101569 var2036022))
+(assert (= temp356_9 #x0000000000000000))
+(assert (= temp356_8 temp356_9))
+(assert (= temp356_10 #x0000000000000000))
+(assert (= var2953526 temp356_10))
+(assert (= var3019073 var2953526))
+(assert (= temp356_12 #x0000000000000000))
+(assert (= temp356_11 temp356_12))
+(assert (= temp356_13 #x0000000000000000))
+(assert (= var3674422 temp356_13))
+(assert (= var3739969 var3674422))
+(model-add temp356_1 () (_ BitVec 64) #x0000000000000040)
+(model-add temp356_2 () (_ BitVec 64) #x0000000000000000)
+(model-add var1445930 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite (or k!0 (= #x0000000000000040 #x7fffffffffffffff))
+                #x0000000000000040
+                (bvadd #x0000000000000040 #x0000000000000001)))
+
+
+
+
+
+

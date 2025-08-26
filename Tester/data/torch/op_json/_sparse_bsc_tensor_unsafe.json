@@ -1,0 +1,55 @@
+{
+	"ccol_indices": {
+		"optional": false,
+		"name": "ccol_indices",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"row_indices": {
+		"optional": false,
+		"name": "row_indices",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"values": {
+		"optional": false,
+		"name": "values",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"size": {
+		"optional": false,
+		"name": "size",
+		"type": "list",
+		"child_prop": {
+			"type": "int"
+		},
+		"input_order": 3
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

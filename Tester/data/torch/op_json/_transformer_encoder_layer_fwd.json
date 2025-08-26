@@ -1,0 +1,159 @@
+{
+	"src": {
+		"optional": false,
+		"name": "src",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"embed_dim": {
+		"optional": false,
+		"name": "embed_dim",
+		"type": "int",
+		"input_order": 1
+	},
+	"num_heads": {
+		"optional": false,
+		"name": "num_heads",
+		"type": "int",
+		"input_order": 2
+	},
+	"qkv_weight": {
+		"optional": false,
+		"name": "qkv_weight",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"qkv_bias": {
+		"optional": false,
+		"name": "qkv_bias",
+		"type": "tensor",
+		"input_order": 4,
+		"dtype": "&T.value"
+	},
+	"proj_weight": {
+		"optional": false,
+		"name": "proj_weight",
+		"type": "tensor",
+		"input_order": 5,
+		"dtype": "&T.value"
+	},
+	"proj_bias": {
+		"optional": false,
+		"name": "proj_bias",
+		"type": "tensor",
+		"input_order": 6,
+		"dtype": "&T.value"
+	},
+	"use_gelu": {
+		"optional": false,
+		"name": "use_gelu",
+		"type": "bool",
+		"input_order": 7
+	},
+	"norm_first": {
+		"optional": false,
+		"name": "norm_first",
+		"type": "bool",
+		"input_order": 8
+	},
+	"eps": {
+		"optional": false,
+		"name": "eps",
+		"type": "float",
+		"input_order": 9
+	},
+	"norm_weight_1": {
+		"optional": false,
+		"name": "norm_weight_1",
+		"type": "tensor",
+		"input_order": 10,
+		"dtype": "&T.value"
+	},
+	"norm_bias_1": {
+		"optional": false,
+		"name": "norm_bias_1",
+		"type": "tensor",
+		"input_order": 11,
+		"dtype": "&T.value"
+	},
+	"norm_weight_2": {
+		"optional": false,
+		"name": "norm_weight_2",
+		"type": "tensor",
+		"input_order": 12,
+		"dtype": "&T.value"
+	},
+	"norm_bias_2": {
+		"optional": false,
+		"name": "norm_bias_2",
+		"type": "tensor",
+		"input_order": 13,
+		"dtype": "&T.value"
+	},
+	"ffn_weight_1": {
+		"optional": false,
+		"name": "ffn_weight_1",
+		"type": "tensor",
+		"input_order": 14,
+		"dtype": "&T.value"
+	},
+	"ffn_bias_1": {
+		"optional": false,
+		"name": "ffn_bias_1",
+		"type": "tensor",
+		"input_order": 15,
+		"dtype": "&T.value"
+	},
+	"ffn_weight_2": {
+		"optional": false,
+		"name": "ffn_weight_2",
+		"type": "tensor",
+		"input_order": 16,
+		"dtype": "&T.value"
+	},
+	"ffn_bias_2": {
+		"optional": false,
+		"name": "ffn_bias_2",
+		"type": "tensor",
+		"input_order": 17,
+		"dtype": "&T.value"
+	},
+	"mask": {
+		"optional": true,
+		"name": "mask",
+		"type": "tensor",
+		"input_order": 18,
+		"dtype": "&T.value"
+	},
+	"mask_type": {
+		"optional": true,
+		"name": "mask_type",
+		"type": "int",
+		"input_order": 19
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

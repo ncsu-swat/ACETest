@@ -1,0 +1,56 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"numel": {
+		"optional": false,
+		"name": "numel",
+		"type": "int",
+		"input_order": 1
+	},
+	"n_bins": {
+		"optional": false,
+		"name": "n_bins",
+		"type": "int",
+		"input_order": 2
+	},
+	"ratio": {
+		"optional": false,
+		"name": "ratio",
+		"type": "float",
+		"input_order": 3
+	},
+	"bit_width": {
+		"optional": false,
+		"name": "bit_width",
+		"type": "int",
+		"input_order": 4
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

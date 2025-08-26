@@ -1,0 +1,13 @@
+{
+	"k": {
+		"name": "k",
+		"input_order": -1,
+		"type": "int"
+	},
+	"input": {
+		"name": "input",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "float"
+	}
+}

@@ -1,0 +1,153 @@
+(declare-fun temp4436_1 () (_ BitVec 64))
+(declare-fun var133465 () (_ BitVec 64))
+(declare-fun var133459 () (_ BitVec 64))
+(declare-fun temp4436_2 () (_ BitVec 64))
+(declare-fun var67739 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_contents_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp4436_3 () (_ BitVec 64))
+(declare-fun var723349 () (_ BitVec 64))
+(declare-fun var67829 () (_ BitVec 64))
+(declare-fun var67832 () (_ BitVec 64))
+(declare-fun temp4436_4 () (_ BitVec 64))
+(declare-fun var858090 () (_ BitVec 64))
+(declare-fun var858058 () (_ BitVec 64))
+(declare-fun var788987 () (_ BitVec 64))
+(declare-fun temp4436_5 () (_ BitVec 64))
+(declare-fun temp4436_6 () (_ BitVec 64))
+(declare-fun temp4436_7 () (_ BitVec 64))
+(declare-fun temp4436_8 () (_ BitVec 64))
+(declare-fun ARGNAME_channels_NAMEEND () (_ BitVec 64))
+(declare-fun temp4436_10 () (_ BitVec 64))
+(declare-fun temp4436_9 () (_ BitVec 64))
+(declare-fun temp4436_11 () (_ BitVec 64))
+(declare-fun ARGNAME_crop_window_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun var2099842 () (_ BitVec 64))
+(declare-fun temp4436_12 () (_ BitVec 64))
+(declare-fun temp4436_13 () (_ BitVec 64))
+(declare-fun ARGNAME_crop_window_NAMEEND_DIMSIZE
+             ()
+             (Array (_ BitVec 64) (_ BitVec 64)))
+(declare-fun temp4436_14 () (_ BitVec 64))
+(declare-fun temp4436_15 () (_ BitVec 64))
+(declare-fun temp4436_16 () (_ BitVec 64))
+(declare-fun temp4436_17 () (_ BitVec 64))
+(declare-fun temp4436_18 () (_ BitVec 64))
+(declare-fun temp4436_19 () (_ BitVec 64))
+(declare-fun temp4436_20 () (_ BitVec 64))
+(declare-fun temp4436_21 () (_ BitVec 64))
+(declare-fun temp4436_22 () (_ BitVec 64))
+(declare-fun temp4436_23 () (_ BitVec 64))
+(declare-fun temp4436_24 () (_ BitVec 64))
+(declare-fun temp4436_25 () (_ BitVec 64))
+(declare-fun temp4436_26 () (_ BitVec 64))
+(declare-fun var2099879 () (_ BitVec 64))
+(declare-fun temp4436_27 () (_ BitVec 64))
+(declare-fun var2099882 () (_ BitVec 64))
+(declare-fun temp4436_28 () (_ BitVec 64))
+(declare-fun temp4436_29 () (_ BitVec 64))
+(declare-fun var2234154 () (_ BitVec 64))
+(declare-fun temp4436_30 () (_ BitVec 64))
+(declare-fun var2299690 () (_ BitVec 64))
+(declare-fun temp4436_31 () (_ BitVec 64))
+(declare-fun var2365226 () (_ BitVec 64))
+(declare-fun temp4436_32 () (_ BitVec 64))
+(declare-fun var2430762 () (_ BitVec 64))
+(declare-fun temp4436_34 () (_ BitVec 64))
+(declare-fun temp4436_33 () (_ BitVec 64))
+(assert (= temp4436_1 #x0000000000000000))
+(assert (= var133465
+   (ite (= ARGNAME_contents_NAMEEND_DIM temp4436_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= var133459 var133465))
+(assert (= var67739 var133459))
+(assert (= temp4436_2 #x0000000000000001))
+(assert (= var67739 temp4436_2))
+(assert (= temp4436_3 #x000000007fffffff))
+(assert (= var723349 temp4436_3))
+(assert (= var67829 var723349))
+(assert (= var67832 var67829))
+(assert (= temp4436_4 #x0000000000000000))
+(assert (= var858090 temp4436_4))
+(assert (= var858058 var858090))
+(assert (= var788987 var858058))
+(assert (= temp4436_5 #x0000000000000000))
+(assert (= var788987 temp4436_5))
+(assert (= temp4436_6 #x0000000000000000))
+(assert (= temp4436_7 #x0000000000000001))
+(assert (= temp4436_8 #x0000000000000003))
+(assert (or false
+    (= ARGNAME_channels_NAMEEND temp4436_6)
+    (= ARGNAME_channels_NAMEEND temp4436_7)
+    (= ARGNAME_channels_NAMEEND temp4436_8)))
+(assert (= temp4436_10 #x0000000000000001))
+(assert (= temp4436_9 temp4436_10))
+(assert (= temp4436_11 #x0000000000000001))
+(assert (= var2099842
+   (ite (= ARGNAME_crop_window_NAMEEND_DIM temp4436_11)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp4436_12 #x0000000000000001))
+(assert (= var2099842 temp4436_12))
+(assert (= temp4436_13 #x0000000000000000))
+(assert (= temp4436_14 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_13)))
+(assert (= temp4436_15 #x0000000000000001))
+(assert (= temp4436_16 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_15)))
+(assert (= temp4436_17 #x0000000000000002))
+(assert (= temp4436_18 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_17)))
+(assert (= temp4436_19 #x0000000000000003))
+(assert (= temp4436_20 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_19)))
+(assert (= temp4436_21 #x0000000000000004))
+(assert (= temp4436_22 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_21)))
+(assert (= temp4436_23 #x0000000000000005))
+(assert (= temp4436_24 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_23)))
+(assert (= temp4436_25 #x0000000000000000))
+(assert (= temp4436_26 (select ARGNAME_crop_window_NAMEEND_DIMSIZE temp4436_25)))
+(assert (= var2099879 temp4436_26))
+(assert (= temp4436_27 #x0000000000000004))
+(assert (= var2099882
+   (ite (= var2099879 temp4436_27) #x0000000000000001 #x0000000000000000)))
+(assert (= temp4436_28 #x0000000000000001))
+(assert (= var2099882 temp4436_28))
+(assert (= temp4436_29 #x0000000000000000))
+(assert (= var2234154 temp4436_29))
+(assert (= temp4436_30 #x0000000000000001))
+(assert (= var2299690 temp4436_30))
+(assert (= temp4436_31 #x0000000000000002))
+(assert (= var2365226 temp4436_31))
+(assert (= temp4436_32 #x0000000000000003))
+(assert (= var2430762 temp4436_32))
+(assert (= temp4436_34 #x0000000000000000))
+(assert (= temp4436_33 temp4436_34))
+(model-add temp4436_1 () (_ BitVec 64) #x0000000000000000)
+(model-add var133465 () (_ BitVec 64) #x0000000000000001)
+(model-add var133459 () (_ BitVec 64) #x0000000000000001)
+(model-add temp4436_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var67739 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_contents_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000000 (bvnot #x0000000000000000)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

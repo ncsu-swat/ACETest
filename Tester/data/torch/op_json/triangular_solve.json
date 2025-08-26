@@ -1,0 +1,60 @@
+{
+	"input": {
+		"optional": false,
+		"name": "input",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"A": {
+		"optional": false,
+		"name": "A",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"upper": {
+		"optional": false,
+		"name": "upper",
+		"type": "bool",
+		"default": "True",
+		"input_order": 2
+	},
+	"transpose": {
+		"optional": false,
+		"name": "transpose",
+		"type": "bool",
+		"default": "False",
+		"input_order": 3
+	},
+	"unitriangular": {
+		"optional": false,
+		"name": "unitriangular",
+		"type": "bool",
+		"default": "False",
+		"input_order": 4
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

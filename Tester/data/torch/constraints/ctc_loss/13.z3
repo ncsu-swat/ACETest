@@ -1,0 +1,53 @@
+(declare-fun temp22_1 () (_ BitVec 64))
+(declare-fun temp22_2 () (_ BitVec 64))
+(declare-fun var133900 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_log_probs_NAMEEND_DIM () (_ BitVec 64))
+(declare-fun temp22_3 () (_ BitVec 64))
+(declare-fun var133927 () (_ BitVec 64))
+(declare-fun temp22_4 () (_ BitVec 64))
+(declare-fun temp22_5 () (_ BitVec 64))
+(declare-fun var526943 () (_ BitVec 64))
+(declare-fun temp22_6 () (_ BitVec 64))
+(declare-fun var526944 () (_ BitVec 64))
+(declare-fun temp22_7 () (_ BitVec 64))
+(declare-fun var526945 () (_ BitVec 64))
+(declare-fun temp22_8 () (_ BitVec 64))
+(declare-fun ARGNAME_zero_infinity_NAMEEND () (_ BitVec 64))
+(declare-fun temp22_9 () (_ BitVec 64))
+(declare-fun ARGNAME_reduction_NAMEEND () (_ BitVec 64))
+(assert (= temp22_1 #x0000000000000003))
+(assert (= var133900
+   (ite (= ARGNAME_log_probs_NAMEEND_DIM temp22_1)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp22_2 #x0000000000000001))
+(assert (= var133900 temp22_2))
+(assert (= temp22_3 #x0000000000000000))
+(assert (= var133927 temp22_3))
+(assert (= temp22_4 #x0000000000000000))
+(assert (= var133927 temp22_4))
+(assert (= temp22_5 #x0000000000000004))
+(assert (= var526943 temp22_5))
+(assert (= temp22_6 #x0000000000000000))
+(assert (= var526944 temp22_6))
+(assert (= temp22_7 #x0000000000000000))
+(assert (= var526945 temp22_7))
+(assert (= temp22_8 #x0000000000000001))
+(assert (= ARGNAME_zero_infinity_NAMEEND temp22_8))
+(assert (= temp22_9 #x0000000000000001))
+(assert (or false (= ARGNAME_reduction_NAMEEND temp22_9)))
+(model-add temp22_1 () (_ BitVec 64) #x0000000000000003)
+(model-add temp22_2 () (_ BitVec 64) #x0000000000000001)
+(model-add var133900 () (_ BitVec 64) #x0000000000000001)
+(model-del k!0)
+(model-add ARGNAME_log_probs_NAMEEND_DIM
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000003 (bvnot #x0000000000000003)))
+
+
+
+
+
+

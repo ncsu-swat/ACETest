@@ -1,0 +1,33 @@
+{
+	"new_vocab_offset": {
+		"name": "new_vocab_offset",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"num_new_vocab": {
+		"name": "num_new_vocab",
+		"input_order": -1,
+		"type": "int",
+		"min": 0
+	},
+	"old_vocab_size": {
+		"name": "old_vocab_size",
+		"input_order": -1,
+		"type": "int",
+		"min": -1,
+		"default": -1
+	},
+	"new_vocab_file": {
+		"name": "new_vocab_file",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	},
+	"old_vocab_file": {
+		"name": "old_vocab_file",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"T": {
+		"name": "T",
+		"input_order": -1,
+		"type": "type",
+		"is_mid": true
+	},
+	"Tindices": {
+		"name": "Tindices",
+		"input_order": -1,
+		"type": "type",
+		"enum": [
+			"int32",
+			"int64"
+		],
+		"default": "int64",
+		"is_mid": true
+	},
+	"adjoint_a": {
+		"name": "adjoint_a",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"adjoint_b": {
+		"name": "adjoint_b",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"a_indices": {
+		"name": "a_indices",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "&Tindices.value"
+	},
+	"a_values": {
+		"name": "a_values",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "&T.value"
+	},
+	"a_shape": {
+		"name": "a_shape",
+		"input_order": 2,
+		"type": "list",
+		"dtype": "int64",
+		"child_prop": {
+			"type": "int",
+			"min": 0
+		}
+	},
+	"b": {
+		"name": "b",
+		"input_order": 3,
+		"type": "tensor",
+		"dtype": "&T.value"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"key_dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "key_dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	},
+	"value_dtype": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "value_dtype",
+		"type": "type",
+		"enum": null,
+		"optional": null
+	}
+}

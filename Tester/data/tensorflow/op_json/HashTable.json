@@ -1,0 +1,30 @@
+{
+	"container": {
+		"name": "container",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"shared_name": {
+		"name": "shared_name",
+		"input_order": -1,
+		"type": "string",
+		"default": ""
+	},
+	"use_node_name_sharing": {
+		"name": "use_node_name_sharing",
+		"input_order": -1,
+		"type": "bool",
+		"default": false
+	},
+	"key_dtype": {
+		"name": "key_dtype",
+		"input_order": -1,
+		"type": "type"
+	},
+	"value_dtype": {
+		"name": "value_dtype",
+		"input_order": -1,
+		"type": "type"
+	}
+}

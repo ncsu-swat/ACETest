@@ -1,0 +1,50 @@
+{
+	"devices": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "devices",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 1,
+		"child_prop": {
+			"type": "string"
+		},
+		"optional": null
+	},
+	"output_types": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_types",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 1,
+		"child_prop": {
+			"type": "type"
+		},
+		"optional": null
+	},
+	"output_shapes": {
+		"is_attr": null,
+		"input_order": -1,
+		"default": null,
+		"is_mid": null,
+		"name": "output_shapes",
+		"type": "list",
+		"value": null,
+		"length": null,
+		"max_len": null,
+		"min_len": 1,
+		"child_prop": {
+			"type": "shape"
+		},
+		"optional": null
+	}
+}

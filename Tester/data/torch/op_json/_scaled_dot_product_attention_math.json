@@ -1,0 +1,74 @@
+{
+	"query": {
+		"optional": false,
+		"name": "query",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"key": {
+		"optional": false,
+		"name": "key",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"value": {
+		"optional": false,
+		"name": "value",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"attn_mask": {
+		"optional": true,
+		"name": "attn_mask",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"dropout_p": {
+		"optional": false,
+		"name": "dropout_p",
+		"type": "float",
+		"default": 0.0,
+		"input_order": 4
+	},
+	"need_attn_weights": {
+		"optional": false,
+		"name": "need_attn_weights",
+		"type": "bool",
+		"default": "False",
+		"input_order": 5
+	},
+	"is_causal": {
+		"optional": false,
+		"name": "is_causal",
+		"type": "bool",
+		"default": "False",
+		"input_order": 6
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

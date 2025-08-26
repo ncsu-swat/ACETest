@@ -1,0 +1,84 @@
+{
+	"query": {
+		"optional": false,
+		"name": "query",
+		"type": "tensor",
+		"input_order": 0,
+		"dtype": "&T.value"
+	},
+	"key": {
+		"optional": false,
+		"name": "key",
+		"type": "tensor",
+		"input_order": 1,
+		"dtype": "&T.value"
+	},
+	"value": {
+		"optional": false,
+		"name": "value",
+		"type": "tensor",
+		"input_order": 2,
+		"dtype": "&T.value"
+	},
+	"cum_seq_q": {
+		"optional": false,
+		"name": "cum_seq_q",
+		"type": "tensor",
+		"input_order": 3,
+		"dtype": "&T.value"
+	},
+	"cum_seq_k": {
+		"optional": false,
+		"name": "cum_seq_k",
+		"type": "tensor",
+		"input_order": 4,
+		"dtype": "&T.value"
+	},
+	"max_q": {
+		"optional": false,
+		"name": "max_q",
+		"type": "int",
+		"input_order": 5
+	},
+	"max_k": {
+		"optional": false,
+		"name": "max_k",
+		"type": "int",
+		"input_order": 6
+	},
+	"dropout_p": {
+		"optional": false,
+		"name": "dropout_p",
+		"type": "float",
+		"input_order": 7
+	},
+	"is_causal": {
+		"optional": false,
+		"name": "is_causal",
+		"type": "bool",
+		"input_order": 8
+	},
+	"T": {
+		"name": "T",
+		"is_mid": true,
+		"type": "type",
+		"input_order": -1,
+		"enum": [
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
+			"half",
+			"bfloat16",
+			"float16",
+			"float32",
+			"float64",
+			"complex32",
+			"complex64"
+		]
+	}
+}

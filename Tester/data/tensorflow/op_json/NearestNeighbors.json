@@ -1,0 +1,20 @@
+{
+	"points": {
+		"name": "points",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"centers": {
+		"name": "centers",
+		"input_order": 1,
+		"type": "tensor",
+		"dtype": "float"
+	},
+	"k": {
+		"name": "k",
+		"input_order": 2,
+		"type": "tensor",
+		"dtype": "int64"
+	}
+}

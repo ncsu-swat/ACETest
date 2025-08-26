@@ -1,0 +1,8 @@
+{
+	"reader_handle": {
+		"name": "reader_handle",
+		"input_order": 0,
+		"type": "tensor",
+		"dtype": "string"
+	}
+}

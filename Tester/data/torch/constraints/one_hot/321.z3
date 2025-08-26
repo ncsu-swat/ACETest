@@ -1,0 +1,67 @@
+(declare-fun temp433_1 () (_ BitVec 64))
+(declare-fun var463492 () (_ BitVec 64))
+(declare-fun var463495 () (_ BitVec 64))
+(declare-fun temp433_2 () (_ BitVec 64))
+(declare-fun temp433_3 () (_ BitVec 64))
+(declare-fun var66283 () (_ BitVec 64))
+(declare-fun k!0 () Bool)
+(declare-fun ARGNAME_input_NAMEEND_NUMELEMENT () (_ BitVec 64))
+(declare-fun temp433_4 () (_ BitVec 64))
+(declare-fun var1705320 () (_ BitVec 64))
+(declare-fun temp433_5 () (_ BitVec 64))
+(declare-fun var1705322 () (_ BitVec 64))
+(declare-fun var1705323 () (_ BitVec 64))
+(declare-fun temp433_6 () (_ BitVec 64))
+(declare-fun var1705324 () (_ BitVec 64))
+(declare-fun temp433_7 () (_ BitVec 64))
+(declare-fun var1705326 () (_ BitVec 64))
+(declare-fun temp433_8 () (_ BitVec 64))
+(declare-fun temp433_9 () (_ BitVec 64))
+(declare-fun ARGNAME_num_classes_NAMEEND () (_ BitVec 64))
+(declare-fun var66463 () (_ BitVec 64))
+(declare-fun temp433_10 () (_ BitVec 64))
+(assert (= temp433_1 #x0000000000000004))
+(assert (= var463492 temp433_1))
+(assert (= var463495 var463492))
+(assert (= temp433_2 #x0000000000000000))
+(assert (= var66283
+   (ite (= ARGNAME_input_NAMEEND_NUMELEMENT temp433_2)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp433_3 #x0000000000000000))
+(assert (= var66283 temp433_3))
+(assert (= temp433_4 #x000000000000000b))
+(assert (= var1705320 temp433_4))
+(assert (= temp433_5 #x0000000000000000))
+(assert (= var1705322
+   (ite (= var1705320 temp433_5) #x0000000000000001 #x0000000000000000)))
+(assert (= var1705323 var1705320))
+(assert (= temp433_6 #xffffffffffffffff))
+(assert (= var1705324 (bvadd var1705323 temp433_6)))
+(assert (= temp433_7 #xffffffffffffffff))
+(assert (= var1705326 (bvand var1705324 temp433_7)))
+(assert (= temp433_8 #x0000000000000000))
+(assert (= temp433_9 #xffffffffffffffff))
+(assert (= var66463
+   (ite (= ARGNAME_num_classes_NAMEEND temp433_9)
+        #x0000000000000001
+        #x0000000000000000)))
+(assert (= temp433_10 #x0000000000000001))
+(assert (= var66463 temp433_10))
+(model-add temp433_1 () (_ BitVec 64) #x0000000000000004)
+(model-add var463492 () (_ BitVec 64) #x0000000000000004)
+(model-add var463495 () (_ BitVec 64) #x0000000000000004)
+(model-add temp433_2 () (_ BitVec 64) #x0000000000000000)
+(model-add temp433_3 () (_ BitVec 64) #x0000000000000000)
+(model-add var66283 () (_ BitVec 64) #x0000000000000000)
+(model-del k!0)
+(model-add ARGNAME_input_NAMEEND_NUMELEMENT
+           ()
+           (_ BitVec 64)
+           (ite k!0 #x0000000000000000 (bvnot #x0000000000000000)))
+
+
+
+
+
+
