@@ -2,6 +2,7 @@
 This repo maintains the source code and other data for our research paper, "ACETest: Automated Constraint Extraction for Testing Deep Learning Operators", which is accepted by ISSTA 2023. ([preprint](https://arxiv.org/abs/2305.17914))
 
 
+This repo optimized ACETest to make it run parallel and fix some issues.
 
 ## About ACETest
 
@@ -18,6 +19,8 @@ We have used ACETest to detect 108 previously unknown bugs on TensorFlow and PyT
 
 
 ## Quick Start Guide for Tester
+
+This version of ACETest use `pixi` as the package manager.
 
 The source code of Testing part of ACETest is now available at `Tester`, you can test TensorFlow or PyTorch with the constraints extracted by ACETest with it.
 
@@ -75,13 +78,32 @@ To test all operators, use the `filter=all` option:
 python main.py --test_round=5000 --mode=all --framework=tf --work_path=output --filter=all
 ```
 
+#### Parallelizing Across APIs
+
+You can run multiple APIs in parallel by adding `--api_workers` (number of concurrent API processes):
+
+```
+python main.py --test_round=5000 --mode=all --framework=tf --work_path=output --filter=all --api_workers=4
+```
+
+Notes:
+- Each API is executed in its own process, and each process internally may start worker processes for constraint sampling and running tests.
+- The total concurrency is roughly `api_workers * p_num` (where `p_num` is an internal per-API worker count). Tune `--api_workers` accordingly.
+
 #### Main Options
 
 - `framework`: Specify the AI framework for testing (`tf` for TensorFlow or `torch` for PyTorch).
-- `total_round`: Set the number of test iterations for each operator.
 - `target_api`: Choose the specific operator/API to test. Available APIs can be found in the `API2OP.csv` file located under `Tester/data/*`.
 - `work_path`: Designate a directory for storing results.
 - `mode`: Select the testing mode based on the processing unit (`all`, `cpu_ori`, `cpu_onednn`, or `gpu`).
+ - `api_workers`: Number of API-level parallel workers to run concurrently.
+ - `api_timeout`: Max seconds to spend fuzzing a single API before moving on.
+ - `total_round`: You can set `-1`, `unlimit`, `unlimited`, or `infinite` to run rounds indefinitely.
+- `--save_non_crash=true`: Save non-crashing test cases for further analysis.
+
+#### Output directories will not be overwritten
+
+If an intended output directory (e.g., `output_tf_0`) already exists, ACETest will create a unique new directory for the run by appending a timestamp (e.g., `output_tf_0-YYYYMMDD-HHMMSS`, with a numeric suffix if needed). Per-API artifacts are written under subfolders inside this unique output root. This ensures previous results are preserved.
 
 
 

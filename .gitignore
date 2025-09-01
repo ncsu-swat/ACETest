@@ -1,0 +1,9 @@
+# pixi environments
+.pixi
+.vscode
+.mypy_cache
+Tester/src/output-torch
+Tester/src/output-tf
+Tester/data
+Tester/data/** 
+*.pyc

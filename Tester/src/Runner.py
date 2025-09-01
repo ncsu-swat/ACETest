@@ -171,7 +171,7 @@ class Runner:
                 print('Crash or Timeout limit has been reached.')
                 self.terminate()
                 break
-            elif self.test_option.test_round <= self.total_times:
+            elif self.test_option.test_round != -1 and self.total_times >= self.test_option.test_round:
                 break
 
             if self.total_times % 50 == 0 and self.get_cov:

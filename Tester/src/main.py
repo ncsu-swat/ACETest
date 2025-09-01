@@ -519,16 +519,28 @@ class FuzzManager:
                 # if len(self.args) > 2:
                 #     return
                 self.samples = [None]
-                self.test_times = [self.test_option.test_round]
+                if self.test_option.test_round == -1:
+                    self.test_times = [10**12]
+                else:
+                    self.test_times = [self.test_option.test_round]
             else:
                 self.sample()
 
-            ratio = self.test_option.test_round / sum(self.test_times)
-            for i in range(len(self.test_times)):
-                self.test_times[i] = int(self.test_times[i] * ratio) + 1
+            # Scale test_times to match requested total rounds unless unlimited
+            if self.test_option.test_round != -1:
+                total = sum(self.test_times) if self.test_times else 0
+                ratio = (self.test_option.test_round / total) if total > 0 else 1
+                for i in range(len(self.test_times)):
+                    self.test_times[i] = int(self.test_times[i] * ratio) + 1
+            else:
+                # Unlimited mode: keep running until api_timeout, so make each sample large
+                self.test_times = [10**12 for _ in self.test_times]
         else:
             self.samples = [None]
-            self.test_times = [self.test_option.test_round]
+            if self.test_option.test_round == -1:
+                self.test_times = [10**12]
+            else:
+                self.test_times = [self.test_option.test_round]
 
 
         # Fuzz
@@ -587,10 +599,11 @@ class FuzzManager:
     def sample(self):
         # test at least 2 times for each sample
         test_round = self.test_option.test_round
-        if len(self.constraints) > test_round / 2:
+        if test_round != -1 and len(self.constraints) > test_round / 2:
             self.constraints = random.sample(self.constraints, k=int(test_round/2))
 
-        sample_per_cons = int(test_round / len(self.constraints) / 2)
+        base_rounds = test_round if test_round != -1 else max(200, len(self.constraints) * 4)
+        sample_per_cons = int(base_rounds / max(1, len(self.constraints)) / 2)
         if sample_per_cons < 2:
             sample_per_cons = 2
         print('Sample {} constraints'.format(len(self.constraints)))
@@ -636,7 +649,10 @@ class FuzzManager:
                 cons_number = 5
             choosed_cons = random.sample(self.constraints, k=cons_number)
 
-            sampler = MultiProcessHandler(choosed_cons, int(test_round / cons_number)*2, task='sample', test_option=self.test_option, args=self.args)
+            rounds_per = int(base_rounds / max(1, cons_number)) * 2
+            if rounds_per < 2:
+                rounds_per = 2
+            sampler = MultiProcessHandler(choosed_cons, rounds_per, task='sample', test_option=self.test_option, args=self.args)
             sampler.execute()
 
             for r in sampler.res:
@@ -843,6 +859,8 @@ class FuzzManager:
         extender = MultiProcessHandler(self.constraints, task='extend', args=self.args, test_option=self.test_option)
         extender.execute()
         for i in range(len(self.constraints)):
+            if extender.res[i] is None:
+                continue
             for goal in extender.res[i]:
                 extended_constraints.append(z3.parse_smt2_string(goal))
 
@@ -1095,7 +1113,7 @@ class FuzzManager:
                     goal.add(sub_goal)
                 combined_goals.append(goal)
         # Remove rebundant constraints
-        if len(combined_goals) > self.test_option.test_round:
+        if self.test_option.test_round != -1 and len(combined_goals) > self.test_option.test_round:
             combined_goals = random.sample(combined_goals, k=self.test_option.test_round)
         
         # Remove uninteresting exprs
@@ -1182,26 +1200,47 @@ def get_op_name(api_name, api2op_csv):
     return None
 
 
+def run_target(args):
+    """Helper for parallel API execution.
+    args: (op_name, api_name, test_option)
+    """
+    op_name, api_name, test_option = args
+    try:
+        fuzz_op(op_name=op_name, api_name=api_name, test_option=test_option)
+    except KeyboardInterrupt:
+        return
+    except Exception as e:
+        print('Error in target {}: {}'.format(api_name, e))
+
+
 if __name__ == '__main__':
 
     argv = sys.argv[1:]
+    opts = []
     try:
-        opts, args = getopt.getopt(argv, '',
-                                   ['framework=', 'filter=', 'mode=',
-                                        'test_round=', 'round_timeout=',
-                                        'use_cons=', 'api_timeout=',
-                                        'target_api=', 'save_non_crash=',
-                                        'total_round=', 'get_cov=', 'work_path=',
-                                         "save_bitmap=", 'record_cov='
-                                        ])
-    except:
+        opts, args = getopt.getopt(
+            argv,
+            '',
+            [
+                'framework=', 'filter=', 'mode=',
+                'test_round=', 'round_timeout=',
+                'use_cons=', 'api_timeout=',
+                'target_api=', 'save_non_crash=',
+                'total_round=', 'get_cov=', 'work_path=',
+                'save_bitmap=', 'record_cov=', 'api_workers='
+            ]
+        )
+    except Exception:
         print('Error: invalid options.')
     test_opt = TestOption()
 
 
     for opt, arg in opts:
         if opt == '--total_round':
-            test_opt.total_round = int(arg)
+            if str(arg).lower() in ['-1', 'unlimit', 'unlimited', 'infinite']:
+                test_opt.total_round = -1
+            else:
+                test_opt.total_round = int(arg)
         if opt == '--work_path':
             test_opt.work_path = arg
         if opt == '--framework':
@@ -1211,7 +1250,10 @@ if __name__ == '__main__':
         if opt == '--mode':
             test_opt.mode = arg
         if opt == '--test_round':
-            test_opt.test_round = int(arg)
+            if str(arg).lower() in ['-1', 'unlimit', 'unlimited', 'infinite']:
+                test_opt.test_round = -1
+            else:
+                test_opt.test_round = int(arg)
         if opt == '--round_timeout':
             test_opt.round_timeout = int(arg)
         if opt == '--get_cov':
@@ -1229,7 +1271,10 @@ if __name__ == '__main__':
                 test_opt.use_cons = False
                 print('Not using cons.')
         if opt == '--api_timeout':
-            test_opt.api = arg
+            try:
+                test_opt.api_timeout = int(arg)
+            except Exception:
+                pass
         if opt == '--target_api':
             test_opt.target_api = arg
         if opt == '--save_bitmap':
@@ -1241,6 +1286,11 @@ if __name__ == '__main__':
                 print('Save non-crash test cases.')
             else:
                 test_opt.save_non_crash = False
+        if opt == '--api_workers':
+            try:
+                test_opt.api_workers = max(1, int(arg))
+            except Exception:
+                test_opt.api_workers = 1
 
     test_opt.initialize()
 
@@ -1296,7 +1346,7 @@ if __name__ == '__main__':
                 continue
             test_targets.append([op_name, api_name])
     elif filter == 'list':
-        with open('op_list.txt', 'r') as f:
+        with open('op_list_1.txt', 'r') as f:
             tested_list = os.listdir(test_opt.output_path)
             for line in f.readlines():
                 api_name = line.strip()
@@ -1324,15 +1374,56 @@ if __name__ == '__main__':
         test_targets = temp
         
 
-    for i in range(test_opt.total_round):
+    i = 0
+    while True:
         test_opt.initialize(round=i)
         start_time = time.time()
         print('{} targets to test.'.format(len(test_targets)))
 
         tested_list = os.listdir(test_opt.output_path)
-        for target in test_targets:
-            if target[1] in tested_list:
-                continue
-            fuzz_op(op_name = target[0], api_name=target[1], test_option=test_opt)
+        targets_for_round = [t for t in test_targets if t[1] not in tested_list]
+        if len(targets_for_round) == 0:
+            print('No targets to run for this round.')
+        else:
+            # Parallelize across APIs according to api_workers using non-daemonic processes
+            workers = max(1, int(getattr(test_opt, 'api_workers', 1)))
+            if workers > 1:
+                print('Running {} targets in parallel with {} workers'.format(len(targets_for_round), workers))
+                idx = 0
+                procs = []
+                try:
+                    # Start initial batch
+                    while idx < len(targets_for_round) and len(procs) < workers:
+                        t = targets_for_round[idx]
+                        p = multiprocessing.Process(target=run_target, args=((t[0], t[1], test_opt),))
+                        p.daemon = False
+                        p.start()
+                        procs.append(p)
+                        idx += 1
+                    # Refill as processes finish
+                    while procs:
+                        for p in list(procs):
+                            p.join(timeout=0.1)
+                            if not p.is_alive():
+                                procs.remove(p)
+                                if idx < len(targets_for_round):
+                                    t = targets_for_round[idx]
+                                    new_proc = multiprocessing.Process(target=run_target, args=((t[0], t[1], test_opt),))
+                                    new_proc.daemon = False
+                                    new_proc.start()
+                                    procs.append(new_proc)
+                                    idx += 1
+                finally:
+                    # Ensure all children are terminated on interruption
+                    for p in procs:
+                        if p.is_alive():
+                            p.terminate()
+                            p.join()
+            else:
+                for target in targets_for_round:
+                    fuzz_op(op_name=target[0], api_name=target[1], test_option=test_opt)
         print('Test finished')
         print(time.time() - start_time, 's in total')
+        i += 1
+        if test_opt.total_round != -1 and i >= test_opt.total_round:
+            break
